@@ -16,5 +16,28 @@ namespace MalvaradoSoft.GestionSecretario
         {
             InitializeComponent();
         }
+
+        private void btnBuscarUsuario_Click(object sender, EventArgs e)
+        {
+            frmBuscarCurso_secretario frmbuscar = new frmBuscarCurso_secretario();
+            if (frmbuscar.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmGestionarTipoNota_secretario frmGestionarTipoNota = new frmGestionarTipoNota_secretario();
+            if (frmGestionarTipoNota.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
