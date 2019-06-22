@@ -101,6 +101,7 @@
     <Compile Include="GenerarReportes\frmReportes_profesor.Designer.cs">
       <DependentUpon>frmReportes_profesor.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSecretario\EstadosFrmGestionarTipoNota.cs" />
     <Compile Include="GestionSecretario\frmAsignarAlumnos_secretario.cs">
       <SubType>Form</SubType>
     </Compile>
