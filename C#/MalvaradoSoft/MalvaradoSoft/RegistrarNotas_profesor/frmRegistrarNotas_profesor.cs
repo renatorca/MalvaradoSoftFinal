@@ -15,7 +15,8 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
         private MAlvaradoWS.user professor;
         private MAlvaradoWS.courseSchedule courseScheduleSelected;
         private BindingList<MAlvaradoWS.courseSchedule> courseSchedules;
-        private BindingList<MAlvaradoWS.course> courses;
+        private MAlvaradoWS.DBControllerWSClient controller = new MAlvaradoWS.DBControllerWSClient();
+        
 
         private frmRegistrarFeedback_profesor feed;
 
@@ -23,8 +24,13 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
         {
             InitializeComponent();
             courseSchedules = new BindingList<MAlvaradoWS.courseSchedule>();
-            courses = new BindingList<MAlvaradoWS.course>();
             professor = p;
+
+            
+
+            
+            
+
         }
 
         private void ingresarFeedback(object sender, DataGridViewCellEventArgs e)

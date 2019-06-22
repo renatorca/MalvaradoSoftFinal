@@ -16,5 +16,10 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
         {
             InitializeComponent();
         }
+
+        private void registrarNotas(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
