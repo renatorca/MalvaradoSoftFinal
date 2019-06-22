@@ -16,5 +16,14 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
         {
             InitializeComponent();
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            //Guardar los cambios
+
+
+            //Cerrar
+            this.Close();
+        }
     }
 }

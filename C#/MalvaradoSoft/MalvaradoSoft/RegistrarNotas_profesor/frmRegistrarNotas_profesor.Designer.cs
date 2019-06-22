@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cboGradoSeccion = new System.Windows.Forms.ComboBox();
-            this.cboCursos = new System.Windows.Forms.ComboBox();
             this.dgvRegistroNotas = new System.Windows.Forms.DataGridView();
             this.colNombreAlumno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPC1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,27 +37,14 @@
             this.colPC4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEx2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnBuscar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroNotas)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cboGradoSeccion
-            // 
-            this.cboGradoSeccion.FormattingEnabled = true;
-            this.cboGradoSeccion.Location = new System.Drawing.Point(111, 61);
-            this.cboGradoSeccion.Name = "cboGradoSeccion";
-            this.cboGradoSeccion.Size = new System.Drawing.Size(175, 21);
-            this.cboGradoSeccion.TabIndex = 14;
-            // 
-            // cboCursos
-            // 
-            this.cboCursos.FormattingEnabled = true;
-            this.cboCursos.Location = new System.Drawing.Point(111, 24);
-            this.cboCursos.Name = "cboCursos";
-            this.cboCursos.Size = new System.Drawing.Size(175, 21);
-            this.cboCursos.TabIndex = 13;
             // 
             // dgvRegistroNotas
             // 
@@ -123,30 +108,21 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(386, 110);
+            this.btnGuardar.Location = new System.Drawing.Point(402, 113);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(108, 23);
             this.btnGuardar.TabIndex = 11;
             this.btnGuardar.Text = "Guardar cambios";
             this.btnGuardar.UseVisualStyleBackColor = true;
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(84, 110);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 10;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 64);
+            this.label3.Location = new System.Drawing.Point(12, 57);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Grado y seccion:";
+            this.label3.Text = "Grado:";
             // 
             // label2
             // 
@@ -157,16 +133,47 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Curso:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 86);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 13);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Sección:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(82, 19);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 14;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(82, 49);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 15;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(82, 86);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 16;
+            // 
             // frmRegistrarNotas_profesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 367);
-            this.Controls.Add(this.cboGradoSeccion);
-            this.Controls.Add(this.cboCursos);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvRegistroNotas);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Name = "frmRegistrarNotas_profesor";
@@ -178,9 +185,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cboGradoSeccion;
-        private System.Windows.Forms.ComboBox cboCursos;
         private System.Windows.Forms.DataGridView dgvRegistroNotas;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombreAlumno;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPC1;
@@ -190,8 +194,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colPC4;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEx2;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

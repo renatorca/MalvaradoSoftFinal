@@ -305,6 +305,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrarNotas_profesor\frmListarCursos_profesor.resx">
+      <DependentUpon>frmListarCursos_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.resx">
+      <DependentUpon>frmRegistrarFeedback_profesor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.resx">
       <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
     </EmbeddedResource>
