@@ -8,18 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MalvaradoSoft.Asistencia
+namespace MalvaradoSoft.GestionSecretario
 {
-    public partial class frmGestionarAsistencia_auxiliar : Form
+    public partial class frmGestionarCursoPorSeccion_secretario : Form
     {
-        public frmGestionarAsistencia_auxiliar()
+        public frmGestionarCursoPorSeccion_secretario()
         {
             InitializeComponent();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

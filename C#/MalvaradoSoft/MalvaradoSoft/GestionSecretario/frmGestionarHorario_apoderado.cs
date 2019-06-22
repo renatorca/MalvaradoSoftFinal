@@ -16,5 +16,10 @@ namespace MalvaradoSoft.GestionSecretario
         {
             InitializeComponent();
         }
+
+        private void buttonAgregar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

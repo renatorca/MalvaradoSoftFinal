@@ -17,7 +17,17 @@ namespace MalvaradoSoft.GestionSecretario
             InitializeComponent();
         }
 
+
         private void button1_Click(object sender, EventArgs e)
+        {
+            frmAsignarAlumnos_secretario frmAsignarAlumnos = new frmAsignarAlumnos_secretario();
+            if (frmAsignarAlumnos.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

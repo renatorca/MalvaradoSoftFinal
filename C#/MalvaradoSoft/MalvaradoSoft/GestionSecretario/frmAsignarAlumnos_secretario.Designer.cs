@@ -76,6 +76,7 @@
             this.btnCrearSeccion.TabIndex = 34;
             this.btnCrearSeccion.Text = "Crear Sección";
             this.btnCrearSeccion.UseVisualStyleBackColor = true;
+            this.btnCrearSeccion.Click += new System.EventHandler(this.btnCrearSeccion_Click);
             // 
             // dgvAlumnos
             // 

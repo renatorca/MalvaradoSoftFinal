@@ -16,5 +16,14 @@ namespace MalvaradoSoft.GestionSecretario
         {
             InitializeComponent();
         }
+
+        private void btnCrearSeccion_Click(object sender, EventArgs e)
+        {
+            DialogResult msg = MessageBox.Show("¿Está seguro de registrar la sección?", "Mensaje de validación", MessageBoxButtons.YesNo);
+            if (msg == DialogResult.Yes)
+            {
+                DialogResult = DialogResult.OK;
+            }
+        }
     }
 }
