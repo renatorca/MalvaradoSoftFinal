@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MalvaradoSoft.Inscripcion_matricula_apoderado
+namespace MalvaradoSoft.InscripcionMatricula_apoderado
 {
     public partial class frmGestionarIntencionMatricula_apoderado : Form
     {

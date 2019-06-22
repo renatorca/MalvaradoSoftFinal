@@ -1,4 +1,4 @@
-﻿namespace MalvaradoSoft.Inscripcion_matricula_apoderado
+﻿namespace MalvaradoSoft.InscripcionMatricula_apoderado
 {
     partial class frmGestionarIntencionMatricula_apoderado
     {

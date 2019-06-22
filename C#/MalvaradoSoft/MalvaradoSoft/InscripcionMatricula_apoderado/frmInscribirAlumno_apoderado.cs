@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MalvaradoSoft.Apoderado
+namespace MalvaradoSoft.InscripcionMatricula_apoderado
 {
     public partial class frmInscribirAlumno_apoderado : Form
     {
@@ -59,7 +59,7 @@ namespace MalvaradoSoft.Apoderado
             {
                 String path = dialog.FileName;
 
-                DialogResult result = MessageBox.Show("El certificado de nacimiento ha sido subido correctamente", "Mensaje de validación", MessageBoxButtons.OKCancel);
+                DialogResult result = MessageBox.Show("El certificado de nacimiento ha sido subido correctamente", "Mensaje de validación", MessageBoxButtons.OK);
                 //using (StreamReader reader = new StreamReader(new FileStream(path, FileMode.Open), new UTF8Encoding()))
                 //{
                 //byte[] byteArray = System.IO.File.ReadAllBytes(@"c:\file.pdf");

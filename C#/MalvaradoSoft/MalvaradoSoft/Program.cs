@@ -1,4 +1,5 @@
-﻿using MalvaradoSoft.GestionSecretario;
+﻿using MalvaradoSoft.InscripcionMatricula_apoderado;
+using MalvaradoSoft.GestionSecretario;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +25,8 @@ namespace MalvaradoSoft
             MAlvaradoWS.course curso = new MAlvaradoWS.course();
             curso.id = 1;
             curso.name = "Test";
-            Application.Run(new frmGestionarTipoNota_secretario(curso));
-
+            //Application.Run(new frmGestionarTipoNota_secretario(curso));
+            Application.Run(new frmMenuInscribirAlumno_apoderado());
 
         }
     }

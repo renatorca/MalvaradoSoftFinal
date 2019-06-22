@@ -1,4 +1,4 @@
-﻿namespace MalvaradoSoft.Apoderado
+﻿namespace MalvaradoSoft.InscripcionMatricula_apoderado
 {
     partial class frmMenuInscribirAlumno_apoderado
     {
