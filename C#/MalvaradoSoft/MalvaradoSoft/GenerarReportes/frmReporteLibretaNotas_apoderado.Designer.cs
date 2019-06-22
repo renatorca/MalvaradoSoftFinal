@@ -1,6 +1,6 @@
 ﻿namespace MalvaradoSoft.GenerarReportes
 {
-    partial class frmReporteNotas_apoderado
+    partial class frmReporteLibretaNotas_apoderado
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace MalvaradoSoft.GenerarReportes
 {
-    partial class frmReportePorEvaluacion_profesor
+    partial class frmReporteEstadisticoPorEvaluacion_profesor
     {
         /// <summary>
         /// Required designer variable.

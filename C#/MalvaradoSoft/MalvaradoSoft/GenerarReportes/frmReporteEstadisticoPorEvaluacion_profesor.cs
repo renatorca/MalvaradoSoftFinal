@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MalvaradoSoft.GenerarReportes
 {
-    public partial class frmReportePorEvaluacion_profesor : Form
+    public partial class frmReporteEstadisticoPorEvaluacion_profesor : Form
     {
-        public frmReportePorEvaluacion_profesor()
+        public frmReporteEstadisticoPorEvaluacion_profesor()
         {
             InitializeComponent();
         }
