@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnHelpBoleta = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnGuardarM = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btnHelpBoleta
-            // 
-            this.btnHelpBoleta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnHelpBoleta.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnHelpBoleta.Location = new System.Drawing.Point(386, 82);
-            this.btnHelpBoleta.Name = "btnHelpBoleta";
-            this.btnHelpBoleta.Size = new System.Drawing.Size(24, 24);
-            this.btnHelpBoleta.TabIndex = 40;
-            this.btnHelpBoleta.UseVisualStyleBackColor = true;
-            this.btnHelpBoleta.Click += new System.EventHandler(this.btnHelpBoleta_Click);
             // 
             // textBox1
             // 
@@ -80,14 +70,33 @@
             this.label1.TabIndex = 42;
             this.label1.Text = "Grado";
             // 
+            // btnGuardarM
+            // 
+            this.btnGuardarM.Location = new System.Drawing.Point(323, 120);
+            this.btnGuardarM.Name = "btnGuardarM";
+            this.btnGuardarM.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardarM.TabIndex = 43;
+            this.btnGuardarM.Text = "Guardar";
+            this.btnGuardarM.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(24, 120);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 44;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            // 
             // frmGestionarIntencionMatricula_apoderado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(421, 155);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnGuardarM);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.btnHelpBoleta);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label9);
             this.Name = "frmGestionarIntencionMatricula_apoderado";
@@ -98,11 +107,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnHelpBoleta;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGuardarM;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
