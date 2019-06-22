@@ -255,6 +255,15 @@
     <EmbeddedResource Include="GestionSecretario\frmGestionarTipoNota_secretario.resx">
       <DependentUpon>frmGestionarTipoNota_secretario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InscripcionMatricula_apoderado\frmGestionarIntencionMatricula_apoderado.resx">
+      <DependentUpon>frmGestionarIntencionMatricula_apoderado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InscripcionMatricula_apoderado\frmInscribirAlumno_apoderado.resx">
+      <DependentUpon>frmInscribirAlumno_apoderado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.resx">
+      <DependentUpon>frmMenuInscribirAlumno_apoderado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
