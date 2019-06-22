@@ -52,6 +52,7 @@
             this.btnAgregar.TabIndex = 22;
             this.btnAgregar.Text = "&Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnNuevo
             // 
@@ -61,6 +62,7 @@
             this.btnNuevo.TabIndex = 21;
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnEliminar
             // 
@@ -70,6 +72,7 @@
             this.btnEliminar.TabIndex = 20;
             this.btnEliminar.Text = "&Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnBuscar
             // 
@@ -79,6 +82,7 @@
             this.btnBuscar.TabIndex = 19;
             this.btnBuscar.Text = "&Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtPeso
             // 
@@ -142,6 +146,7 @@
             this.dgvCursos.ReadOnly = true;
             this.dgvCursos.Size = new System.Drawing.Size(366, 246);
             this.dgvCursos.TabIndex = 12;
+            this.dgvCursos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.editarGrade);
             // 
             // colDescription
             // 

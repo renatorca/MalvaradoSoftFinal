@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MalvaradoSoft.GestionSecretario;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,16 @@ namespace MalvaradoSoft
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+
+
+            //Prueba Gestionar Tipo Nota
+            MAlvaradoWS.course curso = new MAlvaradoWS.course();
+            curso.id = 1;
+            curso.name = "Test";
+            Application.Run(new frmGestionarTipoNota_secretario(curso));
+
+
         }
     }
 }
