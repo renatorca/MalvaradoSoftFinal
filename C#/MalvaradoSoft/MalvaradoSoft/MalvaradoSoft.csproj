@@ -305,6 +305,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.resx">
+      <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Connected Services\MAlvaradoWS\DBControllerWS.wsdl" />
     <None Include="Connected Services\MAlvaradoWS\DBControllerWS.xsd">
       <SubType>Designer</SubType>
