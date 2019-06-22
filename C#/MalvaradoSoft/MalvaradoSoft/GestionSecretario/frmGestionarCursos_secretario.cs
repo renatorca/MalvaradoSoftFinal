@@ -28,7 +28,11 @@ namespace MalvaradoSoft.GestionSecretario
 
         private void button4_Click(object sender, EventArgs e)
         {
-            frmGestionarTipoNota_secretario frmGestionarTipoNota = new frmGestionarTipoNota_secretario();
+            //para invocar a gestionarTipoNota se le pasa un Curso
+            MAlvaradoWS.course c = new MAlvaradoWS.course();
+            c.name = "Test";
+            c.id = 1;
+            frmGestionarTipoNota_secretario frmGestionarTipoNota = new frmGestionarTipoNota_secretario(c);
             if (frmGestionarTipoNota.ShowDialog() == DialogResult.OK)
             {
 

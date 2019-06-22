@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MalvaradoSoft.Apoderado
+namespace MalvaradoSoft.InscripcionMatricula_apoderado
 {
     public partial class frmMenuInscribirAlumno_apoderado : Form
     {
@@ -17,12 +17,21 @@ namespace MalvaradoSoft.Apoderado
             InitializeComponent();
             btnEditar.Enabled = false;
             btnEliminar.Enabled = false;
+            //BindingList<Student> studentList = controller.queryAllStudentsByGuardian(user);
         }
+
+        /*public frmMenuInscribirAlumno_apoderado(User user)
+        {
+            InitializeComponent();
+            btnEditar.Enabled = false;
+            btnEliminar.Enabled = false;
+            //BindingList<Student> studentList = controller.queryAllStudentsByGuardian(user);
+        }*/
 
         private void btnInscribir_Click(object sender, EventArgs e)
         {
-            frmInscribirAlumno_apoderado formulario = new frmInscribirAlumno_apoderado();
-            if (formulario.ShowDialog() == DialogResult.OK)
+            frmInscribirAlumno_apoderado frmIns = new frmInscribirAlumno_apoderado();
+            if (frmIns.ShowDialog() == DialogResult.OK)
             {
                 btnEditar.Enabled = false;
                 btnEliminar.Enabled = false;
@@ -35,6 +44,16 @@ namespace MalvaradoSoft.Apoderado
             //_student.DNI= dgvAlumnosInscritos.Rows[posActual].Cells[0].Value;
 
             //if(posActual)
+
+            if(e.ColumnIndex == 4 )//&& e.RowIndex < studentList.Lenght)
+            {
+                frmGestionarIntencionMatricula_apoderado frmInt = new frmGestionarIntencionMatricula_apoderado();
+                if (frmInt.ShowDialog() == DialogResult.OK)
+                {
+
+                }
+            }
+            if()
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
