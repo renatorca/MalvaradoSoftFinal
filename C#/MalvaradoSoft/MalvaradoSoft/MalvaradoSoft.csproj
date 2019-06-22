@@ -94,6 +94,18 @@
     <Compile Include="GenerarReportes\frmReportes_profesor.Designer.cs">
       <DependentUpon>frmReportes_profesor.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSecretario\frmAsignarAlumnos_secretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSecretario\frmAsignarAlumnos_secretario.Designer.cs">
+      <DependentUpon>frmAsignarAlumnos_secretario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSecretario\frmBuscarCurso_secretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSecretario\frmBuscarCurso_secretario.Designer.cs">
+      <DependentUpon>frmBuscarCurso_secretario.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSecretario\frmGestionarCursos_secretario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +264,18 @@
     <Compile Include="VisualizarNotas_apoderado\frmListarNotas_apoderado.Designer.cs">
       <DependentUpon>frmListarNotas_apoderado.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GestionSecretario\frmAsignarAlumnos_secretario.resx">
+      <DependentUpon>frmAsignarAlumnos_secretario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSecretario\frmBuscarCurso_secretario.resx">
+      <DependentUpon>frmBuscarCurso_secretario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSecretario\frmGestionarCursos_secretario.resx">
+      <DependentUpon>frmGestionarCursos_secretario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSecretario\frmGestionarSeccion_secretario.resx">
+      <DependentUpon>frmGestionarSeccion_secretario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmGestionarTipoNota_secretario.resx">
       <DependentUpon>frmGestionarTipoNota_secretario.cs</DependentUpon>
     </EmbeddedResource>
