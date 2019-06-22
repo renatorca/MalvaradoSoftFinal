@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -69,6 +71,11 @@
     </Compile>
     <Compile Include="Configuracion\frmMenuConfiguracion_todos.Designer.cs">
       <DependentUpon>frmMenuConfiguracion_todos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\MAlvaradoWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="GenerarReportes\frmReporteNotasPorCursoPorSeccion_profesor.cs">
       <SubType>Form</SubType>
@@ -288,6 +295,64 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Connected Services\MAlvaradoWS\DBControllerWS.wsdl" />
+    <None Include="Connected Services\MAlvaradoWS\DBControllerWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.course.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.courseSchedule.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.deleteGRadeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.grade.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.insertGRadeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesByTeacherIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCoursesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllGradesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllTypesXUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryGradesByCourseIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryGradesSearchByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryUserByIDResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateGRadeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updatePasswordUserResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.user.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.userType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.validarUserLoginResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -301,6 +366,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\MAlvaradoWS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MAlvaradoWS\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MAlvaradoWS\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MAlvaradoWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
