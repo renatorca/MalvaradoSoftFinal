@@ -29,16 +29,18 @@
         private void InitializeComponent()
         {
             this.dgvCursos = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.colNombreCurso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSeccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvCursos
             // 
+            this.dgvCursos.AllowUserToAddRows = false;
+            this.dgvCursos.AllowUserToDeleteRows = false;
             this.dgvCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCursos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colNombreCurso,
@@ -46,27 +48,10 @@
             this.colSeccion});
             this.dgvCursos.Location = new System.Drawing.Point(12, 76);
             this.dgvCursos.Name = "dgvCursos";
+            this.dgvCursos.ReadOnly = true;
             this.dgvCursos.Size = new System.Drawing.Size(546, 252);
             this.dgvCursos.TabIndex = 0;
             this.dgvCursos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registrarNotas);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cursos a cargo";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(12, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 20);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Seleccione un curso para registrar notas";
             // 
             // colNombreCurso
             // 
@@ -86,6 +71,24 @@
             this.colSeccion.HeaderText = "Seccion";
             this.colSeccion.Name = "colSeccion";
             this.colSeccion.ReadOnly = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Cursos a cargo";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(12, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(216, 20);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "Seleccione un curso para registrar notas";
             // 
             // frmListarCursos_profesor
             // 

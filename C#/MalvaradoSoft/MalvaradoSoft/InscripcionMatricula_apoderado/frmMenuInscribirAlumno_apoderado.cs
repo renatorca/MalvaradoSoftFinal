@@ -55,6 +55,7 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
 
                 }
             }
+<<<<<<< HEAD
             else
             {
                 /*if (dgvAlumnosInscritos.CurrentCell.ColumnIndex)//student != null)
@@ -65,6 +66,9 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
             }
 
             
+=======
+            //if()
+>>>>>>> c7763cfd0396b4079dcc5a58d0e2a8677edbb6f1
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
