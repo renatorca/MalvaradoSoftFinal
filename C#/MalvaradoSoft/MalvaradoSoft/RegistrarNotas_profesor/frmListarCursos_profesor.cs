@@ -12,14 +12,24 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
 {
     public partial class frmListarCursos_profesor : Form
     {
-        public frmListarCursos_profesor()
+        MAlvaradoWS.DBControllerWSClient controller;
+        frmRegistrarNotas_profesor frmRegistrarNotas;
+
+        public frmListarCursos_profesor(int idTeacher)
         {
             InitializeComponent();
+            controller = new MAlvaradoWS.DBControllerWSClient();
+            dgvCursos.DataSource = controller.queryAllCourseSchedulesPorIDTeacher(idTeacher);
+
+
         }
 
         private void registrarNotas(object sender, DataGridViewCellEventArgs e)
         {
 
+            frmRegistrarNotas = new frmRegistrarNotas_profesor((MAlvaradoWS.courseSchedule)dgvCursos.CurrentRow.DataBoundItem);
+
+            frmRegistrarNotas.ShowDialog();
         }
     }
 }

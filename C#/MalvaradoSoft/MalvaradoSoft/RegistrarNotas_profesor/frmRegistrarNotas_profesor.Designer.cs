@@ -29,86 +29,36 @@
         private void InitializeComponent()
         {
             this.dgvRegistroNotas = new System.Windows.Forms.DataGridView();
-            this.colNombreAlumno = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPC1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPC2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEx1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPC3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPC4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEx2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCourse = new System.Windows.Forms.TextBox();
+            this.txtLevel = new System.Windows.Forms.TextBox();
+            this.txtSection = new System.Windows.Forms.TextBox();
+            this.cboAno = new System.Windows.Forms.ComboBox();
+            this.cboBimestre = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnBuscarAlumnos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroNotas)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvRegistroNotas
             // 
+            this.dgvRegistroNotas.AllowUserToAddRows = false;
+            this.dgvRegistroNotas.AllowUserToDeleteRows = false;
             this.dgvRegistroNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRegistroNotas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colNombreAlumno,
-            this.colPC1,
-            this.colPC2,
-            this.colEx1,
-            this.colPC3,
-            this.colPC4,
-            this.colEx2});
             this.dgvRegistroNotas.Location = new System.Drawing.Point(12, 151);
             this.dgvRegistroNotas.Name = "dgvRegistroNotas";
+            this.dgvRegistroNotas.ReadOnly = true;
             this.dgvRegistroNotas.Size = new System.Drawing.Size(538, 199);
             this.dgvRegistroNotas.TabIndex = 12;
             this.dgvRegistroNotas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ingresarFeedback);
             // 
-            // colNombreAlumno
-            // 
-            this.colNombreAlumno.HeaderText = "Nombre";
-            this.colNombreAlumno.Name = "colNombreAlumno";
-            this.colNombreAlumno.ReadOnly = true;
-            this.colNombreAlumno.Width = 300;
-            // 
-            // colPC1
-            // 
-            this.colPC1.HeaderText = "PC1";
-            this.colPC1.Name = "colPC1";
-            this.colPC1.Width = 30;
-            // 
-            // colPC2
-            // 
-            this.colPC2.HeaderText = "PC2";
-            this.colPC2.Name = "colPC2";
-            this.colPC2.Width = 30;
-            // 
-            // colEx1
-            // 
-            this.colEx1.HeaderText = "EX1";
-            this.colEx1.Name = "colEx1";
-            this.colEx1.Width = 30;
-            // 
-            // colPC3
-            // 
-            this.colPC3.HeaderText = "PC3";
-            this.colPC3.Name = "colPC3";
-            this.colPC3.Width = 30;
-            // 
-            // colPC4
-            // 
-            this.colPC4.HeaderText = "PC4";
-            this.colPC4.Name = "colPC4";
-            this.colPC4.Width = 30;
-            // 
-            // colEx2
-            // 
-            this.colEx2.HeaderText = "EX2";
-            this.colEx2.Name = "colEx2";
-            this.colEx2.Width = 30;
-            // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(402, 113);
+            this.btnGuardar.Location = new System.Drawing.Point(381, 122);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(108, 23);
             this.btnGuardar.TabIndex = 11;
@@ -142,35 +92,85 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Sección:";
             // 
-            // textBox1
+            // txtCourse
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 14;
+            this.txtCourse.Enabled = false;
+            this.txtCourse.Location = new System.Drawing.Point(82, 19);
+            this.txtCourse.Name = "txtCourse";
+            this.txtCourse.Size = new System.Drawing.Size(100, 20);
+            this.txtCourse.TabIndex = 14;
             // 
-            // textBox2
+            // txtLevel
             // 
-            this.textBox2.Location = new System.Drawing.Point(82, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 15;
+            this.txtLevel.Location = new System.Drawing.Point(82, 49);
+            this.txtLevel.Name = "txtLevel";
+            this.txtLevel.Size = new System.Drawing.Size(100, 20);
+            this.txtLevel.TabIndex = 15;
             // 
-            // textBox3
+            // txtSection
             // 
-            this.textBox3.Location = new System.Drawing.Point(82, 86);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 16;
+            this.txtSection.Location = new System.Drawing.Point(82, 86);
+            this.txtSection.Name = "txtSection";
+            this.txtSection.Size = new System.Drawing.Size(100, 20);
+            this.txtSection.TabIndex = 16;
+            // 
+            // cboAno
+            // 
+            this.cboAno.FormattingEnabled = true;
+            this.cboAno.Location = new System.Drawing.Point(316, 19);
+            this.cboAno.Name = "cboAno";
+            this.cboAno.Size = new System.Drawing.Size(121, 21);
+            this.cboAno.TabIndex = 17;
+            // 
+            // cboBimestre
+            // 
+            this.cboBimestre.FormattingEnabled = true;
+            this.cboBimestre.Location = new System.Drawing.Point(316, 49);
+            this.cboBimestre.Name = "cboBimestre";
+            this.cboBimestre.Size = new System.Drawing.Size(121, 21);
+            this.cboBimestre.TabIndex = 18;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(240, 26);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 13);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Año:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(240, 55);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "Bimestre:";
+            // 
+            // btnBuscarAlumnos
+            // 
+            this.btnBuscarAlumnos.Location = new System.Drawing.Point(243, 122);
+            this.btnBuscarAlumnos.Name = "btnBuscarAlumnos";
+            this.btnBuscarAlumnos.Size = new System.Drawing.Size(97, 23);
+            this.btnBuscarAlumnos.TabIndex = 21;
+            this.btnBuscarAlumnos.Text = "Buscar alumnos";
+            this.btnBuscarAlumnos.UseVisualStyleBackColor = true;
+            this.btnBuscarAlumnos.Click += new System.EventHandler(this.btnBuscarAlumnos_Click);
             // 
             // frmRegistrarNotas_profesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 367);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnBuscarAlumnos);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cboBimestre);
+            this.Controls.Add(this.cboAno);
+            this.Controls.Add(this.txtSection);
+            this.Controls.Add(this.txtLevel);
+            this.Controls.Add(this.txtCourse);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvRegistroNotas);
             this.Controls.Add(this.btnGuardar);
@@ -186,19 +186,17 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dgvRegistroNotas;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNombreAlumno;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPC1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPC2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEx1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPC3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPC4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEx2;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCourse;
+        private System.Windows.Forms.TextBox txtLevel;
+        private System.Windows.Forms.TextBox txtSection;
+        private System.Windows.Forms.ComboBox cboAno;
+        private System.Windows.Forms.ComboBox cboBimestre;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnBuscarAlumnos;
     }
 }

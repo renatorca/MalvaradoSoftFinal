@@ -336,6 +336,12 @@
     <None Include="Connected Services\MAlvaradoWS\DBControllerWS.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.bimester.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.bimesterXStudentXYear.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.course.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -351,7 +357,16 @@
     <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.insertGRadeResponse1.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllBimesters_Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllBimesterXStudentXYearResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesByTeacherIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesPorIDTeacherResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesResponse.datasource">
@@ -360,10 +375,16 @@
     <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCoursesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllGradesByIDCourseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllGradesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllTypesXUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllYears_Response.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryGradesByCourseIdResponse.datasource">
@@ -388,6 +409,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.validarUserLoginResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.year.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">

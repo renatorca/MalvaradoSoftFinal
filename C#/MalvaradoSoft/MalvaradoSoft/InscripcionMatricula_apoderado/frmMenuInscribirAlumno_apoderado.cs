@@ -53,7 +53,7 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
 
                 }
             }
-            if()
+            //if()
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
