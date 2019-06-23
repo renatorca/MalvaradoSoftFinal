@@ -12,12 +12,14 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
 {
     public partial class frmMenuInscribirAlumno_apoderado : Form
     {
+        private MAlvaradoWS.DBControllerWSClient controller;
+       // private MAlvaradoWS.student student;
         public frmMenuInscribirAlumno_apoderado()
         {
             InitializeComponent();
             btnEditar.Enabled = false;
             btnEliminar.Enabled = false;
-            //BindingList<Student> studentList = controller.queryAllStudentsByGuardian(user);
+            //BindingList<Student> studentList = controller.queryAllStudentsByIDGuardian(user.getIdUser);
         }
 
         /*public frmMenuInscribirAlumno_apoderado(User user)
@@ -41,7 +43,7 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
         private void dgvAlumnosInscritos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int posActual = dgvAlumnosInscritos.CurrentCell.ColumnIndex;
-            //_student.DNI= dgvAlumnosInscritos.Rows[posActual].Cells[0].Value;
+            //student.DNI= dgvAlumnosInscritos.Rows[posActual].Cells[0].Value;
 
             //if(posActual)
 
@@ -53,7 +55,16 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
 
                 }
             }
-            if()
+            else
+            {
+                /*if (dgvAlumnosInscritos.CurrentCell.ColumnIndex)//student != null)
+                {
+                    btnEditar.Enabled = true;
+                    btnEliminar.Enabled = true;
+                }*/
+            }
+
+            
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
