@@ -193,5 +193,25 @@ namespace MalvaradoSoft.Login
                 txtPassword.UseSystemPasswordChar = false;
             }
         }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            /*
+            lblBlock.Visible = true;
+            lblBlockTime.Visible = true;
+            int contador = user.
+            if (contador > 0)
+            {
+                contador--;
+                int min = contador / 60;
+                int seg = contador - min * 60;
+                lblSegundos.Text = seg.ToString();
+                lblMinutos.Text = min.ToString();
+            }
+            else
+            {
+                btnAcceder.Enabled = true;
+            }*/
+        }
     }
 }

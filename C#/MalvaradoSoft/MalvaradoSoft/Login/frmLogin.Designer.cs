@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -41,6 +42,9 @@
             this.lblErrorMessage = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblBlockTime = new System.Windows.Forms.Label();
+            this.lblBlock = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOcultarContraseña)).BeginInit();
@@ -191,12 +195,40 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
+            // lblBlockTime
+            // 
+            this.lblBlockTime.AutoSize = true;
+            this.lblBlockTime.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblBlockTime.Location = new System.Drawing.Point(289, 303);
+            this.lblBlockTime.Name = "lblBlockTime";
+            this.lblBlockTime.Size = new System.Drawing.Size(53, 13);
+            this.lblBlockTime.TabIndex = 23;
+            this.lblBlockTime.Text = "00:00 min";
+            this.lblBlockTime.Visible = false;
+            // 
+            // lblBlock
+            // 
+            this.lblBlock.AutoSize = true;
+            this.lblBlock.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblBlock.Location = new System.Drawing.Point(260, 280);
+            this.lblBlock.Name = "lblBlock";
+            this.lblBlock.Size = new System.Drawing.Size(132, 13);
+            this.lblBlock.TabIndex = 21;
+            this.lblBlock.Text = "Su cuenta esta bloqueado";
+            this.lblBlock.Visible = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 330);
+            this.Controls.Add(this.lblBlockTime);
+            this.Controls.Add(this.lblBlock);
             this.Controls.Add(this.btnMinimizar);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblErrorMessage);
@@ -238,5 +270,8 @@
         private System.Windows.Forms.Label lblErrorMessage;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblBlockTime;
+        private System.Windows.Forms.Label lblBlock;
     }
 }
