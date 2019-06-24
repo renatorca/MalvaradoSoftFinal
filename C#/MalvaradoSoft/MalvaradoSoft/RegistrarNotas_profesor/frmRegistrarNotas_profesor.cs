@@ -20,7 +20,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
         private BindingList<MAlvaradoWS.bimesterXStudentXYear> students;
         private int idYear;
         private int idBimester;
-        
+
 
         private frmRegistrarFeedback_profesor feed;
 
@@ -33,7 +33,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
             MAlvaradoWS.DBControllerWSClient controller = new MAlvaradoWS.DBControllerWSClient();
             this.courseScheduleSelected = courseSchedule;
 
-            grades = new BindingList<MAlvaradoWS.grade> (controller.queryAllGradesByIDCourse(courseScheduleSelected.course.id));
+            grades = new BindingList<MAlvaradoWS.grade>(controller.queryAllGradesByIDCourse(courseScheduleSelected.course.id));
 
             cboAno.DataSource = controller.queryAllYears_();
             cboAno.DisplayMember = "year";
@@ -44,7 +44,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
             dgvRegistroNotas.Columns[0].HeaderText = "Nombre";
             int i = 1;
 
-            foreach(MAlvaradoWS.grade g in grades)
+            foreach (MAlvaradoWS.grade g in grades)
             {
                 dgvRegistroNotas.Columns[i].Name = g.idGrade.ToString();
                 dgvRegistroNotas.Columns[i].HeaderText = g.description;
@@ -52,7 +52,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
                 i++;
             }
 
-            
+
         }
 
         private void ingresarFeedback(object sender, DataGridViewCellEventArgs e)
@@ -69,18 +69,19 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
             students = new BindingList<MAlvaradoWS.bimesterXStudentXYear>(controller.queryAllBimesterXStudentXYear(
                 courseScheduleSelected.id, this.idYear, this.idBimester, courseScheduleSelected.classSection.id));
 
-            foreach(MAlvaradoWS.bimesterXStudentXYear s in students)
+            foreach (MAlvaradoWS.bimesterXStudentXYear s in students)
             {
                 List<Object> row = new List<Object>(dgvRegistroNotas.ColumnCount);
                 row[0] = (s.student.names + " " + s.student.firstLastName + " " + s.student.secondLastName);
-                foreach(MAlvaradoWS.gradeXStudent gxs in s.gradeXStudents)
+                foreach (MAlvaradoWS.gradeXStudent gxs in s.gradeXStudents)
                 {
                     int ind = dgvRegistroNotas.Columns[gxs.grade.idGrade.ToString()].Index;
-                    row[ind] = gxs;                    
+                    row[ind] = gxs;
                 }
                 dgvRegistroNotas.Rows.Add(row);
-                
+
             }
-       
+
+        }
     }
 }

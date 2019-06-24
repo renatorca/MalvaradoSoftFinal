@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MalvaradoSoft.Login;
+using MalvaradoSoft.Menu_Principal;
+using MalvaradoSoft.Configuracion;
 
 namespace MalvaradoSoft
 {
@@ -26,7 +29,7 @@ namespace MalvaradoSoft
             curso.id = 1;
             curso.name = "Test";
             //Application.Run(new frmGestionarTipoNota_secretario(curso));
-            Application.Run(new frmMenuInscribirAlumno_apoderado());
+            Application.Run(new frmCambiarContraseña());
 
         }
     }
