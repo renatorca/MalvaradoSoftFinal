@@ -31,22 +31,23 @@
             this.dgvAlumnosInscritos = new System.Windows.Forms.DataGridView();
             this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Apel_Paterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FirstLastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ap_Materno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.matricular = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnInscribir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnosInscritos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvAlumnosInscritos
             // 
+            this.dgvAlumnosInscritos.AllowUserToAddRows = false;
             this.dgvAlumnosInscritos.AllowUserToDeleteRows = false;
             this.dgvAlumnosInscritos.AllowUserToResizeColumns = false;
             this.dgvAlumnosInscritos.AllowUserToResizeRows = false;
@@ -55,10 +56,9 @@
             this.dgvAlumnosInscritos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DNI,
             this.nombre,
-            this.Apel_Paterno,
+            this.FirstLastName,
             this.Ap_Materno,
-            this.matricular,
-            this.Column1});
+            this.matricular});
             this.dgvAlumnosInscritos.Location = new System.Drawing.Point(29, 174);
             this.dgvAlumnosInscritos.Name = "dgvAlumnosInscritos";
             this.dgvAlumnosInscritos.ReadOnly = true;
@@ -72,6 +72,7 @@
             // DNI
             // 
             this.DNI.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.DNI.DataPropertyName = "dni";
             this.DNI.Frozen = true;
             this.DNI.HeaderText = "DNI";
             this.DNI.Name = "DNI";
@@ -81,24 +82,27 @@
             // nombre
             // 
             this.nombre.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.nombre.DataPropertyName = "Names";
             this.nombre.Frozen = true;
             this.nombre.HeaderText = "Nombre";
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
             this.nombre.Width = 115;
             // 
-            // Apel_Paterno
+            // FirstLastName
             // 
-            this.Apel_Paterno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Apel_Paterno.Frozen = true;
-            this.Apel_Paterno.HeaderText = "Apel. Paterno";
-            this.Apel_Paterno.Name = "Apel_Paterno";
-            this.Apel_Paterno.ReadOnly = true;
-            this.Apel_Paterno.Width = 114;
+            this.FirstLastName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.FirstLastName.DataPropertyName = "firstLastName";
+            this.FirstLastName.Frozen = true;
+            this.FirstLastName.HeaderText = "Apel. Paterno";
+            this.FirstLastName.Name = "FirstLastName";
+            this.FirstLastName.ReadOnly = true;
+            this.FirstLastName.Width = 114;
             // 
             // Ap_Materno
             // 
             this.Ap_Materno.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Ap_Materno.DataPropertyName = "secondLastName";
             this.Ap_Materno.Frozen = true;
             this.Ap_Materno.HeaderText = "Ap. Materno";
             this.Ap_Materno.Name = "Ap_Materno";
@@ -113,14 +117,8 @@
             this.matricular.ReadOnly = true;
             this.matricular.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.matricular.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.matricular.Text = "Matricular";
             this.matricular.Width = 114;
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column1.HeaderText = "Condición";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
             // 
             // btnInscribir
             // 
@@ -150,6 +148,7 @@
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar Inscripción";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // panel1
             // 
@@ -181,12 +180,23 @@
             this.btnRegresar.UseVisualStyleBackColor = true;
             this.btnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(633, 372);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(139, 23);
+            this.btnCancelar.TabIndex = 18;
+            this.btnCancelar.Text = "Cancelar Selección";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // frmMenuInscribirAlumno_apoderado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEliminar);
@@ -213,9 +223,9 @@
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.DataGridViewTextBoxColumn DNI;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Apel_Paterno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FirstLastName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ap_Materno;
         private System.Windows.Forms.DataGridViewButtonColumn matricular;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

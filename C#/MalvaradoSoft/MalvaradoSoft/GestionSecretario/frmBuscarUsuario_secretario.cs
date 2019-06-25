@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MalvaradoSoft
+namespace MalvaradoSoft.GestionSecretario
 {
-    public partial class Form1 : Form
+    public partial class frmBuscarUsuario_secretario : Form
     {
-        public Form1()
+        public frmBuscarUsuario_secretario()
         {
             InitializeComponent();
         }

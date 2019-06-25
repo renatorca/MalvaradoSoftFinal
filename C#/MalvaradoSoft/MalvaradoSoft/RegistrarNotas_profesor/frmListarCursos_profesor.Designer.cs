@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.dgvCursos = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.colNombreCurso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSeccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,25 +53,6 @@
             this.dgvCursos.TabIndex = 0;
             this.dgvCursos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registrarNotas);
             // 
-            // colNombreCurso
-            // 
-            this.colNombreCurso.HeaderText = "Curso";
-            this.colNombreCurso.Name = "colNombreCurso";
-            this.colNombreCurso.ReadOnly = true;
-            this.colNombreCurso.Width = 300;
-            // 
-            // colNivel
-            // 
-            this.colNivel.HeaderText = "Grado";
-            this.colNivel.Name = "colNivel";
-            this.colNivel.ReadOnly = true;
-            // 
-            // colSeccion
-            // 
-            this.colSeccion.HeaderText = "Seccion";
-            this.colSeccion.Name = "colSeccion";
-            this.colSeccion.ReadOnly = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -89,6 +70,28 @@
             this.textBox1.Size = new System.Drawing.Size(216, 20);
             this.textBox1.TabIndex = 2;
             this.textBox1.Text = "Seleccione un curso para registrar notas";
+            // 
+            // colNombreCurso
+            // 
+            this.colNombreCurso.DataPropertyName = "cursoJoel";
+            this.colNombreCurso.HeaderText = "Curso";
+            this.colNombreCurso.Name = "colNombreCurso";
+            this.colNombreCurso.ReadOnly = true;
+            this.colNombreCurso.Width = 300;
+            // 
+            // colNivel
+            // 
+            this.colNivel.DataPropertyName = "gradoJoel";
+            this.colNivel.HeaderText = "Grado";
+            this.colNivel.Name = "colNivel";
+            this.colNivel.ReadOnly = true;
+            // 
+            // colSeccion
+            // 
+            this.colSeccion.DataPropertyName = "seccionJoel";
+            this.colSeccion.HeaderText = "Seccion";
+            this.colSeccion.Name = "colSeccion";
+            this.colSeccion.ReadOnly = true;
             // 
             // frmListarCursos_profesor
             // 
