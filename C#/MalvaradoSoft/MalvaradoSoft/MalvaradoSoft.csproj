@@ -154,6 +154,12 @@
     <Compile Include="GestionSecretario\frmGestionarSeccion_secretario.Designer.cs">
       <DependentUpon>frmGestionarSeccion_secretario.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSecretario\frmGestionarTipoNota_secretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSecretario\frmGestionarTipoNota_secretario.Designer.cs">
+      <DependentUpon>frmGestionarTipoNota_secretario.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionSecretario\frmGestionarUsuario_secretario.cs">
       <SubType>Form</SubType>
     </Compile>
