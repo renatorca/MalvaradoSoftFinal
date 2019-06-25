@@ -43,10 +43,6 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnSlide = new System.Windows.Forms.PictureBox();
             this.panelFormularios = new System.Windows.Forms.Panel();
-            this.lblRol = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblcorreo = new System.Windows.Forms.Label();
-            this.lblUser = new System.Windows.Forms.Label();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.BarraTitulo.SuspendLayout();
@@ -55,8 +51,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
-            this.panelFormularios.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
@@ -249,59 +243,11 @@
             // 
             // panelFormularios
             // 
-            this.panelFormularios.Controls.Add(this.lblRol);
-            this.panelFormularios.Controls.Add(this.pictureBox2);
-            this.panelFormularios.Controls.Add(this.lblcorreo);
-            this.panelFormularios.Controls.Add(this.lblUser);
             this.panelFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormularios.Location = new System.Drawing.Point(250, 50);
             this.panelFormularios.Name = "panelFormularios";
             this.panelFormularios.Size = new System.Drawing.Size(784, 561);
             this.panelFormularios.TabIndex = 8;
-            // 
-            // lblRol
-            // 
-            this.lblRol.AutoSize = true;
-            this.lblRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRol.Location = new System.Drawing.Point(364, 198);
-            this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(84, 25);
-            this.lblRol.TabIndex = 16;
-            this.lblRol.Text = "Alumno";
-            this.lblRol.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(344, 59);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(128, 128);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lblcorreo
-            // 
-            this.lblcorreo.AutoSize = true;
-            this.lblcorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcorreo.Location = new System.Drawing.Point(311, 308);
-            this.lblcorreo.Name = "lblcorreo";
-            this.lblcorreo.Size = new System.Drawing.Size(73, 25);
-            this.lblcorreo.TabIndex = 15;
-            this.lblcorreo.Text = "correo";
-            this.lblcorreo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblUser
-            // 
-            this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.Location = new System.Drawing.Point(311, 260);
-            this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(57, 25);
-            this.lblUser.TabIndex = 14;
-            this.lblUser.Text = "User";
-            this.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmMenuPrincipal_alumno
             // 
@@ -323,9 +269,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
-            this.panelFormularios.ResumeLayout(false);
-            this.panelFormularios.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,9 +289,5 @@
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnSlide;
         private System.Windows.Forms.Panel panelFormularios;
-        private System.Windows.Forms.Label lblRol;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lblcorreo;
-        private System.Windows.Forms.Label lblUser;
     }
 }

@@ -35,9 +35,9 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
 
             grades = new BindingList<MAlvaradoWS.grade>(controller.queryAllGradesByIDCourse(courseScheduleSelected.course.id));
 
-            cboAno.DataSource = controller.queryAllYears_();
+            //cboAno.DataSource = controller.queryAllYears_();
             cboAno.DisplayMember = "year";
-            cboBimestre.DataSource = controller.queryAllBimesters_();
+            //cboBimestre.DataSource = controller.queryAllBimesters_();
 
             dgvRegistroNotas.ColumnCount = grades.Count + 1;
             dgvRegistroNotas.Columns[0].Name = "name";

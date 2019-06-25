@@ -92,9 +92,6 @@ namespace MalvaradoSoft.Menu_Principal
 
         private void FrmMenuPrincipal_alumno_Load(object sender, EventArgs e)
         {
-            lblUser.Text = User.names + " " + User.firstLastName + " " + User.secondLastName;
-            lblRol.Text = "Alumno";
-            lblcorreo.Text = User.email;
         }
 
         private void BtnMaximizar_Click(object sender, EventArgs e)

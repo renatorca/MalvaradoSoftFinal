@@ -16,5 +16,16 @@ namespace MalvaradoSoft.Configuracion
         {
             InitializeComponent();
         }
+
+        private void BtnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnEditarContraseña_Click(object sender, EventArgs e)
+        {
+            frmCambiarContraseña cambiarContraseña = new frmCambiarContraseña();
+            cambiarContraseña.Show();
+        }
     }
 }

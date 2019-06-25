@@ -242,6 +242,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarNotas_profesor\frmListarCursos_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarNotas_profesor\frmListarCursos_profesor.Designer.cs">
+      <DependentUpon>frmListarCursos_profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.Designer.cs">
+      <DependentUpon>frmRegistrarFeedback_profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.Designer.cs">
+      <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
+    </Compile>
     <Compile Include="VisualizarNotas_apoderado\frmListarAlumnos_apoderado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,6 +286,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracion\frmCambiarContraseña.resx">
       <DependentUpon>frmCambiarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\frmMenuConfiguracion_todos.resx">
+      <DependentUpon>frmMenuConfiguracion_todos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmAsignarAlumnos_secretario.resx">
       <DependentUpon>frmAsignarAlumnos_secretario.cs</DependentUpon>
@@ -332,6 +353,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrarNotas_profesor\frmListarCursos_profesor.resx">
+      <DependentUpon>frmListarCursos_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.resx">
+      <DependentUpon>frmRegistrarFeedback_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.resx">
+      <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Connected Services\MAlvaradoWS\DBControllerWS.wsdl" />
     <None Include="Connected Services\MAlvaradoWS\DBControllerWS.xsd">
       <SubType>Designer</SubType>
@@ -352,9 +382,7 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="RegistrarNotas_profesor\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\MAlvaradoWS\" />
   </ItemGroup>
