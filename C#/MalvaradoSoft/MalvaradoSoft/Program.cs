@@ -1,4 +1,4 @@
-﻿using MalvaradoSoft.InscripcionMatricula_apoderado;
+﻿//using MalvaradoSoft.InscripcionMatricula_apoderado;
 using MalvaradoSoft.GestionSecretario;
 using System;
 using System.Collections.Generic;
@@ -22,11 +22,14 @@ namespace MalvaradoSoft
 
 
             //Prueba Gestionar Tipo Nota
-            MAlvaradoWS.course curso = new MAlvaradoWS.course();
+            RenatoCWS.courseSchedule curso = new RenatoCWS.courseSchedule();
+            RenatoCWS.course c = new RenatoCWS.course();
             curso.id = 1;
-            curso.name = "Test";
+            c.id = 1;
+            c.name = "Test";
+            curso.course = c;
             //Application.Run(new frmGestionarTipoNota_secretario(curso));
-            Application.Run(new frmMenuInscribirAlumno_apoderado());
+            Application.Run(new frmAsignarEventoCursosXSeccion_secretario());
 
         }
     }
