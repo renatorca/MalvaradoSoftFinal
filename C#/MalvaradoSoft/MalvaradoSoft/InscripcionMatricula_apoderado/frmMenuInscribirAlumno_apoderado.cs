@@ -99,7 +99,7 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
 
             if (e.ColumnIndex == 4 )//&& e.RowIndex < studentList.Lenght)
             {
-                frmGestionarIntencionMatricula_apoderado frmInt = new frmGestionarIntencionMatricula_apoderado();
+                frmGestionarIntencionMatricula_apoderado frmInt = new frmGestionarIntencionMatricula_apoderado(student);
                 if (frmInt.ShowDialog() == DialogResult.OK)
                 {
 

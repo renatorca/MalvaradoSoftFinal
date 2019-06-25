@@ -78,6 +78,7 @@
             this.btnGuardarM.TabIndex = 43;
             this.btnGuardarM.Text = "Guardar";
             this.btnGuardarM.UseVisualStyleBackColor = true;
+            this.btnGuardarM.Click += new System.EventHandler(this.btnGuardarM_Click);
             // 
             // btnCancelar
             // 
