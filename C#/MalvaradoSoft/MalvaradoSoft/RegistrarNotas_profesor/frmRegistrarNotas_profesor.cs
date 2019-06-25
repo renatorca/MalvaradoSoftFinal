@@ -20,13 +20,13 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
         private BindingList<MAlvaradoWS.bimesterXStudentXYear> students;
         private int idYear;
         private int idBimester;
-<<<<<<< HEAD
+
         private Object[,] data;
         private bool editado;
         private bool lleno;
-=======
 
->>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
+
+
 
         private frmRegistrarFeedback_profesor feed;
 
@@ -39,13 +39,13 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
             this.txtSection.Text = courseSchedule.classSection.name.ToString();
             controller = new MAlvaradoWS.DBControllerWSClient();
             this.courseScheduleSelected = courseSchedule;
-<<<<<<< HEAD
+
             editado = false;
             grades = new BindingList<MAlvaradoWS.grade> (controller.queryAllGradesByIDCourse(courseScheduleSelected.course.id));
-=======
 
-            grades = new BindingList<MAlvaradoWS.grade>(controller.queryAllGradesByIDCourse(courseScheduleSelected.course.id));
->>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
+
+            
+
 
             cboAno.DataSource = controller.queryAllY();
             cboAno.DisplayMember = "yearJoel";
@@ -91,11 +91,10 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
 
             data = new Object[students.Count, dgvRegistroNotas.ColumnCount];
 
-<<<<<<< HEAD
+
             int i = 0;
             int j = 1;
-=======
->>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
+
             foreach (MAlvaradoWS.bimesterXStudentXYear s in students)
             {
                 //List<Object> row = new List<Object>(dgvRegistroNotas.ColumnCount);
@@ -103,7 +102,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
                 
 
                 row[0] = (s.student.names + " " + s.student.firstLastName + " " + s.student.secondLastName);
-<<<<<<< HEAD
+
                 
                 foreach (MAlvaradoWS.gradeXStudent gxs in s.gradeXStudents)
                 {
@@ -183,18 +182,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
                     this.guardarTodo();
             }
             
-            
-=======
-                foreach (MAlvaradoWS.gradeXStudent gxs in s.gradeXStudents)
-                {
-                    int ind = dgvRegistroNotas.Columns[gxs.grade.idGrade.ToString()].Index;
-                    row[ind] = gxs;
-                }
-                dgvRegistroNotas.Rows.Add(row);
-
-            }
-
->>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
+    
         }
     }
 }
