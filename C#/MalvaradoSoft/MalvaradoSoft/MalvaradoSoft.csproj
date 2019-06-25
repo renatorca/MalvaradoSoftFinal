@@ -54,6 +54,10 @@
     <Compile Include="Asistencia\frmTomarAsistencia_auxiliar.Designer.cs">
       <DependentUpon>frmTomarAsistencia_auxiliar.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSecretario\EstadosFrmGestionarTipoNota.cs" />
+    <Compile Include="GestionSecretario\frmAsignarAlumnos_secretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Configuracion\frmCambiarContraseña.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,21 +91,20 @@
     <Compile Include="GenerarReportes\frmReporteEstadisticoPorEvaluacion_profesor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GenerarReportes\frmReporteEstadisticoPorEvaluacion_profesor.Designer.cs">
-      <DependentUpon>frmReporteEstadisticoPorEvaluacion_profesor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GenerarReportes\frmReportes_profesor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GenerarReportes\frmReportes_profesor.Designer.cs">
-      <DependentUpon>frmReportes_profesor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionSecretario\EstadosFrmGestionarTipoNota.cs" />
-    <Compile Include="GestionSecretario\frmAsignarAlumnos_secretario.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="GestionSecretario\frmAsignarAlumnos_secretario.Designer.cs">
       <DependentUpon>frmAsignarAlumnos_secretario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSecretario\frmAsignarEventoCursosXSeccion_secretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSecretario\frmAsignarEventoCursosXSeccion_secretario.Designer.cs">
+      <DependentUpon>frmAsignarEventoCursosXSeccion_secretario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSecretario\frmAsignarEventos_secretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSecretario\frmAsignarEventos_secretario.Designer.cs">
+      <DependentUpon>frmAsignarEventos_secretario.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSecretario\frmBuscarCurso_secretario.cs">
       <SubType>Form</SubType>
@@ -109,11 +112,17 @@
     <Compile Include="GestionSecretario\frmBuscarCurso_secretario.Designer.cs">
       <DependentUpon>frmBuscarCurso_secretario.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSecretario\frmGestionarCursoPorSeccion_secretario.cs">
+    <Compile Include="GestionSecretario\frmCrearEvento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionSecretario\frmGestionarCursoPorSeccion_secretario.Designer.cs">
-      <DependentUpon>frmGestionarCursoPorSeccion_secretario.cs</DependentUpon>
+    <Compile Include="GestionSecretario\frmCrearEvento.Designer.cs">
+      <DependentUpon>frmCrearEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSecretario\frmGestionarCursoPorSeccionProfesor_secretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSecretario\frmGestionarCursoPorSeccionProfesor_secretario.Designer.cs">
+      <DependentUpon>frmGestionarCursoPorSeccionProfesor_secretario.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSecretario\frmGestionarCursos_secretario.cs">
       <SubType>Form</SubType>
@@ -121,11 +130,17 @@
     <Compile Include="GestionSecretario\frmGestionarCursos_secretario.Designer.cs">
       <DependentUpon>frmGestionarCursos_secretario.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSecretario\frmGestionarHorario_apoderado.cs">
+    <Compile Include="GestionSecretario\frmGestionarEvento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionSecretario\frmGestionarHorario_apoderado.Designer.cs">
-      <DependentUpon>frmGestionarHorario_apoderado.cs</DependentUpon>
+    <Compile Include="GestionSecretario\frmGestionarEvento.Designer.cs">
+      <DependentUpon>frmGestionarEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSecretario\frmGestionarCursosPorSeccion_secretario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSecretario\frmGestionarCursosPorSeccion_secretario.Designer.cs">
+      <DependentUpon>frmGestionarCursosPorSeccion_secretario.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSecretario\frmGestionarMatricula_secretario.cs">
       <SubType>Form</SubType>
@@ -145,35 +160,11 @@
     <Compile Include="GestionSecretario\frmGestionarSeccion_secretario.Designer.cs">
       <DependentUpon>frmGestionarSeccion_secretario.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSecretario\frmGestionarTipoNota_secretario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionSecretario\frmGestionarTipoNota_secretario.Designer.cs">
-      <DependentUpon>frmGestionarTipoNota_secretario.cs</DependentUpon>
-    </Compile>
     <Compile Include="GestionSecretario\frmGestionarUsuario_secretario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GestionSecretario\frmGestionarUsuario_secretario.Designer.cs">
       <DependentUpon>frmGestionarUsuario_secretario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InscripcionMatricula_apoderado\frmGestionarIntencionMatricula_apoderado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InscripcionMatricula_apoderado\frmGestionarIntencionMatricula_apoderado.Designer.cs">
-      <DependentUpon>frmGestionarIntencionMatricula_apoderado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InscripcionMatricula_apoderado\frmInscribirAlumno_apoderado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InscripcionMatricula_apoderado\frmInscribirAlumno_apoderado.Designer.cs">
-      <DependentUpon>frmInscribirAlumno_apoderado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.Designer.cs">
-      <DependentUpon>frmMenuInscribirAlumno_apoderado.cs</DependentUpon>
     </Compile>
     <Compile Include="Asistencia\frmGestionarAsistencia_auxiliar.cs">
       <SubType>Form</SubType>
@@ -243,17 +234,29 @@
     <EmbeddedResource Include="GestionSecretario\frmAsignarAlumnos_secretario.resx">
       <DependentUpon>frmAsignarAlumnos_secretario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GestionSecretario\frmAsignarEventoCursosXSeccion_secretario.resx">
+      <DependentUpon>frmAsignarEventoCursosXSeccion_secretario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSecretario\frmAsignarEventos_secretario.resx">
+      <DependentUpon>frmAsignarEventos_secretario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmBuscarCurso_secretario.resx">
       <DependentUpon>frmBuscarCurso_secretario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionSecretario\frmGestionarCursoPorSeccion_secretario.resx">
-      <DependentUpon>frmGestionarCursoPorSeccion_secretario.cs</DependentUpon>
+    <EmbeddedResource Include="GestionSecretario\frmCrearEvento.resx">
+      <DependentUpon>frmCrearEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSecretario\frmGestionarCursoPorSeccionProfesor_secretario.resx">
+      <DependentUpon>frmGestionarCursoPorSeccionProfesor_secretario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmGestionarCursos_secretario.resx">
       <DependentUpon>frmGestionarCursos_secretario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionSecretario\frmGestionarHorario_apoderado.resx">
-      <DependentUpon>frmGestionarHorario_apoderado.cs</DependentUpon>
+    <EmbeddedResource Include="GestionSecretario\frmGestionarEvento.resx">
+      <DependentUpon>frmGestionarEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSecretario\frmGestionarCursosPorSeccion_secretario.resx">
+      <DependentUpon>frmGestionarCursosPorSeccion_secretario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmGestionarMatricula_secretario.resx">
       <DependentUpon>frmGestionarMatricula_secretario.cs</DependentUpon>
@@ -327,9 +330,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

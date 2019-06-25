@@ -12,9 +12,9 @@ namespace MalvaradoSoft.Asistencia
 {
     public partial class frmTomarAsistencia_auxiliar : Form
     {
-        private MAlvaradoWS.DBControllerWSClient controller;
+        private RenatoCWS.DBControllerWSClient controller;
         private frmGestionarAsistencia_auxiliar frmGestionarAsistencia;
-        public frmTomarAsistencia_auxiliar(MAlvaradoWS.classSection classSection, DateTime date)
+        public frmTomarAsistencia_auxiliar(RenatoCWS.classSection classSection, DateTime date)
         {
             InitializeComponent();
             txtGrado.Text = classSection.level.ToString();

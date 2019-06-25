@@ -1,6 +1,6 @@
 ﻿namespace MalvaradoSoft.GestionSecretario
 {
-    partial class frmGestionarHorario_apoderado
+    partial class frmAsignarEventoCursosXSeccion_secretario
     {
         /// <summary>
         /// Required designer variable.
@@ -29,35 +29,37 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBoxGrado = new System.Windows.Forms.ComboBox();
+            this.cmbGrado = new System.Windows.Forms.ComboBox();
             this.labelGrado = new System.Windows.Forms.Label();
             this.labelSeccion = new System.Windows.Forms.Label();
-            this.comboBoxSeccion = new System.Windows.Forms.ComboBox();
-            this.buttonEliminar = new System.Windows.Forms.Button();
-            this.buttonAgregar = new System.Windows.Forms.Button();
+            this.cmbSeccion = new System.Windows.Forms.ComboBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnEditarEventos = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBoxGrado);
+            this.groupBox1.Controls.Add(this.cmbGrado);
             this.groupBox1.Controls.Add(this.labelGrado);
             this.groupBox1.Controls.Add(this.labelSeccion);
-            this.groupBox1.Controls.Add(this.comboBoxSeccion);
+            this.groupBox1.Controls.Add(this.cmbSeccion);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(216, 90);
-            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabIndex = 22;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sección";
             // 
-            // comboBoxGrado
+            // cmbGrado
             // 
-            this.comboBoxGrado.FormattingEnabled = true;
-            this.comboBoxGrado.Location = new System.Drawing.Point(76, 19);
-            this.comboBoxGrado.Name = "comboBoxGrado";
-            this.comboBoxGrado.Size = new System.Drawing.Size(112, 21);
-            this.comboBoxGrado.TabIndex = 9;
+            this.cmbGrado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGrado.FormattingEnabled = true;
+            this.cmbGrado.Location = new System.Drawing.Point(76, 19);
+            this.cmbGrado.Name = "cmbGrado";
+            this.cmbGrado.Size = new System.Drawing.Size(112, 21);
+            this.cmbGrado.TabIndex = 9;
+            this.cmbGrado.SelectedValueChanged += new System.EventHandler(this.CmbGrado_SelectedValueChanged);
             // 
             // labelGrado
             // 
@@ -77,43 +79,44 @@
             this.labelSeccion.TabIndex = 8;
             this.labelSeccion.Text = "Seccion:";
             // 
-            // comboBoxSeccion
+            // cmbSeccion
             // 
-            this.comboBoxSeccion.FormattingEnabled = true;
-            this.comboBoxSeccion.Location = new System.Drawing.Point(76, 50);
-            this.comboBoxSeccion.Name = "comboBoxSeccion";
-            this.comboBoxSeccion.Size = new System.Drawing.Size(112, 21);
-            this.comboBoxSeccion.TabIndex = 10;
+            this.cmbSeccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSeccion.FormattingEnabled = true;
+            this.cmbSeccion.Location = new System.Drawing.Point(76, 50);
+            this.cmbSeccion.Name = "cmbSeccion";
+            this.cmbSeccion.Size = new System.Drawing.Size(112, 21);
+            this.cmbSeccion.TabIndex = 10;
             // 
-            // buttonEliminar
+            // btnCancelar
             // 
-            this.buttonEliminar.Location = new System.Drawing.Point(24, 112);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(75, 36);
-            this.buttonEliminar.TabIndex = 18;
-            this.buttonEliminar.Text = "Cancelar";
-            this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Location = new System.Drawing.Point(24, 112);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 36);
+            this.btnCancelar.TabIndex = 21;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
-            // buttonAgregar
+            // btnEditarEventos
             // 
-            this.buttonAgregar.Location = new System.Drawing.Point(138, 112);
-            this.buttonAgregar.Name = "buttonAgregar";
-            this.buttonAgregar.Size = new System.Drawing.Size(75, 36);
-            this.buttonAgregar.TabIndex = 17;
-            this.buttonAgregar.Text = "Editar Horario";
-            this.buttonAgregar.UseVisualStyleBackColor = true;
-            this.buttonAgregar.Click += new System.EventHandler(this.buttonAgregar_Click);
+            this.btnEditarEventos.Location = new System.Drawing.Point(138, 112);
+            this.btnEditarEventos.Name = "btnEditarEventos";
+            this.btnEditarEventos.Size = new System.Drawing.Size(75, 36);
+            this.btnEditarEventos.TabIndex = 20;
+            this.btnEditarEventos.Text = "Editar Eventos";
+            this.btnEditarEventos.UseVisualStyleBackColor = true;
+            this.btnEditarEventos.Click += new System.EventHandler(this.BtnEditarHorario_Click);
             // 
-            // frmGestionarHorario_apoderado
+            // frmAsignarEventoCursosXSeccion_secretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(240, 161);
+            this.ClientSize = new System.Drawing.Size(241, 160);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.buttonEliminar);
-            this.Controls.Add(this.buttonAgregar);
-            this.Name = "frmGestionarHorario_apoderado";
-            this.Text = "frmGestionarHorario_apoderado";
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnEditarEventos);
+            this.Name = "frmAsignarEventoCursosXSeccion_secretario";
+            this.Text = "frmAsignarEventoCursosXSeccion_secretario";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -123,11 +126,11 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBoxGrado;
+        private System.Windows.Forms.ComboBox cmbGrado;
         private System.Windows.Forms.Label labelGrado;
         private System.Windows.Forms.Label labelSeccion;
-        private System.Windows.Forms.ComboBox comboBoxSeccion;
-        private System.Windows.Forms.Button buttonEliminar;
-        private System.Windows.Forms.Button buttonAgregar;
+        private System.Windows.Forms.ComboBox cmbSeccion;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnEditarEventos;
     }
 }

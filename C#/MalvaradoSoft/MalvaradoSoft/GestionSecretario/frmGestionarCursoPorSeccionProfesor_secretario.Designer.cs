@@ -1,6 +1,6 @@
 ﻿namespace MalvaradoSoft.GestionSecretario
 {
-    partial class frmGestionarCursoPorSeccion_secretario
+    partial class frmGestionarCursoPorSeccionProfesor_secretario
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -37,17 +38,18 @@
             this.txtGrado = new System.Windows.Forms.TextBox();
             this.labelGrado = new System.Windows.Forms.Label();
             this.labelSeccion = new System.Windows.Forms.Label();
+            this.queryAllUsersByUserTypeResponseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.profesor = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursosPorGrado)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.queryAllUsersByUserTypeResponseBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(136, 328);
+            this.button2.Location = new System.Drawing.Point(64, 328);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 32);
             this.button2.TabIndex = 19;
@@ -56,7 +58,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(367, 328);
+            this.button1.Location = new System.Drawing.Point(267, 328);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 32);
             this.button1.TabIndex = 18;
@@ -68,7 +70,7 @@
             this.groupBox2.Controls.Add(this.dgvCursosPorGrado);
             this.groupBox2.Location = new System.Drawing.Point(12, 102);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(559, 217);
+            this.groupBox2.Size = new System.Drawing.Size(397, 217);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cursos";
@@ -80,12 +82,13 @@
             this.dgvCursosPorGrado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCursosPorGrado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2,
-            this.Column5});
+            this.profesor});
             this.dgvCursosPorGrado.Location = new System.Drawing.Point(6, 19);
             this.dgvCursosPorGrado.Name = "dgvCursosPorGrado";
-            this.dgvCursosPorGrado.Size = new System.Drawing.Size(543, 192);
+            this.dgvCursosPorGrado.Size = new System.Drawing.Size(383, 192);
             this.dgvCursosPorGrado.TabIndex = 8;
+//            this.dgvCursosPorGrado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCursosPorGrado_CellContentClick);
+  //          this.dgvCursosPorGrado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCursosPorGrado_CellDoubleClick);
             // 
             // groupBox1
             // 
@@ -132,42 +135,41 @@
             this.labelSeccion.TabIndex = 1;
             this.labelSeccion.Text = "Seccion:";
             // 
+            // queryAllUsersByUserTypeResponseBindingSource
+            // 
+            this.queryAllUsersByUserTypeResponseBindingSource.DataSource = typeof(MalvaradoSoft.RenatoCWS.queryAllUsersByUserTypeResponse);
+            // 
             // Column1
             // 
+            this.Column1.DataPropertyName = "name";
             this.Column1.Frozen = true;
             this.Column1.HeaderText = "Nombre";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Width = 160;
             // 
-            // Column2
+            // profesor
             // 
-            this.Column2.HeaderText = "Eventos";
-            this.Column2.Name = "Column2";
-            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column2.Width = 160;
+            this.profesor.HeaderText = "Profesor";
+            this.profesor.Name = "profesor";
+            this.profesor.Width = 180;
             // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Profesor";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 180;
-            // 
-            // frmGestionarCursoPorSeccion_secretario
+            // frmGestionarCursoPorSeccionProfesor_secretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 372);
+            this.ClientSize = new System.Drawing.Size(421, 372);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmGestionarCursoPorSeccion_secretario";
+            this.Name = "frmGestionarCursoPorSeccionProfesor_secretario";
             this.Text = "1";
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursosPorGrado)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.queryAllUsersByUserTypeResponseBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -183,8 +185,8 @@
         private System.Windows.Forms.TextBox txtGrado;
         private System.Windows.Forms.Label labelGrado;
         private System.Windows.Forms.Label labelSeccion;
+        private System.Windows.Forms.BindingSource queryAllUsersByUserTypeResponseBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewComboBoxColumn profesor;
     }
 }
