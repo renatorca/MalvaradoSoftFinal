@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.gbDatosGenerales = new System.Windows.Forms.GroupBox();
+            this.lblx2 = new System.Windows.Forms.Label();
+            this.lblx1 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTel = new System.Windows.Forms.TextBox();
             this.txtApMat = new System.Windows.Forms.TextBox();
@@ -52,10 +54,10 @@
             this.ofdBirthCertificate = new System.Windows.Forms.OpenFileDialog();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.gbDatosGenerales.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -63,6 +65,8 @@
             // 
             // gbDatosGenerales
             // 
+            this.gbDatosGenerales.Controls.Add(this.lblx2);
+            this.gbDatosGenerales.Controls.Add(this.lblx1);
             this.gbDatosGenerales.Controls.Add(this.txtEmail);
             this.gbDatosGenerales.Controls.Add(this.txtTel);
             this.gbDatosGenerales.Controls.Add(this.txtApMat);
@@ -85,18 +89,36 @@
             this.gbDatosGenerales.TabStop = false;
             this.gbDatosGenerales.Text = "Datos Generales del Alumno";
             // 
+            // lblx2
+            // 
+            this.lblx2.AutoSize = true;
+            this.lblx2.Location = new System.Drawing.Point(469, 215);
+            this.lblx2.Name = "lblx2";
+            this.lblx2.Size = new System.Drawing.Size(12, 17);
+            this.lblx2.TabIndex = 10;
+            this.lblx2.Text = " ";
+            // 
+            // lblx1
+            // 
+            this.lblx1.AutoSize = true;
+            this.lblx1.Location = new System.Drawing.Point(100, 28);
+            this.lblx1.Name = "lblx1";
+            this.lblx1.Size = new System.Drawing.Size(12, 17);
+            this.lblx1.TabIndex = 9;
+            this.lblx1.Text = " ";
+            // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(487, 212);
+            this.txtEmail.Location = new System.Drawing.Point(119, 212);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(229, 23);
             this.txtEmail.TabIndex = 6;
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(119, 214);
+            this.txtTel.Location = new System.Drawing.Point(479, 212);
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(220, 23);
+            this.txtTel.Size = new System.Drawing.Size(237, 23);
             this.txtTel.TabIndex = 5;
             // 
             // txtApMat
@@ -120,7 +142,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.label7.Location = new System.Drawing.Point(363, 217);
+            this.label7.Location = new System.Drawing.Point(355, 215);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(118, 16);
             this.label7.TabIndex = 7;
@@ -263,7 +285,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(344, 542);
+            this.btnCancelar.Location = new System.Drawing.Point(661, 542);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(112, 23);
             this.btnCancelar.TabIndex = 32;
@@ -273,23 +295,13 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(661, 542);
+            this.btnGuardar.Location = new System.Drawing.Point(331, 542);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(112, 23);
             this.btnGuardar.TabIndex = 33;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(22, 542);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(112, 23);
-            this.btnEliminar.TabIndex = 34;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // label9
             // 
@@ -326,14 +338,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Documentos";
             // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(22, 542);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(112, 23);
+            this.btnNuevo.TabIndex = 36;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            // 
             // frmInscribirAlumno_apoderado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.gbDatosGenerales);
@@ -376,9 +397,11 @@
         private System.Windows.Forms.OpenFileDialog ofdBirthCertificate;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Label lblx1;
+        private System.Windows.Forms.Label lblx2;
     }
 }

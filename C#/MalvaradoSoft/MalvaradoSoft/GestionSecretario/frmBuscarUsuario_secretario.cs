@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace MalvaradoSoft.GestionSecretario
 {
-    public partial class frmGestionarCursoPorSeccion_secretario : Form
+    public partial class frmBuscarUsuario_secretario : Form
     {
-        public frmGestionarCursoPorSeccion_secretario()
+        public frmBuscarUsuario_secretario()
         {
             InitializeComponent();
         }
-
     }
 }
