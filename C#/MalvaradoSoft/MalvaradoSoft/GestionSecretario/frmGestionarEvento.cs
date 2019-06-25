@@ -98,9 +98,9 @@ namespace MalvaradoSoft.GestionSecretario
             {
                 for (int fila = 0; fila < dgvEventos.Rows.Count - 1; fila++)
                 {
-                    RenatoCWS.@event evento = new RenatoCWS.@event();
-                    evento = (RenatoCWS.@event)dgvEventos.Rows[fila].DataBoundItem;
-                    controller.updateEvent(evento);
+                    //RenatoCWS.@event evento = new RenatoCWS.@event();
+                   // evento = (RenatoCWS.@event)dgvEventos.Rows[fila].DataBoundItem;
+                    //controller.updateEvent(evento);
                 }
                 DialogResult = DialogResult.OK;
             }
