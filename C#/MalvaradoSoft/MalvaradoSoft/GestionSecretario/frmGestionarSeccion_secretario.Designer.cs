@@ -42,8 +42,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSecciones)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
@@ -57,7 +57,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(153, 368);
+            this.button2.Location = new System.Drawing.Point(188, 399);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 34);
             this.button2.TabIndex = 17;
@@ -73,7 +73,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(15, 368);
+            this.button1.Location = new System.Drawing.Point(29, 399);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 34);
             this.button1.TabIndex = 16;
@@ -90,9 +90,9 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dgvSecciones.Location = new System.Drawing.Point(12, 179);
+            this.dgvSecciones.Location = new System.Drawing.Point(12, 197);
             this.dgvSecciones.Name = "dgvSecciones";
-            this.dgvSecciones.Size = new System.Drawing.Size(253, 175);
+            this.dgvSecciones.Size = new System.Drawing.Size(298, 175);
             this.dgvSecciones.TabIndex = 15;
             // 
             // Column1
@@ -120,21 +120,21 @@
             // 
             this.txtSalon.Location = new System.Drawing.Point(87, 139);
             this.txtSalon.Name = "txtSalon";
-            this.txtSalon.Size = new System.Drawing.Size(100, 20);
+            this.txtSalon.Size = new System.Drawing.Size(121, 20);
             this.txtSalon.TabIndex = 14;
             // 
             // txtSeccion
             // 
             this.txtSeccion.Location = new System.Drawing.Point(87, 106);
             this.txtSeccion.Name = "txtSeccion";
-            this.txtSeccion.Size = new System.Drawing.Size(100, 20);
+            this.txtSeccion.Size = new System.Drawing.Size(121, 20);
             this.txtSeccion.TabIndex = 13;
             // 
             // txtGrado
             // 
             this.txtGrado.Location = new System.Drawing.Point(87, 74);
             this.txtGrado.Name = "txtGrado";
-            this.txtGrado.Size = new System.Drawing.Size(100, 20);
+            this.txtGrado.Size = new System.Drawing.Size(121, 20);
             this.txtGrado.TabIndex = 12;
             // 
             // label3
@@ -174,10 +174,21 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(303, 51);
+            this.panel1.Size = new System.Drawing.Size(341, 51);
             this.panel1.TabIndex = 25;
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
             this.panel1.Move += new System.EventHandler(this.Panel1_Move);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(308, 6);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(21, 18);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 44;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // label6
             // 
@@ -190,22 +201,11 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Gestionar Sección";
             // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(271, 10);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(21, 18);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 44;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
-            // 
             // frmGestionarSeccion_secretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 414);
+            this.ClientSize = new System.Drawing.Size(339, 457);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
