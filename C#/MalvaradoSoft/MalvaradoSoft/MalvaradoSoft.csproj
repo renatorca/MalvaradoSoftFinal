@@ -72,19 +72,6 @@
     <Compile Include="Configuracion\frmMenuConfiguracion_todos.Designer.cs">
       <DependentUpon>frmMenuConfiguracion_todos.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="Connected Services\JohanaWS\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\MAlvaradoWS\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-=======
->>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
     <Compile Include="GenerarReportes\frmReporteNotasPorCursoPorSeccion_profesor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,217 +306,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <None Include="Connected Services\JohanaWS\DBControllerWS1.wsdl" />
-    <None Include="Connected Services\JohanaWS\DBControllerWS1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.bimester.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.bimesterXStudentXYear.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.course.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.courseSchedule.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.deleteGRadeResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.deleteStudentResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.grade.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.insertGRadeResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.insertStudentResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.insertStudentXYearResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllBimesterXStudentXYearResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllBResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllCourseSchedulesByTeacherIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllCourseSchedulesPorIDTeacherResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllCourseSchedulesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllCoursesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllGradesByIDCourseResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllGradesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllStudentsByGuardianIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllTypesXUserResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryAllYResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryBlockTimebyIDResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryBlockTimebyUserNameResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryGradesByCourseIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryGradesSearchByNameResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.queryUserByIDResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.student.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.updateBlockTimeResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.updateGRadeResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.updateGradeXStudentResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.updatePasswordUserResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.updateStudentResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.updateUserResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.user.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.userType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.validarUserLoginResponse1.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\JohanaWS\MalvaradoSoft.JohanaWS.year.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\DBControllerWS.wsdl" />
-    <None Include="Connected Services\MAlvaradoWS\DBControllerWS.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.bimester.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.bimesterXStudentXYear.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.course.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.courseSchedule.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.deleteGRadeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.grade.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.insertGRadeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.insertStudentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllBimesterXStudentXYearResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllBResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesByTeacherIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesPorIDTeacherResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCoursesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllGradesByIDCourseResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllGradesResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllStudentsByIDGuardianResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllTypesXUserResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllYResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryGradesByCourseIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryGradesSearchByNameResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryUserByIDResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.student.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateGRadeResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updatePasswordUserResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateStudentResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.user.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.userType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.validarUserLoginResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.year.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-=======
     <EmbeddedResource Include="RegistrarNotas_profesor\frmListarCursos_profesor.resx">
       <DependentUpon>frmListarCursos_profesor.cs</DependentUpon>
     </EmbeddedResource>
@@ -539,7 +315,6 @@
     <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.resx">
       <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
     </EmbeddedResource>
->>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -553,39 +328,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-<<<<<<< HEAD
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\JohanaWS\" />
-    <WCFMetadataStorage Include="Connected Services\MAlvaradoWS\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\JohanaWS\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\JohanaWS\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\JohanaWS\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\MAlvaradoWS\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\MAlvaradoWS\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\MAlvaradoWS\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
-=======
->>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
