@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,12 +13,12 @@ namespace MalvaradoSoft.GestionSecretario
 {
     public partial class frmGestionarEvento : Form
     {
-        private RenatoCWS.courseSchedule curso = new RenatoCWS.courseSchedule();
-        private RenatoCWS.DBControllerWSClient controller;
-        public frmGestionarEvento(RenatoCWS.courseSchedule c)
+        private MAlvaradoWS.courseSchedule curso = new MAlvaradoWS.courseSchedule();
+        private MAlvaradoWS.DBControllerWSClient controller;
+        public frmGestionarEvento(MAlvaradoWS.courseSchedule c)
         {
             InitializeComponent();
-            controller = new RenatoCWS.DBControllerWSClient();
+            controller = new MAlvaradoWS.DBControllerWSClient();
             dgvEventos.AutoGenerateColumns = false;
             dgvEventos.DataSource = controller.queryAllEventsByCourse(1);
             curso = c;
@@ -35,7 +36,7 @@ namespace MalvaradoSoft.GestionSecretario
 
         private void CmbDia_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            controller = new RenatoCWS.DBControllerWSClient();
+            controller = new MAlvaradoWS.DBControllerWSClient();
             int idDay = 0;
             if (cmbDia.Text == "Lunes")
             {
@@ -85,8 +86,8 @@ namespace MalvaradoSoft.GestionSecretario
             DialogResult msg = MessageBox.Show("¿Está seguro de eliminar el evento del curso?", "Mensaje de validación", MessageBoxButtons.YesNo);
             if (msg == DialogResult.Yes)
             {
-                RenatoCWS.@event eve;
-                eve = (RenatoCWS.@event)dgvEventos.CurrentRow.DataBoundItem;
+                MAlvaradoWS.@event eve;
+                eve = (MAlvaradoWS.@event)dgvEventos.CurrentRow.DataBoundItem;
                 controller.deleteEvent(eve);
             }
         }
@@ -98,8 +99,8 @@ namespace MalvaradoSoft.GestionSecretario
             {
                 for (int fila = 0; fila < dgvEventos.Rows.Count - 1; fila++)
                 {
-                    RenatoCWS.@event evento = new RenatoCWS.@event();
-                    evento = (RenatoCWS.@event)dgvEventos.Rows[fila].DataBoundItem;
+                    MAlvaradoWS.@event evento = new MAlvaradoWS.@event();
+                    evento = (MAlvaradoWS.@event)dgvEventos.Rows[fila].DataBoundItem;
                     controller.updateEvent(evento);
                 }
                 DialogResult = DialogResult.OK;
@@ -109,6 +110,29 @@ namespace MalvaradoSoft.GestionSecretario
         private void FrmGestionarEvento_Load(object sender, EventArgs e)
         {
 
+        }
+        //METODO PARA ARRASTRAR EL FORMULARIO---------------------------------------------------------------------
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void Panel1_Move(object sender, EventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void Panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

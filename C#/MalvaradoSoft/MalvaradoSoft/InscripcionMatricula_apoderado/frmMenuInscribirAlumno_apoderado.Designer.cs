@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuInscribirAlumno_apoderado));
             this.dgvAlumnosInscritos = new System.Windows.Forms.DataGridView();
             this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,7 +60,7 @@
             this.FirstLastName,
             this.Ap_Materno,
             this.matricular});
-            this.dgvAlumnosInscritos.Location = new System.Drawing.Point(29, 174);
+            this.dgvAlumnosInscritos.Location = new System.Drawing.Point(12, 172);
             this.dgvAlumnosInscritos.Name = "dgvAlumnosInscritos";
             this.dgvAlumnosInscritos.ReadOnly = true;
             this.dgvAlumnosInscritos.RowHeadersVisible = false;
@@ -126,9 +127,11 @@
             this.btnInscribir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInscribir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnInscribir.ForeColor = System.Drawing.Color.White;
-            this.btnInscribir.Location = new System.Drawing.Point(637, 172);
+            this.btnInscribir.Image = ((System.Drawing.Image)(resources.GetObject("btnInscribir.Image")));
+            this.btnInscribir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInscribir.Location = new System.Drawing.Point(598, 172);
             this.btnInscribir.Name = "btnInscribir";
-            this.btnInscribir.Size = new System.Drawing.Size(139, 34);
+            this.btnInscribir.Size = new System.Drawing.Size(190, 34);
             this.btnInscribir.TabIndex = 2;
             this.btnInscribir.Text = "Inscribir Alumno";
             this.btnInscribir.UseVisualStyleBackColor = false;
@@ -140,9 +143,11 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.Location = new System.Drawing.Point(637, 243);
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(598, 243);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(139, 34);
+            this.btnEditar.Size = new System.Drawing.Size(190, 34);
             this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "Editar Inscripción";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -150,13 +155,15 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.DimGray;
+            this.btnEliminar.BackColor = System.Drawing.Color.Firebrick;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(637, 319);
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(598, 319);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(139, 34);
+            this.btnEliminar.Size = new System.Drawing.Size(190, 34);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar Inscripción";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -188,9 +195,11 @@
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(637, 515);
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(598, 532);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(139, 34);
+            this.btnRegresar.Size = new System.Drawing.Size(190, 34);
             this.btnRegresar.TabIndex = 17;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -202,9 +211,11 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(637, 391);
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(598, 391);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(139, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(190, 34);
             this.btnCancelar.TabIndex = 18;
             this.btnCancelar.Text = "Cancelar Selección";
             this.btnCancelar.UseVisualStyleBackColor = false;

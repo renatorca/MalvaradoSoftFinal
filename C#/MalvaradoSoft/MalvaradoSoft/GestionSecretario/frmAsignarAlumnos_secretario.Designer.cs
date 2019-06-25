@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAsignarAlumnos_secretario));
             this.cmbSalon = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -41,8 +42,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbSalon
@@ -69,9 +72,11 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(208, 465);
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(210, 465);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(113, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(136, 34);
             this.btnCancelar.TabIndex = 35;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -82,11 +87,14 @@
             this.btnCrearSeccion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearSeccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCrearSeccion.ForeColor = System.Drawing.Color.White;
+            this.btnCrearSeccion.Image = ((System.Drawing.Image)(resources.GetObject("btnCrearSeccion.Image")));
+            this.btnCrearSeccion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCrearSeccion.Location = new System.Drawing.Point(37, 465);
             this.btnCrearSeccion.Name = "btnCrearSeccion";
-            this.btnCrearSeccion.Size = new System.Drawing.Size(132, 34);
+            this.btnCrearSeccion.Size = new System.Drawing.Size(136, 34);
             this.btnCrearSeccion.TabIndex = 34;
             this.btnCrearSeccion.Text = "Crear Sección";
+            this.btnCrearSeccion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCrearSeccion.UseVisualStyleBackColor = false;
             this.btnCrearSeccion.Click += new System.EventHandler(this.btnCrearSeccion_Click);
             // 
@@ -155,11 +163,14 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(361, 58);
             this.panel1.TabIndex = 39;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
+            this.panel1.Move += new System.EventHandler(this.Panel1_Move);
             // 
             // label4
             // 
@@ -171,6 +182,17 @@
             this.label4.Size = new System.Drawing.Size(228, 33);
             this.label4.TabIndex = 13;
             this.label4.Text = "Asignar Alumnos";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(325, 10);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(21, 18);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 40;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // frmAsignarAlumnos_secretario
             // 
@@ -187,11 +209,13 @@
             this.Controls.Add(this.cmbGrado);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAsignarAlumnos_secretario";
             this.Text = "frmAsignarAlumnos_secretario";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlumnos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +236,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }

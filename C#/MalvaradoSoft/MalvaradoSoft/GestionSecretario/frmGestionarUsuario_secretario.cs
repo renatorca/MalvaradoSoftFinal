@@ -28,16 +28,6 @@ namespace MalvaradoSoft.GestionSecretario
             MessageBox.Show("Se ha realizado con exito el registro", "Mensaje de Confirmacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void btnBuscarUsuario_Click(object sender, EventArgs e)
-        {
-            //frmBuscarUsuario_secretario fbuscar = new frmBuscarUsuario_secretario();
-            //if (fbuscar.ShowDialog() == DialogResult.OK)
-            {
-                //Editar los parametros de los textBox según el usuario elegido
-
-            }
-        }
-
         private void ckApoderado_CheckedChanged(object sender, EventArgs e)
         {
             if (ckApoderado.Checked == true)
@@ -121,5 +111,14 @@ namespace MalvaradoSoft.GestionSecretario
             this.Close();
         }
 
+        private void BtnBuscarUs_Click(object sender, EventArgs e)
+        {
+            //frmBuscarUsuario_secretario fbuscar = new frmBuscarUsuario_secretario();
+            //if (fbuscar.ShowDialog() == DialogResult.OK)
+            {
+                //Editar los parametros de los textBox según el usuario elegido
+
+            }
+        }
     }
 }

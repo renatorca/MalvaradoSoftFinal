@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionarMatricula_secretario));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Dni = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -100,9 +101,11 @@
             this.btnMatricular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMatricular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnMatricular.ForeColor = System.Drawing.Color.White;
-            this.btnMatricular.Location = new System.Drawing.Point(466, 451);
+            this.btnMatricular.Image = ((System.Drawing.Image)(resources.GetObject("btnMatricular.Image")));
+            this.btnMatricular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMatricular.Location = new System.Drawing.Point(400, 513);
             this.btnMatricular.Name = "btnMatricular";
-            this.btnMatricular.Size = new System.Drawing.Size(120, 34);
+            this.btnMatricular.Size = new System.Drawing.Size(146, 34);
             this.btnMatricular.TabIndex = 3;
             this.btnMatricular.Text = "Matricular";
             this.btnMatricular.UseVisualStyleBackColor = false;
@@ -113,9 +116,11 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(667, 451);
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(631, 513);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(120, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(146, 34);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -144,11 +149,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(828, 493);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnMatricular);
             this.Controls.Add(this.dataGridView1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGestionarMatricula_secretario";
             this.Text = "frmGestionarMatricula_secretario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

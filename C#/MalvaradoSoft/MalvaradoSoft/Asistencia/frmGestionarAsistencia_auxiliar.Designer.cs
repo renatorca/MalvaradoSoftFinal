@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionarAsistencia_auxiliar));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -136,9 +137,11 @@
             this.btnTomarAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTomarAsistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.btnTomarAsistencia.ForeColor = System.Drawing.Color.White;
-            this.btnTomarAsistencia.Location = new System.Drawing.Point(271, 377);
+            this.btnTomarAsistencia.Image = ((System.Drawing.Image)(resources.GetObject("btnTomarAsistencia.Image")));
+            this.btnTomarAsistencia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTomarAsistencia.Location = new System.Drawing.Point(175, 377);
             this.btnTomarAsistencia.Name = "btnTomarAsistencia";
-            this.btnTomarAsistencia.Size = new System.Drawing.Size(139, 34);
+            this.btnTomarAsistencia.Size = new System.Drawing.Size(180, 34);
             this.btnTomarAsistencia.TabIndex = 16;
             this.btnTomarAsistencia.Text = "Seleccionar";
             this.btnTomarAsistencia.UseVisualStyleBackColor = false;
@@ -150,9 +153,11 @@
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(478, 377);
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(404, 377);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(139, 34);
+            this.btnRegresar.Size = new System.Drawing.Size(182, 34);
             this.btnRegresar.TabIndex = 20;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;

@@ -175,7 +175,7 @@
             // 
             // btnCancelarContraseña
             // 
-            this.btnCancelarContraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnCancelarContraseña.BackColor = System.Drawing.Color.Firebrick;
             this.btnCancelarContraseña.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelarContraseña.ForeColor = System.Drawing.Color.White;
@@ -205,7 +205,7 @@
             // 
             // btnCancelarDni
             // 
-            this.btnCancelarDni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnCancelarDni.BackColor = System.Drawing.Color.Firebrick;
             this.btnCancelarDni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarDni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelarDni.ForeColor = System.Drawing.Color.White;
@@ -235,7 +235,7 @@
             // 
             // btnCancelarCelular
             // 
-            this.btnCancelarCelular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnCancelarCelular.BackColor = System.Drawing.Color.Firebrick;
             this.btnCancelarCelular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarCelular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelarCelular.ForeColor = System.Drawing.Color.White;
@@ -265,7 +265,7 @@
             // 
             // btnCancelarCorreo
             // 
-            this.btnCancelarCorreo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnCancelarCorreo.BackColor = System.Drawing.Color.Firebrick;
             this.btnCancelarCorreo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelarCorreo.ForeColor = System.Drawing.Color.White;
@@ -295,7 +295,7 @@
             // 
             // btnCancelarNombreUsuario
             // 
-            this.btnCancelarNombreUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnCancelarNombreUsuario.BackColor = System.Drawing.Color.Firebrick;
             this.btnCancelarNombreUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarNombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelarNombreUsuario.ForeColor = System.Drawing.Color.White;
@@ -325,7 +325,7 @@
             // 
             // btnCancelarNombre
             // 
-            this.btnCancelarNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnCancelarNombre.BackColor = System.Drawing.Color.Firebrick;
             this.btnCancelarNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelarNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelarNombre.ForeColor = System.Drawing.Color.White;
@@ -727,6 +727,8 @@
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegresar.Location = new System.Drawing.Point(623, 526);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(136, 39);

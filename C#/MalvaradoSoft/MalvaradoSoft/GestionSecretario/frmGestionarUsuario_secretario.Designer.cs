@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionarUsuario_secretario));
             this.btnEliminar = new System.Windows.Forms.Button();
             this.gbTipoUsuario = new System.Windows.Forms.GroupBox();
             this.ckProfesor = new System.Windows.Forms.CheckBox();
@@ -38,8 +39,8 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.gbDatosGenerales = new System.Windows.Forms.GroupBox();
+            this.btnBuscarUs = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.btnBuscarUsuario = new System.Windows.Forms.Button();
             this.txtTel = new System.Windows.Forms.TextBox();
             this.txtApMat = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -68,9 +69,11 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(184, 437);
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(181, 506);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(115, 34);
+            this.btnEliminar.Size = new System.Drawing.Size(123, 34);
             this.btnEliminar.TabIndex = 35;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -148,9 +151,11 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(501, 437);
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(498, 506);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(115, 34);
+            this.btnGuardar.Size = new System.Drawing.Size(127, 34);
             this.btnGuardar.TabIndex = 33;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -161,17 +166,19 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(19, 437);
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(16, 506);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(115, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(135, 34);
             this.btnCancelar.TabIndex = 32;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // gbDatosGenerales
             // 
+            this.gbDatosGenerales.Controls.Add(this.btnBuscarUs);
             this.gbDatosGenerales.Controls.Add(this.txtEmail);
-            this.gbDatosGenerales.Controls.Add(this.btnBuscarUsuario);
             this.gbDatosGenerales.Controls.Add(this.txtTel);
             this.gbDatosGenerales.Controls.Add(this.txtApMat);
             this.gbDatosGenerales.Controls.Add(this.label8);
@@ -192,21 +199,22 @@
             this.gbDatosGenerales.TabStop = false;
             this.gbDatosGenerales.Text = "Datos Generales";
             // 
+            // btnBuscarUs
+            // 
+            this.btnBuscarUs.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarUs.Image")));
+            this.btnBuscarUs.Location = new System.Drawing.Point(540, 23);
+            this.btnBuscarUs.Name = "btnBuscarUs";
+            this.btnBuscarUs.Size = new System.Drawing.Size(36, 33);
+            this.btnBuscarUs.TabIndex = 26;
+            this.btnBuscarUs.UseVisualStyleBackColor = true;
+            this.btnBuscarUs.Click += new System.EventHandler(this.BtnBuscarUs_Click);
+            // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(126, 222);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(379, 20);
             this.txtEmail.TabIndex = 10;
-            // 
-            // btnBuscarUsuario
-            // 
-            this.btnBuscarUsuario.Location = new System.Drawing.Point(524, 10);
-            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
-            this.btnBuscarUsuario.Size = new System.Drawing.Size(65, 33);
-            this.btnBuscarUsuario.TabIndex = 24;
-            this.btnBuscarUsuario.UseVisualStyleBackColor = true;
-            this.btnBuscarUsuario.Click += new System.EventHandler(this.btnBuscarUsuario_Click);
             // 
             // txtTel
             // 
@@ -320,9 +328,11 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.Location = new System.Drawing.Point(342, 437);
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(339, 506);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(115, 34);
+            this.btnEditar.Size = new System.Drawing.Size(126, 34);
             this.btnEditar.TabIndex = 36;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -331,9 +341,9 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Location = new System.Drawing.Point(0, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(636, 51);
+            this.panel1.Size = new System.Drawing.Size(804, 51);
             this.panel1.TabIndex = 37;
             // 
             // label1
@@ -351,7 +361,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 483);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnEliminar);
@@ -359,6 +369,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.gbDatosGenerales);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGestionarUsuario_secretario";
             this.Text = "frmGestionarUsuario_secretario";
             this.gbTipoUsuario.ResumeLayout(false);
@@ -384,7 +395,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.GroupBox gbDatosGenerales;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Button btnBuscarUsuario;
         private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.TextBox txtApMat;
         private System.Windows.Forms.Label label8;
@@ -401,5 +411,6 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBuscarUs;
     }
 }
