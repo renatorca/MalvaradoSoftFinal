@@ -42,6 +42,7 @@
             this.btnAjustes = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnGestionarCursos = new System.Windows.Forms.Button();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -142,6 +143,7 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.MenuVertical.Controls.Add(this.btnGestionarCursos);
             this.MenuVertical.Controls.Add(this.btnCerrarSesion);
             this.MenuVertical.Controls.Add(this.btnCursos);
             this.MenuVertical.Controls.Add(this.btnAjustes);
@@ -179,7 +181,7 @@
             this.btnCursos.ForeColor = System.Drawing.Color.White;
             this.btnCursos.Image = ((System.Drawing.Image)(resources.GetObject("btnCursos.Image")));
             this.btnCursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCursos.Location = new System.Drawing.Point(0, 258);
+            this.btnCursos.Location = new System.Drawing.Point(0, 249);
             this.btnCursos.Name = "btnCursos";
             this.btnCursos.Size = new System.Drawing.Size(250, 38);
             this.btnCursos.TabIndex = 2;
@@ -230,6 +232,23 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnGestionarCursos
+            // 
+            this.btnGestionarCursos.FlatAppearance.BorderSize = 0;
+            this.btnGestionarCursos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnGestionarCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGestionarCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestionarCursos.ForeColor = System.Drawing.Color.White;
+            this.btnGestionarCursos.Image = ((System.Drawing.Image)(resources.GetObject("btnGestionarCursos.Image")));
+            this.btnGestionarCursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGestionarCursos.Location = new System.Drawing.Point(0, 322);
+            this.btnGestionarCursos.Name = "btnGestionarCursos";
+            this.btnGestionarCursos.Size = new System.Drawing.Size(250, 38);
+            this.btnGestionarCursos.TabIndex = 18;
+            this.btnGestionarCursos.Text = "Gestionar Cursos";
+            this.btnGestionarCursos.UseVisualStyleBackColor = true;
+            this.btnGestionarCursos.Click += new System.EventHandler(this.BtnGestionarCursos_Click);
+            // 
             // frmMenuPrincipal_profesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,5 +287,6 @@
         private System.Windows.Forms.Button btnAjustes;
         private System.Windows.Forms.Button btnAlumnos;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnGestionarCursos;
     }
 }

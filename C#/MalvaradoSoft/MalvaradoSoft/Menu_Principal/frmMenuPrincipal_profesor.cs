@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using MalvaradoSoft.Configuracion;
 using MalvaradoSoft.GenerarReportes;
 using MalvaradoSoft.MAlvaradoWS;
+using MalvaradoSoft.RegistrarNotas_profesor;
 
 namespace MalvaradoSoft.Menu_Principal
 {
@@ -137,6 +138,11 @@ namespace MalvaradoSoft.Menu_Principal
         private void BtnCursos_Click(object sender, EventArgs e)
         {
             OpenForm<frmReporteEstadisticoPorEvaluacion_profesor>();
+        }
+
+        private void BtnGestionarCursos_Click(object sender, EventArgs e)
+        {
+            OpenForm<frmListarCursos_profesor>(user.idUser);
         }
 
         private void BtnSlide_Click(object sender, EventArgs e)

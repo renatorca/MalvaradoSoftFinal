@@ -221,6 +221,19 @@
         VMT0sq0AAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="btnGestionarCursos.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACcAAAAeCAYAAACv1gdQAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA36AAAN+gHZMNd/AAAAB3RJ
+        TUUH4wUVATYpOU+IfwAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMS41ZEdYUgAAASBJREFUWEft
+        mDFLw0AYhq1Y0KWC7SJ26M/pUKSDBLo5dPAP+iO0S0s3J3FyKqJtNN4l8Tk4QcpByJcvXbwPHu4u5Hvv
+        4UIy5KhOlWV5Yq1N4BGyPM9LLcjbGWOu/Vb1CrEOAbcEfewHa9BIriiKMwKWoWANmp7cwAWEgjX4lWOf
+        LuOYw7jxW1cXN18S8BkK1uCP3DnrBes3v3V1HVKO+QpSv3V1RbkoJyDKSYlyUqKclCgnJcpJiXJS/occ
+        YwHfzL8U2SA3aSQHlqB71nOYaUFswnjV9OSeCBj5y+ollevTsIUF856/rF4iOZpOaXC/IbbI3cGFk2yB
+        IU9nXUvOFQ3uP8k7GHiF5xZ4gQzqyXF6x7xRUxofwL1hwc+CBtba9AckdCAqH7zi6AAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
   <data name="btnCerrarSesion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
