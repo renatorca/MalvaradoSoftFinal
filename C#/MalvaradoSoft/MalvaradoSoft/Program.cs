@@ -6,6 +6,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MalvaradoSoft.RegistrarNotas_profesor;
+using MalvaradoSoft.Login;
+using MalvaradoSoft.Menu_Principal;
+using MalvaradoSoft.Configuracion;
+
 
 namespace MalvaradoSoft
 {
@@ -27,10 +31,13 @@ namespace MalvaradoSoft
             curso.id = 1;
             curso.name = "Test";
             //Application.Run(new frmGestionarTipoNota_secretario(curso));
+
             //Application.Run(new frmMenuInscribirAlumno_apoderado());
 
             //Prueba ListarCursos_Profesor
-            Application.Run(new frmListarCursos_profesor(3));
+            //Application.Run(new frmListarCursos_profesor(3));
+            Application.Run(new frmCambiarContraseña());
+
 
         }
     }

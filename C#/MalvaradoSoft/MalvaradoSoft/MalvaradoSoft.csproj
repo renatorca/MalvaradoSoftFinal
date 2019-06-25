@@ -279,6 +279,9 @@
     <EmbeddedResource Include="Asistencia\frmTomarAsistencia_auxiliar.resx">
       <DependentUpon>frmTomarAsistencia_auxiliar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\frmCambiarContraseña.resx">
+      <DependentUpon>frmCambiarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmAsignarAlumnos_secretario.resx">
       <DependentUpon>frmAsignarAlumnos_secretario.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,6 +311,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.resx">
       <DependentUpon>frmMenuInscribirAlumno_apoderado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmIniciarTipoUsuario.resx">
+      <DependentUpon>frmIniciarTipoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmRecuperarContrasena.resx">
+      <DependentUpon>frmRecuperarContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\frmMenuPrincipal_alumno.resx">
+      <DependentUpon>frmMenuPrincipal_alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\frmMenuPrincipal_apoderado.resx">
+      <DependentUpon>frmMenuPrincipal_apoderado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\frmMenuPrincipal_auxiliar.resx">
+      <DependentUpon>frmMenuPrincipal_auxiliar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\frmMenuPrincipal_profesor.resx">
+      <DependentUpon>frmMenuPrincipal_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\frmMenuPrincipal_Secretario.resx">
+      <DependentUpon>frmMenuPrincipal_Secretario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
