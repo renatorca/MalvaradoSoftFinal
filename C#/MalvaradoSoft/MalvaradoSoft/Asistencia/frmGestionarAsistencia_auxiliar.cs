@@ -17,9 +17,20 @@ namespace MalvaradoSoft.Asistencia
             InitializeComponent();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
+        private void BtnTomarAsistencia_Click(object sender, EventArgs e)
+        {
+            //frmTomarAsistencia_auxiliar tomarAsistencia = new frmTomarAsistencia_auxiliar();
+            //tomarAsistencia.Show();
+        }
+
+        private void BtnRegresar_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BtnRegresar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -12,11 +12,11 @@ namespace MalvaradoSoft.GestionSecretario
 {
     public partial class frmGestionarCursosPorSeccion_secretario : Form
     {
-        RenatoCWS.DBControllerWSClient controller;
+        MAlvaradoWS.DBControllerWSClient controller;
         public frmGestionarCursosPorSeccion_secretario()
         {
             InitializeComponent();
-            controller = new RenatoCWS.DBControllerWSClient();
+            controller = new MAlvaradoWS.DBControllerWSClient();
             BindingList<int> grados = new BindingList<int>();
             grados.Add(1);
             grados.Add(2);
@@ -36,8 +36,8 @@ namespace MalvaradoSoft.GestionSecretario
 
         private void BtnEditarHorario_Click(object sender, EventArgs e)
         {
-            RenatoCWS.classSection cs;
-            cs = (RenatoCWS.classSection)cmbSeccion.SelectedItem;
+            MAlvaradoWS.classSection cs;
+            cs = (MAlvaradoWS.classSection)cmbSeccion.SelectedItem;
             frmGestionarCursoPorSeccionProfesor_secretario frmCursoporSeccion = new frmGestionarCursoPorSeccionProfesor_secretario(cs);
             if (frmCursoporSeccion.ShowDialog() == DialogResult.OK)
             {

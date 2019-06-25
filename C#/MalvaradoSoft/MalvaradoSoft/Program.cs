@@ -35,7 +35,10 @@ namespace MalvaradoSoft
             curso.course = c;
             //Application.Run(new frmGestionarTipoNota_secretario(curso));
 
+
             //Application.Run(new frmAsignarEventoCursosXSeccion_secretario());
+
+
 
 
             JohanaWS.user u = new JohanaWS.user();
@@ -49,8 +52,6 @@ namespace MalvaradoSoft
             //Application.Run(new frmListarCursos_profesor(3));
 
             Application.Run(new frmCambiarContraseña());
-
-
         }
     }
 }

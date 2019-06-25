@@ -228,9 +228,9 @@
             // 
             // btnUploadStudyCertificate
             // 
-            this.btnUploadStudyCertificate.Location = new System.Drawing.Point(19, 60);
+            this.btnUploadStudyCertificate.Location = new System.Drawing.Point(366, 54);
             this.btnUploadStudyCertificate.Name = "btnUploadStudyCertificate";
-            this.btnUploadStudyCertificate.Size = new System.Drawing.Size(218, 23);
+            this.btnUploadStudyCertificate.Size = new System.Drawing.Size(218, 34);
             this.btnUploadStudyCertificate.TabIndex = 9;
             this.btnUploadStudyCertificate.Text = "Certificado de estudios";
             this.btnUploadStudyCertificate.UseVisualStyleBackColor = true;
@@ -247,9 +247,9 @@
             // 
             // btnBirthCertificate
             // 
-            this.btnBirthCertificate.Location = new System.Drawing.Point(357, 60);
+            this.btnBirthCertificate.Location = new System.Drawing.Point(16, 54);
             this.btnBirthCertificate.Name = "btnBirthCertificate";
-            this.btnBirthCertificate.Size = new System.Drawing.Size(218, 23);
+            this.btnBirthCertificate.Size = new System.Drawing.Size(218, 34);
             this.btnBirthCertificate.TabIndex = 12;
             this.btnBirthCertificate.Text = "Certificado de nacimiento";
             this.btnBirthCertificate.UseVisualStyleBackColor = true;
@@ -285,22 +285,30 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(661, 542);
+            this.btnCancelar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(619, 542);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(112, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(154, 34);
             this.btnCancelar.TabIndex = 32;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(331, 542);
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(329, 542);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(112, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(154, 34);
             this.btnGuardar.TabIndex = 33;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // label9
@@ -340,12 +348,16 @@
             // 
             // btnNuevo
             // 
+            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnNuevo.ForeColor = System.Drawing.Color.White;
             this.btnNuevo.Location = new System.Drawing.Point(22, 542);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(112, 23);
+            this.btnNuevo.Size = new System.Drawing.Size(154, 34);
             this.btnNuevo.TabIndex = 36;
             this.btnNuevo.Text = "Nuevo";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.UseVisualStyleBackColor = false;
             // 
             // frmInscribirAlumno_apoderado
             // 

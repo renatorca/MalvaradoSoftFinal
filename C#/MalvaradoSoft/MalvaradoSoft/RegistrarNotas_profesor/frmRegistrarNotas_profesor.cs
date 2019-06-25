@@ -45,13 +45,12 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
 
 
             
-
-
             cboAno.DataSource = controller.queryAllY();
             cboAno.DisplayMember = "yearJoel";
             MAlvaradoWS.year y;      
             cboBimestre.DataSource = controller.queryAllB();
             cboBimestre.DisplayMember = "valorBimester";
+
 
             dgvRegistroNotas.ColumnCount = grades.Count + 1;
             dgvRegistroNotas.Columns[0].Name = "name";

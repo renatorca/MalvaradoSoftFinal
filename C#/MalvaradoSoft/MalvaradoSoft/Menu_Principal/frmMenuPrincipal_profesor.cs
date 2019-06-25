@@ -9,7 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MalvaradoSoft.Configuracion;
+using MalvaradoSoft.GenerarReportes;
 using MalvaradoSoft.MAlvaradoWS;
+using MalvaradoSoft.RegistrarNotas_profesor;
 
 namespace MalvaradoSoft.Menu_Principal
 {
@@ -92,9 +94,6 @@ namespace MalvaradoSoft.Menu_Principal
 
         private void FrmMenuPrincipal_alumno_Load(object sender, EventArgs e)
         {
-            lblUser.Text = User.names + " " + User.firstLastName + " " + User.secondLastName;
-            lblRol.Text = "Alumno";
-            lblcorreo.Text = User.email;
         }
 
         private void BtnMaximizar_Click(object sender, EventArgs e)
@@ -133,7 +132,17 @@ namespace MalvaradoSoft.Menu_Principal
 
         private void BtnAjustes_Click(object sender, EventArgs e)
         {
-            OpenForm<frmCambiarContraseña>();
+            OpenForm<frmMenuConfiguracion_todos>();
+        }
+
+        private void BtnCursos_Click(object sender, EventArgs e)
+        {
+            OpenForm<frmReporteEstadisticoPorEvaluacion_profesor>();
+        }
+
+        private void BtnGestionarCursos_Click(object sender, EventArgs e)
+        {
+            OpenForm<frmListarCursos_profesor>(user.idUser);
         }
 
         private void BtnSlide_Click(object sender, EventArgs e)

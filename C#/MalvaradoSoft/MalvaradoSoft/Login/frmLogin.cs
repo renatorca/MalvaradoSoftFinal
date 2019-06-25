@@ -14,10 +14,11 @@ namespace MalvaradoSoft.Login
 {
     public partial class frmLogin : Form
     {
-        frmRecuperarContrasena recuperarContraseña;
-        MAlvaradoWS.DBControllerWSClient controller;
-        MAlvaradoWS.user user;
-
+        private frmRecuperarContrasena recuperarContraseña;
+        private MAlvaradoWS.DBControllerWSClient controller;
+        private MAlvaradoWS.user user = null;
+        private int contador = 0;
+        private int tiempoBloqueo = 900; // 15 min = 15*60
         public frmLogin()
         {
             InitializeComponent();
@@ -32,10 +33,10 @@ namespace MalvaradoSoft.Login
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
 
         private void BtnAcceder_Click(object sender, EventArgs e)
-        {
+        {            
             if (String.Equals(txtUser.Text, "USUARIO") || String.Equals(txtPassword.Text, "CONTRASEÑA"))
             {
-                msgError("Ingrese un usuario y/o contraseña valida.");
+                estadoComponentes(estado.LogIncorrecto);
                 return;
             }
 
@@ -44,6 +45,12 @@ namespace MalvaradoSoft.Login
             if (idUser != 0)
             {
                 user = controller.queryUserByID(idUser);
+                if (validarBloqueoCuenta(user)) //Si la cuenta esta bloqueada
+                {
+                    return;
+                }
+
+                //Cuenta no bloqueada
                 if (String.Equals(txtPassword.Text, user.password)) //Usuario y contraseña correcta
                 {
                     BindingList<MAlvaradoWS.userType> tipo = new BindingList<MAlvaradoWS.userType>(controller.queryAllTypesXUser(user));
@@ -93,7 +100,20 @@ namespace MalvaradoSoft.Login
                 }
                 else //Usuario incorrecto
                 {
-                    msgError("Ingrese un usuario y/o contraseña valida.");
+                    estadoComponentes(estado.LogIncorrecto);
+                    user.nAttempts = user.nAttempts + 1;
+                    if (user.nAttempts < 6)
+                    {
+                        controller.updateUser(user);
+                    }
+                    else
+                    {
+                        user.blocked = true;
+                        controller.updateUser(user);
+                        string hora_actual = DateTime.Now.ToString("hhmmss");
+                        string time = hora_actual.Substring(0,2) + ":" + hora_actual.Substring(2, 2)  + ":" + hora_actual.Substring(4, 2);
+                        controller.updateBlockTime(time, user);
+                    }
                 }
             }
             else //Usuario incorrecto
@@ -155,6 +175,12 @@ namespace MalvaradoSoft.Login
 
         private void BtnCerrar_Click(object sender, EventArgs e)
         {
+            //Validacion si desea cerrar el form
+            if (user != null)
+            {
+                string time = convertTimeString(contador);
+                controller.updateBlockTime(time, user);
+            }
             Application.Exit();
         }
 
@@ -193,25 +219,107 @@ namespace MalvaradoSoft.Login
                 txtPassword.UseSystemPasswordChar = false;
             }
         }
+        private int getTimeSeconds(string cad) //"hh:mm:ss"
+        {
+            int min = 0, seg = 0;
+            min = Int32.Parse(cad.Substring(3,2));
+            seg = Int32.Parse(cad.Substring(6,2));
+            return min*60 + seg;
+        }
+        private string convertTimeString(int sec)
+        {
+            string time = "";
+            int min = sec / 60;
+            sec = sec - min * 60;
+            time = "00:" + min.ToString() + ":" + sec.ToString();
+            return time;
+        }
+
+        private bool continuaBloqueado(string blockTime, string now)
+        {
+            int segBlockTime = Int32.Parse(blockTime.Substring(6,2)) + Int32.Parse(blockTime.Substring(3,2))*60 + Int32.Parse(blockTime.Substring(0,2))* 3600;
+            int segNow = Int32.Parse(now.Substring(4, 2)) + Int32.Parse(now.Substring(2, 2)) * 60 + Int32.Parse(now.Substring(0, 2)) * 3600;            
+            if (segNow - segBlockTime < tiempoBloqueo)
+                contador = segNow - segBlockTime;
+            else
+                contador = 0;
+
+            return (segNow - segBlockTime < tiempoBloqueo);
+        }
+
+        private bool validarBloqueoCuenta(MAlvaradoWS.user user)
+        {            
+            if (user.blocked)
+            {                
+                string now = DateTime.Now.ToString("hhmmss");
+                string blockTime = controller.queryBlockTimebyID(user.idUser);
+                //Verifico si ya transcurrio el tiempo de bloqueo
+                if (continuaBloqueado(blockTime, now))
+                {
+                    estadoComponentes(estado.Bloqueado);
+                    return true;
+                }
+                else
+                {
+                    user.blocked = false;
+                    user.nAttempts = 0;
+                    controller.updateUser(user);
+                    estadoComponentes(estado.Desbloqueado);
+                    return false;
+                }
+            }
+            else //Usuario no bloquado
+            {
+                estadoComponentes(estado.Desbloqueado);
+                return false;
+            }
+        }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            /*
             lblBlock.Visible = true;
             lblBlockTime.Visible = true;
-            int contador = user.
             if (contador > 0)
             {
                 contador--;
                 int min = contador / 60;
                 int seg = contador - min * 60;
-                lblSegundos.Text = seg.ToString();
-                lblMinutos.Text = min.ToString();
+                lblBlockTime.Text = min.ToString()  + ":" + seg.ToString() + " seg.";
             }
             else
             {
                 btnAcceder.Enabled = true;
-            }*/
+            }
+        }
+
+        public void estadoComponentes(estado e)
+        {
+            switch (e)
+            {
+                case estado.Inicial:
+                    break;
+                case estado.Bloqueado:
+                    timer1.Enabled = true;
+                    btnAcceder.Enabled = false;
+                    break;
+                case estado.Desbloqueado:
+                    timer1.Enabled = false;
+                    lblBlock.Visible = false;
+                    lblBlockTime.Visible = false;
+                    btnAcceder.Enabled = true ;
+                    break;
+                case estado.LogIncorrecto:
+                    msgError("Ingrese un usuario y/o contraseña valida.");
+                    timer1.Enabled = false;
+                    lblBlock.Visible = false;
+                    lblBlockTime.Visible = false;
+                    break;                    
+            }
+        }
+
+        public enum estado
+        {
+            Inicial, Bloqueado, Desbloqueado, LogIncorrecto
         }
     }
 }

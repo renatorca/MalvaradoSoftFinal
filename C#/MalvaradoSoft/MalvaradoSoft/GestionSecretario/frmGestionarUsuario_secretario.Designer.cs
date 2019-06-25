@@ -54,19 +54,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbTipoUsuario.SuspendLayout();
             this.gbDatosGenerales.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnEliminar
             // 
+            this.btnEliminar.BackColor = System.Drawing.Color.Firebrick;
             this.btnEliminar.Enabled = false;
-            this.btnEliminar.Location = new System.Drawing.Point(169, 376);
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(184, 437);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(108, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(115, 34);
             this.btnEliminar.TabIndex = 35;
             this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // gbTipoUsuario
             // 
@@ -75,7 +82,7 @@
             this.gbTipoUsuario.Controls.Add(this.ckAuxiliar);
             this.gbTipoUsuario.Controls.Add(this.ckAlumno);
             this.gbTipoUsuario.Controls.Add(this.ckApoderado);
-            this.gbTipoUsuario.Location = new System.Drawing.Point(19, 12);
+            this.gbTipoUsuario.Location = new System.Drawing.Point(12, 74);
             this.gbTipoUsuario.Name = "gbTipoUsuario";
             this.gbTipoUsuario.Size = new System.Drawing.Size(597, 51);
             this.gbTipoUsuario.TabIndex = 34;
@@ -137,21 +144,29 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(506, 376);
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnGuardar.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar.Location = new System.Drawing.Point(501, 437);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(108, 23);
+            this.btnGuardar.Size = new System.Drawing.Size(115, 34);
             this.btnGuardar.TabIndex = 33;
             this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(19, 376);
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(19, 437);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(108, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(115, 34);
             this.btnCancelar.TabIndex = 32;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // gbDatosGenerales
             // 
@@ -170,7 +185,7 @@
             this.gbDatosGenerales.Controls.Add(this.label4);
             this.gbDatosGenerales.Controls.Add(this.label3);
             this.gbDatosGenerales.Controls.Add(this.label2);
-            this.gbDatosGenerales.Location = new System.Drawing.Point(19, 78);
+            this.gbDatosGenerales.Location = new System.Drawing.Point(19, 147);
             this.gbDatosGenerales.Name = "gbDatosGenerales";
             this.gbDatosGenerales.Size = new System.Drawing.Size(597, 271);
             this.gbDatosGenerales.TabIndex = 30;
@@ -300,19 +315,44 @@
             // 
             // btnEditar
             // 
+            this.btnEditar.BackColor = System.Drawing.Color.ForestGreen;
             this.btnEditar.Enabled = false;
-            this.btnEditar.Location = new System.Drawing.Point(334, 376);
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Location = new System.Drawing.Point(342, 437);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(108, 23);
+            this.btnEditar.Size = new System.Drawing.Size(115, 34);
             this.btnEditar.TabIndex = 36;
             this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(636, 51);
+            this.panel1.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(10, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(243, 33);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Gestionar Usuario";
             // 
             // frmGestionarUsuario_secretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 424);
+            this.ClientSize = new System.Drawing.Size(636, 483);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.gbTipoUsuario);
@@ -325,6 +365,8 @@
             this.gbTipoUsuario.PerformLayout();
             this.gbDatosGenerales.ResumeLayout(false);
             this.gbDatosGenerales.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -357,5 +399,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
     }
 }
