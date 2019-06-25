@@ -5,65 +5,20 @@
       <xsd:import schemaLocation="http://localhost:8080/MalvaradoSoftWebGF/DBControllerWS?xsd=1" namespace="http://services.malvaradosoft.inf.pucp.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="queryAllCourseSchedulesPorIDTeacher">
-    <part name="parameters" element="tns:queryAllCourseSchedulesPorIDTeacher" />
+  <message name="queryAllCourses">
+    <part name="parameters" element="tns:queryAllCourses" />
   </message>
-  <message name="queryAllCourseSchedulesPorIDTeacherResponse">
-    <part name="parameters" element="tns:queryAllCourseSchedulesPorIDTeacherResponse" />
+  <message name="queryAllCoursesResponse">
+    <part name="parameters" element="tns:queryAllCoursesResponse" />
   </message>
-  <message name="queryAllBimesterXStudentXYear">
-    <part name="parameters" element="tns:queryAllBimesterXStudentXYear" />
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
   </message>
-  <message name="queryAllBimesterXStudentXYearResponse">
-    <part name="parameters" element="tns:queryAllBimesterXStudentXYearResponse" />
+  <message name="queryAllY">
+    <part name="parameters" element="tns:queryAllY" />
   </message>
-  <message name="queryAllGradesByIDCourse">
-    <part name="parameters" element="tns:queryAllGradesByIDCourse" />
-  </message>
-  <message name="queryAllGradesByIDCourseResponse">
-    <part name="parameters" element="tns:queryAllGradesByIDCourseResponse" />
-  </message>
-  <message name="queryAllTypesXUser">
-    <part name="parameters" element="tns:queryAllTypesXUser" />
-  </message>
-  <message name="queryAllTypesXUserResponse">
-    <part name="parameters" element="tns:queryAllTypesXUserResponse" />
-  </message>
-  <message name="queryAllCourseSchedulesByTeacherId">
-    <part name="parameters" element="tns:queryAllCourseSchedulesByTeacherId" />
-  </message>
-  <message name="queryAllCourseSchedulesByTeacherIdResponse">
-    <part name="parameters" element="tns:queryAllCourseSchedulesByTeacherIdResponse" />
-  </message>
-  <message name="queryAllCourseSchedules">
-    <part name="parameters" element="tns:queryAllCourseSchedules" />
-  </message>
-  <message name="queryAllCourseSchedulesResponse">
-    <part name="parameters" element="tns:queryAllCourseSchedulesResponse" />
-  </message>
-  <message name="queryGradesByCourseId">
-    <part name="parameters" element="tns:queryGradesByCourseId" />
-  </message>
-  <message name="queryGradesByCourseIdResponse">
-    <part name="parameters" element="tns:queryGradesByCourseIdResponse" />
-  </message>
-  <message name="queryGradesSearchByName">
-    <part name="parameters" element="tns:queryGradesSearchByName" />
-  </message>
-  <message name="queryGradesSearchByNameResponse">
-    <part name="parameters" element="tns:queryGradesSearchByNameResponse" />
-  </message>
-  <message name="updatePasswordUser">
-    <part name="parameters" element="tns:updatePasswordUser" />
-  </message>
-  <message name="updatePasswordUserResponse">
-    <part name="parameters" element="tns:updatePasswordUserResponse" />
-  </message>
-  <message name="queryAllBimesters_">
-    <part name="parameters" element="tns:queryAllBimesters_" />
-  </message>
-  <message name="queryAllBimesters_Response">
-    <part name="parameters" element="tns:queryAllBimesters_Response" />
+  <message name="queryAllYResponse">
+    <part name="parameters" element="tns:queryAllYResponse" />
   </message>
   <message name="queryAllGrades">
     <part name="parameters" element="tns:queryAllGrades" />
@@ -71,23 +26,11 @@
   <message name="queryAllGradesResponse">
     <part name="parameters" element="tns:queryAllGradesResponse" />
   </message>
-  <message name="queryAllCourses">
-    <part name="parameters" element="tns:queryAllCourses" />
+  <message name="queryUserByID">
+    <part name="parameters" element="tns:queryUserByID" />
   </message>
-  <message name="queryAllCoursesResponse">
-    <part name="parameters" element="tns:queryAllCoursesResponse" />
-  </message>
-  <message name="deleteGRade">
-    <part name="parameters" element="tns:deleteGRade" />
-  </message>
-  <message name="deleteGRadeResponse">
-    <part name="parameters" element="tns:deleteGRadeResponse" />
-  </message>
-  <message name="queryAllYears_">
-    <part name="parameters" element="tns:queryAllYears_" />
-  </message>
-  <message name="queryAllYears_Response">
-    <part name="parameters" element="tns:queryAllYears_Response" />
+  <message name="queryUserByIDResponse">
+    <part name="parameters" element="tns:queryUserByIDResponse" />
   </message>
   <message name="insertGRade">
     <part name="parameters" element="tns:insertGRade" />
@@ -101,11 +44,11 @@
   <message name="updateGRadeResponse">
     <part name="parameters" element="tns:updateGRadeResponse" />
   </message>
-  <message name="queryUserByID">
-    <part name="parameters" element="tns:queryUserByID" />
+  <message name="deleteGRade">
+    <part name="parameters" element="tns:deleteGRade" />
   </message>
-  <message name="queryUserByIDResponse">
-    <part name="parameters" element="tns:queryUserByIDResponse" />
+  <message name="deleteGRadeResponse">
+    <part name="parameters" element="tns:deleteGRadeResponse" />
   </message>
   <message name="validarUserLogin">
     <part name="parameters" element="tns:validarUserLogin" />
@@ -113,83 +56,194 @@
   <message name="validarUserLoginResponse">
     <part name="parameters" element="tns:validarUserLoginResponse" />
   </message>
+  <message name="insertStudent">
+    <part name="parameters" element="tns:insertStudent" />
+  </message>
+  <message name="insertStudentResponse">
+    <part name="parameters" element="tns:insertStudentResponse" />
+  </message>
+  <message name="updateStudent">
+    <part name="parameters" element="tns:updateStudent" />
+  </message>
+  <message name="updateStudentResponse">
+    <part name="parameters" element="tns:updateStudentResponse" />
+  </message>
+  <message name="queryAllCourseSchedulesPorIDTeacher">
+    <part name="parameters" element="tns:queryAllCourseSchedulesPorIDTeacher" />
+  </message>
+  <message name="queryAllCourseSchedulesPorIDTeacherResponse">
+    <part name="parameters" element="tns:queryAllCourseSchedulesPorIDTeacherResponse" />
+  </message>
+  <message name="queryAllStudentsByIDGuardian">
+    <part name="parameters" element="tns:queryAllStudentsByIDGuardian" />
+  </message>
+  <message name="queryAllStudentsByIDGuardianResponse">
+    <part name="parameters" element="tns:queryAllStudentsByIDGuardianResponse" />
+  </message>
+  <message name="queryAllBimesterXStudentXYear">
+    <part name="parameters" element="tns:queryAllBimesterXStudentXYear" />
+  </message>
+  <message name="queryAllBimesterXStudentXYearResponse">
+    <part name="parameters" element="tns:queryAllBimesterXStudentXYearResponse" />
+  </message>
+  <message name="queryAllGradesByIDCourse">
+    <part name="parameters" element="tns:queryAllGradesByIDCourse" />
+  </message>
+  <message name="queryAllGradesByIDCourseResponse">
+    <part name="parameters" element="tns:queryAllGradesByIDCourseResponse" />
+  </message>
+  <message name="queryAllCourseSchedulesByTeacherId">
+    <part name="parameters" element="tns:queryAllCourseSchedulesByTeacherId" />
+  </message>
+  <message name="queryAllCourseSchedulesByTeacherIdResponse">
+    <part name="parameters" element="tns:queryAllCourseSchedulesByTeacherIdResponse" />
+  </message>
+  <message name="queryAllCourseSchedules">
+    <part name="parameters" element="tns:queryAllCourseSchedules" />
+  </message>
+  <message name="queryAllCourseSchedulesResponse">
+    <part name="parameters" element="tns:queryAllCourseSchedulesResponse" />
+  </message>
+  <message name="queryAllTypesXUser">
+    <part name="parameters" element="tns:queryAllTypesXUser" />
+  </message>
+  <message name="queryAllTypesXUserResponse">
+    <part name="parameters" element="tns:queryAllTypesXUserResponse" />
+  </message>
+  <message name="queryAllB">
+    <part name="parameters" element="tns:queryAllB" />
+  </message>
+  <message name="queryAllBResponse">
+    <part name="parameters" element="tns:queryAllBResponse" />
+  </message>
+  <message name="queryGradesByCourseId">
+    <part name="parameters" element="tns:queryGradesByCourseId" />
+  </message>
+  <message name="queryGradesByCourseIdResponse">
+    <part name="parameters" element="tns:queryGradesByCourseIdResponse" />
+  </message>
+  <message name="updatePasswordUser">
+    <part name="parameters" element="tns:updatePasswordUser" />
+  </message>
+  <message name="updatePasswordUserResponse">
+    <part name="parameters" element="tns:updatePasswordUserResponse" />
+  </message>
+  <message name="queryGradesSearchByName">
+    <part name="parameters" element="tns:queryGradesSearchByName" />
+  </message>
+  <message name="queryGradesSearchByNameResponse">
+    <part name="parameters" element="tns:queryGradesSearchByNameResponse" />
+  </message>
   <portType name="DBControllerWS">
-    <operation name="queryAllCourseSchedulesPorIDTeacher">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesPorIDTeacherRequest" message="tns:queryAllCourseSchedulesPorIDTeacher" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesPorIDTeacherResponse" message="tns:queryAllCourseSchedulesPorIDTeacherResponse" />
+    <operation name="queryAllCourses">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCoursesRequest" message="tns:queryAllCourses" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCoursesResponse" message="tns:queryAllCoursesResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourses/Fault/Exception" name="Exception" message="tns:Exception" />
     </operation>
-    <operation name="queryAllBimesterXStudentXYear">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllBimesterXStudentXYearRequest" message="tns:queryAllBimesterXStudentXYear" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllBimesterXStudentXYearResponse" message="tns:queryAllBimesterXStudentXYearResponse" />
-    </operation>
-    <operation name="queryAllGradesByIDCourse">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllGradesByIDCourseRequest" message="tns:queryAllGradesByIDCourse" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllGradesByIDCourseResponse" message="tns:queryAllGradesByIDCourseResponse" />
-    </operation>
-    <operation name="queryAllTypesXUser">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllTypesXUserRequest" message="tns:queryAllTypesXUser" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllTypesXUserResponse" message="tns:queryAllTypesXUserResponse" />
-    </operation>
-    <operation name="queryAllCourseSchedulesByTeacherId">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesByTeacherIdRequest" message="tns:queryAllCourseSchedulesByTeacherId" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesByTeacherIdResponse" message="tns:queryAllCourseSchedulesByTeacherIdResponse" />
-    </operation>
-    <operation name="queryAllCourseSchedules">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesRequest" message="tns:queryAllCourseSchedules" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesResponse" message="tns:queryAllCourseSchedulesResponse" />
-    </operation>
-    <operation name="queryGradesByCourseId">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryGradesByCourseIdRequest" message="tns:queryGradesByCourseId" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryGradesByCourseIdResponse" message="tns:queryGradesByCourseIdResponse" />
-    </operation>
-    <operation name="queryGradesSearchByName">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryGradesSearchByNameRequest" message="tns:queryGradesSearchByName" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryGradesSearchByNameResponse" message="tns:queryGradesSearchByNameResponse" />
-    </operation>
-    <operation name="updatePasswordUser">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updatePasswordUserRequest" message="tns:updatePasswordUser" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updatePasswordUserResponse" message="tns:updatePasswordUserResponse" />
-    </operation>
-    <operation name="queryAllBimesters_">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllBimesters_Request" message="tns:queryAllBimesters_" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllBimesters_Response" message="tns:queryAllBimesters_Response" />
+    <operation name="queryAllY">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllYRequest" message="tns:queryAllY" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllYResponse" message="tns:queryAllYResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllY/Fault/Exception" name="Exception" message="tns:Exception" />
     </operation>
     <operation name="queryAllGrades">
       <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllGradesRequest" message="tns:queryAllGrades" />
       <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllGradesResponse" message="tns:queryAllGradesResponse" />
-    </operation>
-    <operation name="queryAllCourses">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCoursesRequest" message="tns:queryAllCourses" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCoursesResponse" message="tns:queryAllCoursesResponse" />
-    </operation>
-    <operation name="deleteGRade">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/deleteGRadeRequest" message="tns:deleteGRade" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/deleteGRadeResponse" message="tns:deleteGRadeResponse" />
-    </operation>
-    <operation name="queryAllYears_">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllYears_Request" message="tns:queryAllYears_" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllYears_Response" message="tns:queryAllYears_Response" />
-    </operation>
-    <operation name="insertGRade">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/insertGRadeRequest" message="tns:insertGRade" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/insertGRadeResponse" message="tns:insertGRadeResponse" />
-    </operation>
-    <operation name="updateGRade">
-      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updateGRadeRequest" message="tns:updateGRade" />
-      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updateGRadeResponse" message="tns:updateGRadeResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllGrades/Fault/Exception" name="Exception" message="tns:Exception" />
     </operation>
     <operation name="queryUserByID">
       <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryUserByIDRequest" message="tns:queryUserByID" />
       <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryUserByIDResponse" message="tns:queryUserByIDResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryUserByID/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="insertGRade">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/insertGRadeRequest" message="tns:insertGRade" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/insertGRadeResponse" message="tns:insertGRadeResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/insertGRade/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updateGRade">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updateGRadeRequest" message="tns:updateGRade" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updateGRadeResponse" message="tns:updateGRadeResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updateGRade/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="deleteGRade">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/deleteGRadeRequest" message="tns:deleteGRade" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/deleteGRadeResponse" message="tns:deleteGRadeResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/deleteGRade/Fault/Exception" name="Exception" message="tns:Exception" />
     </operation>
     <operation name="validarUserLogin">
       <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/validarUserLoginRequest" message="tns:validarUserLogin" />
       <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/validarUserLoginResponse" message="tns:validarUserLoginResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/validarUserLogin/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="insertStudent">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/insertStudentRequest" message="tns:insertStudent" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/insertStudentResponse" message="tns:insertStudentResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/insertStudent/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updateStudent">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updateStudentRequest" message="tns:updateStudent" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updateStudentResponse" message="tns:updateStudentResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updateStudent/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="queryAllCourseSchedulesPorIDTeacher">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesPorIDTeacherRequest" message="tns:queryAllCourseSchedulesPorIDTeacher" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesPorIDTeacherResponse" message="tns:queryAllCourseSchedulesPorIDTeacherResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesPorIDTeacher/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="queryAllStudentsByIDGuardian">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllStudentsByIDGuardianRequest" message="tns:queryAllStudentsByIDGuardian" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllStudentsByIDGuardianResponse" message="tns:queryAllStudentsByIDGuardianResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllStudentsByIDGuardian/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="queryAllBimesterXStudentXYear">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllBimesterXStudentXYearRequest" message="tns:queryAllBimesterXStudentXYear" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllBimesterXStudentXYearResponse" message="tns:queryAllBimesterXStudentXYearResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllBimesterXStudentXYear/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="queryAllGradesByIDCourse">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllGradesByIDCourseRequest" message="tns:queryAllGradesByIDCourse" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllGradesByIDCourseResponse" message="tns:queryAllGradesByIDCourseResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllGradesByIDCourse/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="queryAllCourseSchedulesByTeacherId">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesByTeacherIdRequest" message="tns:queryAllCourseSchedulesByTeacherId" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesByTeacherIdResponse" message="tns:queryAllCourseSchedulesByTeacherIdResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesByTeacherId/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="queryAllCourseSchedules">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesRequest" message="tns:queryAllCourseSchedules" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedulesResponse" message="tns:queryAllCourseSchedulesResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllCourseSchedules/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="queryAllTypesXUser">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllTypesXUserRequest" message="tns:queryAllTypesXUser" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllTypesXUserResponse" message="tns:queryAllTypesXUserResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllTypesXUser/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="queryAllB">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllBRequest" message="tns:queryAllB" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllBResponse" message="tns:queryAllBResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryAllB/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="queryGradesByCourseId">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryGradesByCourseIdRequest" message="tns:queryGradesByCourseId" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryGradesByCourseIdResponse" message="tns:queryGradesByCourseIdResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryGradesByCourseId/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="updatePasswordUser">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updatePasswordUserRequest" message="tns:updatePasswordUser" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updatePasswordUserResponse" message="tns:updatePasswordUserResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/updatePasswordUser/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="queryGradesSearchByName">
+      <input wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryGradesSearchByNameRequest" message="tns:queryGradesSearchByName" />
+      <output wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryGradesSearchByNameResponse" message="tns:queryGradesSearchByNameResponse" />
+      <fault wsam:Action="http://services.malvaradosoft.inf.pucp.edu.pe/DBControllerWS/queryGradesSearchByName/Fault/Exception" name="Exception" message="tns:Exception" />
     </operation>
   </portType>
   <binding name="DBControllerWSPortBinding" type="tns:DBControllerWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="queryAllCourseSchedulesPorIDTeacher">
+    <operation name="queryAllCourses">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -197,8 +251,11 @@
       <output>
         <soap:body use="literal" />
       </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
     </operation>
-    <operation name="queryAllBimesterXStudentXYear">
+    <operation name="queryAllY">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -206,78 +263,9 @@
       <output>
         <soap:body use="literal" />
       </output>
-    </operation>
-    <operation name="queryAllGradesByIDCourse">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="queryAllTypesXUser">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="queryAllCourseSchedulesByTeacherId">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="queryAllCourseSchedules">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="queryGradesByCourseId">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="queryGradesSearchByName">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="updatePasswordUser">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="queryAllBimesters_">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
     </operation>
     <operation name="queryAllGrades">
       <soap:operation soapAction="" />
@@ -287,51 +275,9 @@
       <output>
         <soap:body use="literal" />
       </output>
-    </operation>
-    <operation name="queryAllCourses">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="deleteGRade">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="queryAllYears_">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="insertGRade">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="updateGRade">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
     </operation>
     <operation name="queryUserByID">
       <soap:operation soapAction="" />
@@ -341,6 +287,45 @@
       <output>
         <soap:body use="literal" />
       </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="insertGRade">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updateGRade">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="deleteGRade">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
     </operation>
     <operation name="validarUserLogin">
       <soap:operation soapAction="" />
@@ -350,6 +335,165 @@
       <output>
         <soap:body use="literal" />
       </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="insertStudent">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updateStudent">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="queryAllCourseSchedulesPorIDTeacher">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="queryAllStudentsByIDGuardian">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="queryAllBimesterXStudentXYear">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="queryAllGradesByIDCourse">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="queryAllCourseSchedulesByTeacherId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="queryAllCourseSchedules">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="queryAllTypesXUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="queryAllB">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="queryGradesByCourseId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="updatePasswordUser">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="queryGradesSearchByName">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
     </operation>
   </binding>
   <service name="DBControllerWS">

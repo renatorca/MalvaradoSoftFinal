@@ -26,7 +26,9 @@ namespace MalvaradoSoft
             curso.id = 1;
             curso.name = "Test";
             //Application.Run(new frmGestionarTipoNota_secretario(curso));
-            Application.Run(new frmMenuInscribirAlumno_apoderado());
+            JohanaWS.user u = new JohanaWS.user();
+            u.idUser = 3;
+            Application.Run(new frmMenuInscribirAlumno_apoderado(u));
 
         }
     }

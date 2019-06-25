@@ -69,18 +69,19 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
             students = new BindingList<MAlvaradoWS.bimesterXStudentXYear>(controller.queryAllBimesterXStudentXYear(
                 courseScheduleSelected.id, this.idYear, this.idBimester, courseScheduleSelected.classSection.id));
 
-            foreach(MAlvaradoWS.bimesterXStudentXYear s in students)
+            foreach (MAlvaradoWS.bimesterXStudentXYear s in students)
             {
                 List<Object> row = new List<Object>(dgvRegistroNotas.ColumnCount);
                 row[0] = (s.student.names + " " + s.student.firstLastName + " " + s.student.secondLastName);
-                foreach(MAlvaradoWS.gradeXStudent gxs in s.gradeXStudents)
+                foreach (MAlvaradoWS.gradeXStudent gxs in s.gradeXStudents)
                 {
                     int ind = dgvRegistroNotas.Columns[gxs.grade.idGrade.ToString()].Index;
-                    row[ind] = gxs;                    
+                    row[ind] = gxs;
                 }
                 dgvRegistroNotas.Rows.Add(row);
-                
+
             }
+        }
        
     }
 }
