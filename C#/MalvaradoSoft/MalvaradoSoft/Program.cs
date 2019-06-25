@@ -34,9 +34,9 @@ namespace MalvaradoSoft
             c.name = "Test";
             curso.course = c;
             //Application.Run(new frmGestionarTipoNota_secretario(curso));
-<<<<<<< HEAD
-            Application.Run(new frmAsignarEventoCursosXSeccion_secretario());
-=======
+
+            //Application.Run(new frmAsignarEventoCursosXSeccion_secretario());
+
 
             JohanaWS.user u = new JohanaWS.user();
             u.idUser = 3;
@@ -50,8 +50,6 @@ namespace MalvaradoSoft
 
             Application.Run(new frmCambiarContraseña());
 
-
->>>>>>> 2a25276a1da4623a4f493c04f0ddb8b8f097b819
 
         }
     }
