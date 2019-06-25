@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MalvaradoSoft.Login;
+using MalvaradoSoft.Menu_Principal;
+using MalvaradoSoft.Configuracion;
 
 namespace MalvaradoSoft
 {
@@ -26,9 +29,13 @@ namespace MalvaradoSoft
             curso.id = 1;
             curso.name = "Test";
             //Application.Run(new frmGestionarTipoNota_secretario(curso));
+<<<<<<< HEAD
             JohanaWS.user u = new JohanaWS.user();
             u.idUser = 3;
             Application.Run(new frmMenuInscribirAlumno_apoderado(u));
+=======
+            Application.Run(new frmCambiarContraseña());
+>>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
 
         }
     }

@@ -72,6 +72,7 @@
     <Compile Include="Configuracion\frmMenuConfiguracion_todos.Designer.cs">
       <DependentUpon>frmMenuConfiguracion_todos.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Connected Services\JohanaWS\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -82,6 +83,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+=======
+>>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
     <Compile Include="GenerarReportes\frmReporteNotasPorCursoPorSeccion_profesor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +250,9 @@
     <EmbeddedResource Include="Asistencia\frmTomarAsistencia_auxiliar.resx">
       <DependentUpon>frmTomarAsistencia_auxiliar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion\frmCambiarContraseña.resx">
+      <DependentUpon>frmCambiarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmAsignarAlumnos_secretario.resx">
       <DependentUpon>frmAsignarAlumnos_secretario.cs</DependentUpon>
     </EmbeddedResource>
@@ -280,6 +286,30 @@
     <EmbeddedResource Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.resx">
       <DependentUpon>frmMenuInscribirAlumno_apoderado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmIniciarTipoUsuario.resx">
+      <DependentUpon>frmIniciarTipoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\frmRecuperarContrasena.resx">
+      <DependentUpon>frmRecuperarContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\frmMenuPrincipal_alumno.resx">
+      <DependentUpon>frmMenuPrincipal_alumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\frmMenuPrincipal_apoderado.resx">
+      <DependentUpon>frmMenuPrincipal_apoderado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\frmMenuPrincipal_auxiliar.resx">
+      <DependentUpon>frmMenuPrincipal_auxiliar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\frmMenuPrincipal_profesor.resx">
+      <DependentUpon>frmMenuPrincipal_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_Principal\frmMenuPrincipal_Secretario.resx">
+      <DependentUpon>frmMenuPrincipal_Secretario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -289,6 +319,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <None Include="Connected Services\JohanaWS\DBControllerWS1.wsdl" />
     <None Include="Connected Services\JohanaWS\DBControllerWS1.xsd">
       <SubType>Designer</SubType>
@@ -498,6 +529,17 @@
     <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.year.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+=======
+    <EmbeddedResource Include="RegistrarNotas_profesor\frmListarCursos_profesor.resx">
+      <DependentUpon>frmListarCursos_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.resx">
+      <DependentUpon>frmRegistrarFeedback_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.resx">
+      <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -511,6 +553,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
@@ -542,5 +585,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+=======
+>>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

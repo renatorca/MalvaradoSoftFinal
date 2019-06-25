@@ -20,7 +20,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
         private BindingList<MAlvaradoWS.bimesterXStudentXYear> students;
         private int idYear;
         private int idBimester;
-        
+
 
         private frmRegistrarFeedback_profesor feed;
 
@@ -33,7 +33,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
             MAlvaradoWS.DBControllerWSClient controller = new MAlvaradoWS.DBControllerWSClient();
             this.courseScheduleSelected = courseSchedule;
 
-            grades = new BindingList<MAlvaradoWS.grade> (controller.queryAllGradesByIDCourse(courseScheduleSelected.course.id));
+            grades = new BindingList<MAlvaradoWS.grade>(controller.queryAllGradesByIDCourse(courseScheduleSelected.course.id));
 
             cboAno.DataSource = controller.queryAllYears_();
             cboAno.DisplayMember = "year";
@@ -44,7 +44,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
             dgvRegistroNotas.Columns[0].HeaderText = "Nombre";
             int i = 1;
 
-            foreach(MAlvaradoWS.grade g in grades)
+            foreach (MAlvaradoWS.grade g in grades)
             {
                 dgvRegistroNotas.Columns[i].Name = g.idGrade.ToString();
                 dgvRegistroNotas.Columns[i].HeaderText = g.description;
@@ -52,7 +52,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
                 i++;
             }
 
-            
+
         }
 
         private void ingresarFeedback(object sender, DataGridViewCellEventArgs e)
@@ -81,7 +81,12 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
                 dgvRegistroNotas.Rows.Add(row);
 
             }
+<<<<<<< HEAD
         }
        
+=======
+
+        }
+>>>>>>> 9f87f2fced9e818f118a7ebadf75cf1e46f34664
     }
 }
