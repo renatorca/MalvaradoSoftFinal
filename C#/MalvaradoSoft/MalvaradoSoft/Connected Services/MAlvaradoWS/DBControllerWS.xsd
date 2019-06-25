@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://services.malvaradosoft.inf.pucp.edu.pe/" targetNamespace="http://services.malvaradosoft.inf.pucp.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Exception" type="tns:Exception" />
+  <xs:element name="deleteGRade" type="tns:deleteGRade" />
+  <xs:element name="deleteGRadeResponse" type="tns:deleteGRadeResponse" />
+  <xs:element name="insertGRade" type="tns:insertGRade" />
+  <xs:element name="insertGRadeResponse" type="tns:insertGRadeResponse" />
+  <xs:element name="queryAllB" type="tns:queryAllB" />
+  <xs:element name="queryAllBResponse" type="tns:queryAllBResponse" />
+  <xs:element name="queryAllBimesterXStudentXYear" type="tns:queryAllBimesterXStudentXYear" />
+  <xs:element name="queryAllBimesterXStudentXYearResponse" type="tns:queryAllBimesterXStudentXYearResponse" />
+  <xs:element name="queryAllCourseSchedules" nillable="true" type="tns:queryAllCourseSchedulesByTeacherId" />
+  <xs:element name="queryAllCourseSchedulesByTeacherId" type="tns:queryAllCourseSchedulesByTeacherId" />
+  <xs:element name="queryAllCourseSchedulesByTeacherIdResponse" type="tns:queryAllCourseSchedulesByTeacherIdResponse" />
+  <xs:element name="queryAllCourseSchedulesPorIDTeacher" type="tns:queryAllCourseSchedulesPorIDTeacher" />
+  <xs:element name="queryAllCourseSchedulesPorIDTeacherResponse" type="tns:queryAllCourseSchedulesPorIDTeacherResponse" />
+  <xs:element name="queryAllCourseSchedulesResponse" nillable="true" type="tns:queryAllCourseSchedulesByTeacherIdResponse" />
+  <xs:element name="queryAllCourses" type="tns:queryAllCourses" />
+  <xs:element name="queryAllCoursesResponse" type="tns:queryAllCoursesResponse" />
+  <xs:element name="queryAllGrades" type="tns:queryAllGrades" />
+  <xs:element name="queryAllGradesByIDCourse" type="tns:queryAllGradesByIDCourse" />
+  <xs:element name="queryAllGradesByIDCourseResponse" type="tns:queryAllGradesByIDCourseResponse" />
+  <xs:element name="queryAllGradesResponse" type="tns:queryAllGradesResponse" />
+  <xs:element name="queryAllStudentsByGuardianID" type="tns:queryAllStudentsByGuardianID" />
+  <xs:element name="queryAllStudentsByGuardianIDResponse" type="tns:queryAllStudentsByGuardianIDResponse" />
+  <xs:element name="queryAllTypesXUser" type="tns:queryAllTypesXUser" />
+  <xs:element name="queryAllTypesXUserResponse" type="tns:queryAllTypesXUserResponse" />
+  <xs:element name="queryAllY" type="tns:queryAllY" />
+  <xs:element name="queryAllYResponse" type="tns:queryAllYResponse" />
+  <xs:element name="queryBlockTimebyID" type="tns:queryBlockTimebyID" />
+  <xs:element name="queryBlockTimebyIDResponse" type="tns:queryBlockTimebyIDResponse" />
+  <xs:element name="queryBlockTimebyUserName" type="tns:queryBlockTimebyUserName" />
+  <xs:element name="queryBlockTimebyUserNameResponse" type="tns:queryBlockTimebyUserNameResponse" />
+  <xs:element name="queryGradesByCourseId" type="tns:queryGradesByCourseId" />
+  <xs:element name="queryGradesByCourseIdResponse" type="tns:queryGradesByCourseIdResponse" />
+  <xs:element name="queryGradesSearchByName" type="tns:queryGradesSearchByName" />
+  <xs:element name="queryGradesSearchByNameResponse" type="tns:queryGradesSearchByNameResponse" />
+  <xs:element name="queryUserByID" type="tns:queryUserByID" />
+  <xs:element name="queryUserByIDResponse" type="tns:queryUserByIDResponse" />
+  <xs:element name="updateBlockTime" type="tns:updateBlockTime" />
+  <xs:element name="updateBlockTimeResponse" type="tns:updateBlockTimeResponse" />
+  <xs:element name="updateGRade" type="tns:updateGRade" />
+  <xs:element name="updateGRadeResponse" type="tns:updateGRadeResponse" />
+  <xs:element name="updateGradeXStudent" type="tns:updateGradeXStudent" />
+  <xs:element name="updateGradeXStudentResponse" type="tns:updateGradeXStudentResponse" />
+  <xs:element name="updatePasswordUser" type="tns:updatePasswordUser" />
+  <xs:element name="updatePasswordUserResponse" type="tns:updatePasswordUserResponse" />
+  <xs:element name="updateUser" type="tns:updateUser" />
+  <xs:element name="updateUserResponse" type="tns:updateUserResponse" />
+  <xs:element name="validarUserLogin" type="tns:validarUserLogin" />
+  <xs:element name="validarUserLoginResponse" type="tns:validarUserLoginResponse" />
+  <xs:complexType name="queryAllGradesByIDCourse">
+    <xs:sequence>
+      <xs:element name="idCourse" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllGradesByIDCourseResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:grade" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="grade">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="course" type="tns:course" />
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="idGrade" type="xs:int" />
+      <xs:element name="weight" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="course">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="grades" nillable="true" type="tns:grade" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element name="level" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateGRade">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="grade" type="tns:grade" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateGRadeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllCourseSchedulesByTeacherId">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllCourseSchedulesByTeacherIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:courseSchedule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="courseSchedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="classSection" type="tns:classSection" />
+      <xs:element minOccurs="0" name="classroom" type="tns:classroom" />
+      <xs:element minOccurs="0" name="course" type="tns:course" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="teacherXyear" type="tns:teacherXYear" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="classSection">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" />
+      <xs:element name="level" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element minOccurs="0" name="schedulePDF" type="xs:anyType" />
+      <xs:element name="total" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="classroom">
+    <xs:sequence>
+      <xs:element name="capacity" type="xs:int" />
+      <xs:element name="id" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="teacherXYear">
+    <xs:sequence>
+      <xs:element name="idTeacherXYear" type="xs:int" />
+      <xs:element minOccurs="0" name="year" type="tns:year" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="year">
+    <xs:sequence>
+      <xs:element name="idYear" type="xs:int" />
+      <xs:element name="year" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateGradeXStudent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="gradeXStudent" type="tns:gradeXStudent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="gradeXStudent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bimester" type="tns:bimester" />
+      <xs:element minOccurs="0" name="course" type="tns:course" />
+      <xs:element minOccurs="0" name="feedback" type="xs:string" />
+      <xs:element minOccurs="0" name="grade" type="tns:grade" />
+      <xs:element minOccurs="0" name="registerDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="student" type="tns:student" />
+      <xs:element name="value" type="xs:double" />
+      <xs:element minOccurs="0" name="year" type="tns:year" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bimester">
+    <xs:sequence>
+      <xs:element name="idBimester" type="xs:int" />
+      <xs:element name="valorBimester" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="student">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:user">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="birthCertificate" type="xs:anyType" />
+          <xs:element minOccurs="0" name="guardian" type="tns:user" />
+          <xs:element minOccurs="0" name="studyCertificate" type="xs:anyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="user">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="address" type="xs:string" />
+      <xs:element minOccurs="0" name="blockTime" type="tns:time" />
+      <xs:element name="blocked" type="xs:boolean" />
+      <xs:element name="cellPhone" type="xs:int" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="firstLastName" type="xs:string" />
+      <xs:element name="idUser" type="xs:int" />
+      <xs:element minOccurs="0" name="names" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="secondLastName" type="xs:string" />
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element name="nAttempts" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="time">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="updateGradeXStudentResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllTypesXUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="user" type="tns:user" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllTypesXUserResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:userType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="userType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string" />
+      <xs:element name="idUserType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryBlockTimebyID">
+    <xs:sequence>
+      <xs:element name="idUser" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryBlockTimebyIDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryBlockTimebyUserName">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="userName" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryBlockTimebyUserNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryUserByID">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryUserByIDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:user" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertGRade">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="grade" type="tns:grade" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertGRadeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validarUserLogin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="validarUserLoginResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryGradesByCourseId">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryGradesByCourseIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:grade" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryGradesSearchByName">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element name="arg1" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryGradesSearchByNameResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:grade" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllGrades">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="queryAllGradesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:grade" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllBimesterXStudentXYear">
+    <xs:sequence>
+      <xs:element name="idCourse" type="xs:int" />
+      <xs:element name="idYear" type="xs:int" />
+      <xs:element name="idBimester" type="xs:int" />
+      <xs:element name="idClassSection" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllBimesterXStudentXYearResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bimesterXStudentXYear" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="bimesterXStudentXYear">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bimester" type="tns:bimester" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="gradeXStudents" nillable="true" type="tns:gradeXStudent" />
+      <xs:element minOccurs="0" name="student" type="tns:student" />
+      <xs:element minOccurs="0" name="year" type="tns:year" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllStudentsByGuardianID">
+    <xs:sequence>
+      <xs:element name="idGuardian" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllStudentsByGuardianIDResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:student" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteGRade">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="grade" type="tns:grade" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="deleteGRadeResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllB">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="queryAllBResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:bimester" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllY">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="queryAllYResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:year" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateBlockTime">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="blockTime" type="xs:string" />
+      <xs:element minOccurs="0" name="user" type="tns:user" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateBlockTimeResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="updatePasswordUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updatePasswordUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllCourseSchedulesPorIDTeacher">
+    <xs:sequence>
+      <xs:element name="idTeacher" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllCourseSchedulesPorIDTeacherResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:courseSchedule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateUser">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="user" type="tns:user" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="updateUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="queryAllCourses">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="queryAllCoursesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:course" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

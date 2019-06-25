@@ -29,7 +29,8 @@ namespace MalvaradoSoft
             curso.id = 1;
             curso.name = "Test";
             //Application.Run(new frmGestionarTipoNota_secretario(curso));
-            Application.Run(new frmCambiarContraseña());
+            Application.Run(new frmLogin());
+            //Application.Run(new frmCambiarContraseña());
 
         }
     }

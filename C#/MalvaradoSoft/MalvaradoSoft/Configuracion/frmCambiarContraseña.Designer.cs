@@ -54,7 +54,7 @@
             this.btnActualizar.Location = new System.Drawing.Point(244, 426);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(128, 28);
-            this.btnActualizar.TabIndex = 21;
+            this.btnActualizar.TabIndex = 0;
             this.btnActualizar.Text = "Actualizar Contraseña";
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
