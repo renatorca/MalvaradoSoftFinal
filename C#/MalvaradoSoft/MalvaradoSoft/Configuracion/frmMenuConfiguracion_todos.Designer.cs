@@ -36,29 +36,28 @@
             this.btnEditCorreo = new System.Windows.Forms.PictureBox();
             this.btnEditUserName = new System.Windows.Forms.PictureBox();
             this.btnEditNombre = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.linea2 = new System.Windows.Forms.PictureBox();
             this.lblContraseña = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.linea6 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblDni = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.linea5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.lblTelefono = new System.Windows.Forms.Label();
             this.lblCorreo = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblNombreUsuario = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.linea1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.linea4 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.linea3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.txtNombreUsuario = new System.Windows.Forms.TextBox();
             this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtCelular = new System.Windows.Forms.TextBox();
@@ -85,13 +84,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnEditCorreo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEditUserName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEditNombre)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea3)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,23 +121,23 @@
             this.panel1.Controls.Add(this.btnEditCorreo);
             this.panel1.Controls.Add(this.btnEditUserName);
             this.panel1.Controls.Add(this.btnEditNombre);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.linea2);
             this.panel1.Controls.Add(this.lblContraseña);
-            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Controls.Add(this.linea6);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.lblDni);
-            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.linea5);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.lblTelefono);
             this.panel1.Controls.Add(this.lblCorreo);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.lblNombreUsuario);
-            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.linea1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.linea4);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.linea3);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(18, 97);
@@ -212,16 +211,17 @@
             this.btnEditNombre.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnEditNombre.TabIndex = 31;
             this.btnEditNombre.TabStop = false;
+            this.btnEditNombre.Click += new System.EventHandler(this.BtnEditNombre_Click);
             // 
-            // pictureBox2
+            // linea2
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(264, 96);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(457, 10);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 30;
-            this.pictureBox2.TabStop = false;
+            this.linea2.Image = ((System.Drawing.Image)(resources.GetObject("linea2.Image")));
+            this.linea2.Location = new System.Drawing.Point(263, 96);
+            this.linea2.Name = "linea2";
+            this.linea2.Size = new System.Drawing.Size(457, 10);
+            this.linea2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.linea2.TabIndex = 30;
+            this.linea2.TabStop = false;
             // 
             // lblContraseña
             // 
@@ -233,15 +233,15 @@
             this.lblContraseña.TabIndex = 29;
             this.lblContraseña.Text = "contraseña";
             // 
-            // pictureBox7
+            // linea6
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(263, 281);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(458, 10);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 28;
-            this.pictureBox7.TabStop = false;
+            this.linea6.Image = ((System.Drawing.Image)(resources.GetObject("linea6.Image")));
+            this.linea6.Location = new System.Drawing.Point(263, 281);
+            this.linea6.Name = "linea6";
+            this.linea6.Size = new System.Drawing.Size(458, 10);
+            this.linea6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.linea6.TabIndex = 28;
+            this.linea6.TabStop = false;
             // 
             // label9
             // 
@@ -273,15 +273,15 @@
             this.lblDni.TabIndex = 25;
             this.lblDni.Text = "dni";
             // 
-            // pictureBox6
+            // linea5
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(263, 228);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(458, 10);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 24;
-            this.pictureBox6.TabStop = false;
+            this.linea5.Image = ((System.Drawing.Image)(resources.GetObject("linea5.Image")));
+            this.linea5.Location = new System.Drawing.Point(263, 228);
+            this.linea5.Name = "linea5";
+            this.linea5.Size = new System.Drawing.Size(458, 10);
+            this.linea5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.linea5.TabIndex = 24;
+            this.linea5.TabStop = false;
             // 
             // label8
             // 
@@ -333,15 +333,15 @@
             this.lblNombreUsuario.TabIndex = 19;
             this.lblNombreUsuario.Text = "nombre";
             // 
-            // pictureBox4
+            // linea1
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(263, 45);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(458, 10);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 18;
-            this.pictureBox4.TabStop = false;
+            this.linea1.Image = ((System.Drawing.Image)(resources.GetObject("linea1.Image")));
+            this.linea1.Location = new System.Drawing.Point(263, 45);
+            this.linea1.Name = "linea1";
+            this.linea1.Size = new System.Drawing.Size(458, 10);
+            this.linea1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.linea1.TabIndex = 18;
+            this.linea1.TabStop = false;
             // 
             // label1
             // 
@@ -353,15 +353,15 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "NOMBRE";
             // 
-            // pictureBox5
+            // linea4
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(263, 179);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(458, 10);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 16;
-            this.pictureBox5.TabStop = false;
+            this.linea4.Image = ((System.Drawing.Image)(resources.GetObject("linea4.Image")));
+            this.linea4.Location = new System.Drawing.Point(263, 179);
+            this.linea4.Name = "linea4";
+            this.linea4.Size = new System.Drawing.Size(458, 10);
+            this.linea4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.linea4.TabIndex = 16;
+            this.linea4.TabStop = false;
             // 
             // label5
             // 
@@ -373,15 +373,15 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "CELULAR";
             // 
-            // pictureBox3
+            // linea3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(263, 137);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(458, 10);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
+            this.linea3.Image = ((System.Drawing.Image)(resources.GetObject("linea3.Image")));
+            this.linea3.Location = new System.Drawing.Point(263, 137);
+            this.linea3.Name = "linea3";
+            this.linea3.Size = new System.Drawing.Size(458, 10);
+            this.linea3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.linea3.TabIndex = 14;
+            this.linea3.TabStop = false;
             // 
             // label3
             // 
@@ -437,19 +437,6 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
             // 
-            // btnEditar
-            // 
-            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.btnEditar.ForeColor = System.Drawing.Color.White;
-            this.btnEditar.Location = new System.Drawing.Point(417, 526);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(136, 39);
-            this.btnEditar.TabIndex = 28;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = false;
-            // 
             // txtNombreUsuario
             // 
             this.txtNombreUsuario.ForeColor = System.Drawing.Color.DimGray;
@@ -458,6 +445,7 @@
             this.txtNombreUsuario.Size = new System.Drawing.Size(151, 20);
             this.txtNombreUsuario.TabIndex = 37;
             this.txtNombreUsuario.Text = "Nombre de Usuario";
+            this.txtNombreUsuario.Visible = false;
             // 
             // txtCorreo
             // 
@@ -467,6 +455,7 @@
             this.txtCorreo.Size = new System.Drawing.Size(151, 20);
             this.txtCorreo.TabIndex = 38;
             this.txtCorreo.Text = "Correo electrónico";
+            this.txtCorreo.Visible = false;
             // 
             // txtCelular
             // 
@@ -476,6 +465,7 @@
             this.txtCelular.Size = new System.Drawing.Size(151, 20);
             this.txtCelular.TabIndex = 39;
             this.txtCelular.Text = "Celular";
+            this.txtCelular.Visible = false;
             // 
             // txtDni
             // 
@@ -485,6 +475,7 @@
             this.txtDni.Size = new System.Drawing.Size(151, 20);
             this.txtDni.TabIndex = 40;
             this.txtDni.Text = "Dni";
+            this.txtDni.Visible = false;
             // 
             // txtContraseña
             // 
@@ -494,6 +485,7 @@
             this.txtContraseña.Size = new System.Drawing.Size(151, 20);
             this.txtContraseña.TabIndex = 41;
             this.txtContraseña.Text = "Nueva Contraseña";
+            this.txtContraseña.Visible = false;
             // 
             // txtConfirmarContraseña
             // 
@@ -503,6 +495,7 @@
             this.txtConfirmarContraseña.Size = new System.Drawing.Size(151, 20);
             this.txtConfirmarContraseña.TabIndex = 42;
             this.txtConfirmarContraseña.Text = "Nueva Contraseña";
+            this.txtConfirmarContraseña.Visible = false;
             // 
             // txtNombre
             // 
@@ -512,6 +505,7 @@
             this.txtNombre.Size = new System.Drawing.Size(151, 20);
             this.txtNombre.TabIndex = 43;
             this.txtNombre.Text = "Nombre";
+            this.txtNombre.Visible = false;
             // 
             // btnGuardarNombre
             // 
@@ -525,6 +519,7 @@
             this.btnGuardarNombre.TabIndex = 29;
             this.btnGuardarNombre.Text = "Guardar cambios";
             this.btnGuardarNombre.UseVisualStyleBackColor = false;
+            this.btnGuardarNombre.Visible = false;
             // 
             // btnCancelarNombre
             // 
@@ -538,6 +533,7 @@
             this.btnCancelarNombre.TabIndex = 44;
             this.btnCancelarNombre.Text = "Cancelar";
             this.btnCancelarNombre.UseVisualStyleBackColor = false;
+            this.btnCancelarNombre.Visible = false;
             // 
             // btnCancelarNombreUsuario
             // 
@@ -551,6 +547,7 @@
             this.btnCancelarNombreUsuario.TabIndex = 46;
             this.btnCancelarNombreUsuario.Text = "Cancelar";
             this.btnCancelarNombreUsuario.UseVisualStyleBackColor = false;
+            this.btnCancelarNombreUsuario.Visible = false;
             // 
             // btnGuardarNombreUsuario
             // 
@@ -564,6 +561,7 @@
             this.btnGuardarNombreUsuario.TabIndex = 45;
             this.btnGuardarNombreUsuario.Text = "Guardar cambios";
             this.btnGuardarNombreUsuario.UseVisualStyleBackColor = false;
+            this.btnGuardarNombreUsuario.Visible = false;
             // 
             // btnCancelarCorreo
             // 
@@ -577,6 +575,7 @@
             this.btnCancelarCorreo.TabIndex = 48;
             this.btnCancelarCorreo.Text = "Cancelar";
             this.btnCancelarCorreo.UseVisualStyleBackColor = false;
+            this.btnCancelarCorreo.Visible = false;
             // 
             // btnGuardarCorreo
             // 
@@ -590,6 +589,7 @@
             this.btnGuardarCorreo.TabIndex = 47;
             this.btnGuardarCorreo.Text = "Guardar cambios";
             this.btnGuardarCorreo.UseVisualStyleBackColor = false;
+            this.btnGuardarCorreo.Visible = false;
             // 
             // btnCancelarCelular
             // 
@@ -603,6 +603,7 @@
             this.btnCancelarCelular.TabIndex = 50;
             this.btnCancelarCelular.Text = "Cancelar";
             this.btnCancelarCelular.UseVisualStyleBackColor = false;
+            this.btnCancelarCelular.Visible = false;
             // 
             // btnGuardarCelular
             // 
@@ -616,6 +617,7 @@
             this.btnGuardarCelular.TabIndex = 49;
             this.btnGuardarCelular.Text = "Guardar cambios";
             this.btnGuardarCelular.UseVisualStyleBackColor = false;
+            this.btnGuardarCelular.Visible = false;
             // 
             // btnCancelarDni
             // 
@@ -629,6 +631,7 @@
             this.btnCancelarDni.TabIndex = 52;
             this.btnCancelarDni.Text = "Cancelar";
             this.btnCancelarDni.UseVisualStyleBackColor = false;
+            this.btnCancelarDni.Visible = false;
             // 
             // btnGuardarDni
             // 
@@ -642,6 +645,7 @@
             this.btnGuardarDni.TabIndex = 51;
             this.btnGuardarDni.Text = "Guardar cambios";
             this.btnGuardarDni.UseVisualStyleBackColor = false;
+            this.btnGuardarDni.Visible = false;
             // 
             // btnCancelarContraseña
             // 
@@ -655,6 +659,7 @@
             this.btnCancelarContraseña.TabIndex = 54;
             this.btnCancelarContraseña.Text = "Cancelar";
             this.btnCancelarContraseña.UseVisualStyleBackColor = false;
+            this.btnCancelarContraseña.Visible = false;
             // 
             // btnGuardarContraseña
             // 
@@ -668,13 +673,13 @@
             this.btnGuardarContraseña.TabIndex = 53;
             this.btnGuardarContraseña.Text = "Guardar cambios";
             this.btnGuardarContraseña.UseVisualStyleBackColor = false;
+            this.btnGuardarContraseña.Visible = false;
             // 
             // frmMenuConfiguracion_todos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 600);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -689,13 +694,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnEditCorreo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEditUserName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEditNombre)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linea3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -706,28 +711,27 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblDni;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox linea5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblTelefono;
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblNombreUsuario;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox linea1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox linea4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox linea3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox linea2;
         private System.Windows.Forms.Label lblContraseña;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox linea6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.PictureBox btnEditarContraseña;
         private System.Windows.Forms.PictureBox btnEditarDni;
         private System.Windows.Forms.PictureBox btnEditarCelular;

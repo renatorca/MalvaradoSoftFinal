@@ -60,22 +60,11 @@
     <Compile Include="Configuracion\frmCambiarContraseña.Designer.cs">
       <DependentUpon>frmCambiarContraseña.cs</DependentUpon>
     </Compile>
-    <Compile Include="Configuracion\frmCambiarDatosBasicos_todos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Configuracion\frmCambiarDatosBasicos_todos.Designer.cs">
-      <DependentUpon>frmCambiarDatosBasicos_todos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Configuracion\frmMenuConfiguracion_todos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Configuracion\frmMenuConfiguracion_todos.Designer.cs">
       <DependentUpon>frmMenuConfiguracion_todos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\MAlvaradoWS\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="GenerarReportes\frmReporteNotasPorCursoPorSeccion_profesor.cs">
       <SubType>Form</SubType>
@@ -362,10 +351,6 @@
     <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.resx">
       <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Connected Services\MAlvaradoWS\DBControllerWS.wsdl" />
-    <None Include="Connected Services\MAlvaradoWS\DBControllerWS.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -379,24 +364,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\MAlvaradoWS\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\MAlvaradoWS\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\MAlvaradoWS\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\MAlvaradoWS\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
