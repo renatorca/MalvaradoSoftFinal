@@ -172,6 +172,24 @@
     <Compile Include="Asistencia\frmGestionarAsistencia_auxiliar.Designer.cs">
       <DependentUpon>frmGestionarAsistencia_auxiliar.cs</DependentUpon>
     </Compile>
+    <Compile Include="InscripcionMatricula_apoderado\frmGestionarIntencionMatricula_apoderado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InscripcionMatricula_apoderado\frmGestionarIntencionMatricula_apoderado.Designer.cs">
+      <DependentUpon>frmGestionarIntencionMatricula_apoderado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InscripcionMatricula_apoderado\frmInscribirAlumno_apoderado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InscripcionMatricula_apoderado\frmInscribirAlumno_apoderado.Designer.cs">
+      <DependentUpon>frmInscribirAlumno_apoderado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.Designer.cs">
+      <DependentUpon>frmMenuInscribirAlumno_apoderado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login\frmIniciarTipoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +240,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarNotas_profesor\frmListarCursos_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarNotas_profesor\frmListarCursos_profesor.Designer.cs">
+      <DependentUpon>frmListarCursos_profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.Designer.cs">
+      <DependentUpon>frmRegistrarFeedback_profesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.Designer.cs">
+      <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Asistencia\frmGestionarAsistencia_auxiliar.resx">
       <DependentUpon>frmGestionarAsistencia_auxiliar.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,15 +303,6 @@
     <EmbeddedResource Include="GestionSecretario\frmGestionarTipoNota_secretario.resx">
       <DependentUpon>frmGestionarTipoNota_secretario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InscripcionMatricula_apoderado\frmGestionarIntencionMatricula_apoderado.resx">
-      <DependentUpon>frmGestionarIntencionMatricula_apoderado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InscripcionMatricula_apoderado\frmInscribirAlumno_apoderado.resx">
-      <DependentUpon>frmInscribirAlumno_apoderado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.resx">
-      <DependentUpon>frmMenuInscribirAlumno_apoderado.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login\frmIniciarTipoUsuario.resx">
       <DependentUpon>frmIniciarTipoUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -309,15 +336,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RegistrarNotas_profesor\frmListarCursos_profesor.resx">
-      <DependentUpon>frmListarCursos_profesor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.resx">
-      <DependentUpon>frmRegistrarFeedback_profesor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.resx">
-      <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -168,12 +168,11 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
 
                 editado = false;
             }
+            MessageBox.Show("Cambios guardados con éxito", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
-       
-
-            MessageBox.Show("Cambios guardados con éxito", "Confirmación", MessageBoxButtons.OK, MessageBoxIcon.Information );
-        }
+            
+        
 
         private void confirmarSalida(object sender, FormClosingEventArgs e)
         {
