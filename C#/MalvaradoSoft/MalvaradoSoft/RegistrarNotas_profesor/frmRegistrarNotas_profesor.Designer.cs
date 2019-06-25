@@ -51,10 +51,10 @@
             this.dgvRegistroNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRegistroNotas.Location = new System.Drawing.Point(12, 151);
             this.dgvRegistroNotas.Name = "dgvRegistroNotas";
-            this.dgvRegistroNotas.ReadOnly = true;
             this.dgvRegistroNotas.Size = new System.Drawing.Size(538, 199);
             this.dgvRegistroNotas.TabIndex = 12;
             this.dgvRegistroNotas.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ingresarFeedback);
+            this.dgvRegistroNotas.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.editarNota);
             // 
             // btnGuardar
             // 
@@ -64,6 +64,7 @@
             this.btnGuardar.TabIndex = 11;
             this.btnGuardar.Text = "Guardar cambios";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // label3
             // 
@@ -102,6 +103,7 @@
             // 
             // txtLevel
             // 
+            this.txtLevel.Enabled = false;
             this.txtLevel.Location = new System.Drawing.Point(82, 49);
             this.txtLevel.Name = "txtLevel";
             this.txtLevel.Size = new System.Drawing.Size(100, 20);
@@ -109,6 +111,7 @@
             // 
             // txtSection
             // 
+            this.txtSection.Enabled = false;
             this.txtSection.Location = new System.Drawing.Point(82, 86);
             this.txtSection.Name = "txtSection";
             this.txtSection.Size = new System.Drawing.Size(100, 20);
@@ -178,6 +181,7 @@
             this.Controls.Add(this.label2);
             this.Name = "frmRegistrarNotas_profesor";
             this.Text = "frmRegistrarNotas_profesor";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.confirmarSalida);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroNotas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

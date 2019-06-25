@@ -19,6 +19,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
         {
             InitializeComponent();
             controller = new MAlvaradoWS.DBControllerWSClient();
+            dgvCursos.AutoGenerateColumns = false;
             dgvCursos.DataSource = controller.queryAllCourseSchedulesPorIDTeacher(idTeacher);
 
 
