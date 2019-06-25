@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRegresar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -39,27 +38,18 @@
             this.cbSeccion = new System.Windows.Forms.ComboBox();
             this.cbGrado = new System.Windows.Forms.ComboBox();
             this.btnTomarAsistencia = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnRegresar
-            // 
-            this.btnRegresar.Location = new System.Drawing.Point(467, 377);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(94, 25);
-            this.btnRegresar.TabIndex = 19;
-            this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(0, -18);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(860, 59);
+            this.panel1.Size = new System.Drawing.Size(800, 59);
             this.panel1.TabIndex = 18;
             // 
             // label4
@@ -97,30 +87,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label1.Location = new System.Drawing.Point(10, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 16);
+            this.label1.Size = new System.Drawing.Size(54, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Grado:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label2.Location = new System.Drawing.Point(10, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 17);
+            this.label2.Size = new System.Drawing.Size(66, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Sección:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.label3.Location = new System.Drawing.Point(10, 127);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 17);
+            this.label3.Size = new System.Drawing.Size(53, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Fecha:";
             // 
@@ -142,22 +132,42 @@
             // 
             // btnTomarAsistencia
             // 
-            this.btnTomarAsistencia.Location = new System.Drawing.Point(234, 377);
+            this.btnTomarAsistencia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnTomarAsistencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTomarAsistencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnTomarAsistencia.ForeColor = System.Drawing.Color.White;
+            this.btnTomarAsistencia.Location = new System.Drawing.Point(271, 377);
             this.btnTomarAsistencia.Name = "btnTomarAsistencia";
-            this.btnTomarAsistencia.Size = new System.Drawing.Size(94, 25);
+            this.btnTomarAsistencia.Size = new System.Drawing.Size(139, 34);
             this.btnTomarAsistencia.TabIndex = 16;
             this.btnTomarAsistencia.Text = "Seleccionar";
-            this.btnTomarAsistencia.UseVisualStyleBackColor = true;
+            this.btnTomarAsistencia.UseVisualStyleBackColor = false;
+            this.btnTomarAsistencia.Click += new System.EventHandler(this.BtnTomarAsistencia_Click);
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnRegresar.ForeColor = System.Drawing.Color.White;
+            this.btnRegresar.Location = new System.Drawing.Point(478, 377);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(139, 34);
+            this.btnRegresar.TabIndex = 20;
+            this.btnRegresar.Text = "Regresar";
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
             // 
             // frmGestionarAsistencia_auxiliar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnTomarAsistencia);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGestionarAsistencia_auxiliar";
             this.Text = "frmGestionarAsistencia_auxiliar";
             this.panel1.ResumeLayout(false);
@@ -169,8 +179,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -181,5 +189,6 @@
         private System.Windows.Forms.ComboBox cbSeccion;
         private System.Windows.Forms.ComboBox cbGrado;
         private System.Windows.Forms.Button btnTomarAsistencia;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }

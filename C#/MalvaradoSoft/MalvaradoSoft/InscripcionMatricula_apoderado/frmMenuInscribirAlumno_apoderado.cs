@@ -17,9 +17,9 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
 
     public partial class frmMenuInscribirAlumno_apoderado : Form
     {
-        private JohanaWS.DBControllerWSClient controller2;
-        private JohanaWS.user guardian;
-        private JohanaWS.student student;
+        private MAlvaradoWS.DBControllerWSClient controller2;
+        private MAlvaradoWS.user guardian;
+        private MAlvaradoWS.student student;
 
         public void estadoComponentes(Estado est)
         {
@@ -62,11 +62,11 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
             btnEliminar.Enabled = false;
         }
 
-        public frmMenuInscribirAlumno_apoderado(JohanaWS.user user)
+        public frmMenuInscribirAlumno_apoderado(MAlvaradoWS.user user)
         {
             InitializeComponent();
             estadoComponentes(Estado.inicial);
-            controller2 = new JohanaWS.DBControllerWSClient();
+            controller2 = new MAlvaradoWS.DBControllerWSClient();
             guardian = user;
             dgvAlumnosInscritos.AutoGenerateColumns = false;
             dgvAlumnosInscritos.DataSource = controller2.queryAllStudentsByGuardianID(user.idUser);
@@ -95,7 +95,7 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
             //int posActual = dgvAlumnosInscritos.CurrentCell.ColumnIndex;
             //student= dgvAlumnosInscritos.Rows[posActual].Cells[0].Value;
             estadoComponentes(Estado.editar);
-            this.student = (JohanaWS.student)dgvAlumnosInscritos.CurrentRow.DataBoundItem;
+            this.student = (MAlvaradoWS.student)dgvAlumnosInscritos.CurrentRow.DataBoundItem;
 
             if (e.ColumnIndex == 4 )//&& e.RowIndex < studentList.Lenght)
             {

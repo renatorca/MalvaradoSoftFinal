@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MalvaradoSoft.Configuracion;
+using MalvaradoSoft.GestionSecretario;
 using MalvaradoSoft.MAlvaradoWS;
 
 namespace MalvaradoSoft.Menu_Principal
@@ -130,7 +131,17 @@ namespace MalvaradoSoft.Menu_Principal
 
         private void BtnAjustes_Click(object sender, EventArgs e)
         {
-            OpenForm<frmCambiarContraseña>();
+            OpenForm<frmMenuConfiguracion_todos>();
+        }
+
+        private void BtnCursos_Click(object sender, EventArgs e)
+        {
+            OpenForm<frmGestionarCursos_secretario>();
+        }
+
+        private void BtnAlumnos_Click(object sender, EventArgs e)
+        {
+            OpenForm<frmGestionarUsuario_secretario>();
         }
 
         private void BtnSlide_Click(object sender, EventArgs e)

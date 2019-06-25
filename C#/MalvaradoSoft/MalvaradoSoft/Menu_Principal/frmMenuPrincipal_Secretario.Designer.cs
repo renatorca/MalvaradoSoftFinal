@@ -183,12 +183,13 @@
             this.btnCursos.ForeColor = System.Drawing.Color.White;
             this.btnCursos.Image = ((System.Drawing.Image)(resources.GetObject("btnCursos.Image")));
             this.btnCursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCursos.Location = new System.Drawing.Point(0, 322);
+            this.btnCursos.Location = new System.Drawing.Point(0, 315);
             this.btnCursos.Name = "btnCursos";
             this.btnCursos.Size = new System.Drawing.Size(250, 38);
             this.btnCursos.TabIndex = 2;
-            this.btnCursos.Text = "Cursos";
+            this.btnCursos.Text = "Gestionar Cursos";
             this.btnCursos.UseVisualStyleBackColor = true;
+            this.btnCursos.Click += new System.EventHandler(this.BtnCursos_Click);
             // 
             // btnProfesores
             // 
@@ -236,8 +237,9 @@
             this.btnAlumnos.Name = "btnAlumnos";
             this.btnAlumnos.Size = new System.Drawing.Size(250, 38);
             this.btnAlumnos.TabIndex = 0;
-            this.btnAlumnos.Text = "Alumnos";
+            this.btnAlumnos.Text = "Gestionar Usuarios";
             this.btnAlumnos.UseVisualStyleBackColor = true;
+            this.btnAlumnos.Click += new System.EventHandler(this.BtnAlumnos_Click);
             // 
             // pictureBox1
             // 

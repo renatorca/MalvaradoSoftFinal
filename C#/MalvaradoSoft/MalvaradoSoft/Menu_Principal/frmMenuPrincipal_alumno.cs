@@ -128,7 +128,12 @@ namespace MalvaradoSoft.Menu_Principal
 
         private void BtnAjustes_Click(object sender, EventArgs e)
         {
-            OpenForm<frmCambiarContraseña>();
+            OpenForm<frmMenuConfiguracion_todos>();
+        }
+
+        private void BtnAlumnos_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void BtnSlide_Click(object sender, EventArgs e)

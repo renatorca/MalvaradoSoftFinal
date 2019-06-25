@@ -149,6 +149,7 @@
             this.btnAlumnos.TabIndex = 0;
             this.btnAlumnos.Text = "Alumnos";
             this.btnAlumnos.UseVisualStyleBackColor = true;
+            this.btnAlumnos.Click += new System.EventHandler(this.BtnAlumnos_Click);
             // 
             // pictureBox1
             // 

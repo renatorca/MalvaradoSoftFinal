@@ -122,32 +122,44 @@
             // 
             // btnInscribir
             // 
-            this.btnInscribir.Location = new System.Drawing.Point(633, 174);
+            this.btnInscribir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnInscribir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInscribir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnInscribir.ForeColor = System.Drawing.Color.White;
+            this.btnInscribir.Location = new System.Drawing.Point(637, 172);
             this.btnInscribir.Name = "btnInscribir";
-            this.btnInscribir.Size = new System.Drawing.Size(139, 23);
+            this.btnInscribir.Size = new System.Drawing.Size(139, 34);
             this.btnInscribir.TabIndex = 2;
             this.btnInscribir.Text = "Inscribir Alumno";
-            this.btnInscribir.UseVisualStyleBackColor = true;
+            this.btnInscribir.UseVisualStyleBackColor = false;
             this.btnInscribir.Click += new System.EventHandler(this.btnInscribir_Click);
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(633, 242);
+            this.btnEditar.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Location = new System.Drawing.Point(637, 243);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(139, 23);
+            this.btnEditar.Size = new System.Drawing.Size(139, 34);
             this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "Editar Inscripción";
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(633, 310);
+            this.btnEliminar.BackColor = System.Drawing.Color.DimGray;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(637, 319);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(139, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(139, 34);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar Inscripción";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // panel1
@@ -172,22 +184,30 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(29, 553);
+            this.btnRegresar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnRegresar.ForeColor = System.Drawing.Color.White;
+            this.btnRegresar.Location = new System.Drawing.Point(637, 515);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(139, 23);
+            this.btnRegresar.Size = new System.Drawing.Size(139, 34);
             this.btnRegresar.TabIndex = 17;
             this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.BtnRegresar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(633, 372);
+            this.btnCancelar.BackColor = System.Drawing.Color.DimGray;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(637, 391);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(139, 23);
+            this.btnCancelar.Size = new System.Drawing.Size(139, 34);
             this.btnCancelar.TabIndex = 18;
             this.btnCancelar.Text = "Cancelar Selección";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // frmMenuInscribirAlumno_apoderado

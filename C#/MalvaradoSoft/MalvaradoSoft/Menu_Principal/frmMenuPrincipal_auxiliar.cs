@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MalvaradoSoft.Asistencia;
 using MalvaradoSoft.Configuracion;
 using MalvaradoSoft.MAlvaradoWS;
 
@@ -130,7 +131,12 @@ namespace MalvaradoSoft.Menu_Principal
 
         private void BtnAjustes_Click(object sender, EventArgs e)
         {
-            OpenForm<frmCambiarContraseña>();
+            OpenForm<frmMenuConfiguracion_todos>();
+        }
+
+        private void BtnAlumnos_Click(object sender, EventArgs e)
+        {
+            OpenForm<frmGestionarAsistencia_auxiliar>();
         }
 
         private void BtnSlide_Click(object sender, EventArgs e)
