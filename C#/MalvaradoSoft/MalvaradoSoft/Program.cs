@@ -27,24 +27,27 @@ namespace MalvaradoSoft
 
 
             //Prueba Gestionar Tipo Nota
-
-            //RenatoCWS.courseSchedule curso = new RenatoCWS.courseSchedule();
-            //RenatoCWS.course c = new RenatoCWS.course();
-            /*curso.id = 1;
-            c.id = 1;
-            c.name = "Test";
-            curso.course = c;*/
             
             Application.Run(new frmLogin());
 
+            //Application.Run(new frmAsignarEventoCursosXSeccion_secretario());
+
+
+            //JohanaWS.user u = new JohanaWS.user();
+            //u.idUser = 3;
 
             //Application.Run(new frmAsignarEventoCursosXSeccion_secretario());
 
 
 
 
+
             //JohanaWS.user u = new JohanaWS.user();
             //u.idUser = 3;
+
+            //JohanaWS.user u = new JohanaWS.user();
+            //u.idUser = 3;
+
             //Application.Run(new frmMenuInscribirAlumno_apoderado(u));
 
 
@@ -53,7 +56,11 @@ namespace MalvaradoSoft
             //Prueba ListarCursos_Profesor
             //Application.Run(new frmListarCursos_profesor(3));
 
-            Application.Run(new frmCambiarContraseña());
+            //Application.Run(new frmCambiarContraseña());
+
+            //Application.Run(new frmGestionarMatricula_secretario());
+            //Application.Run(new frmCambiarContraseña());
+
         }
     }
 }

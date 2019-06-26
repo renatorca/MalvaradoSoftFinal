@@ -107,7 +107,10 @@
             this.btnCancelar.Size = new System.Drawing.Size(118, 34);
             this.btnCancelar.TabIndex = 44;
             this.btnCancelar.Text = "Cancelar";
+            //this.btnCancelar.UseVisualStyleBackColor = true;
+            
             this.btnCancelar.UseVisualStyleBackColor = false;
+			this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // panel1
             // 
@@ -131,6 +134,7 @@
             this.label2.Size = new System.Drawing.Size(448, 33);
             this.label2.TabIndex = 13;
             this.label2.Text = "Gestionar Intencion de Matricula";
+
             // 
             // btnCerrar
             // 

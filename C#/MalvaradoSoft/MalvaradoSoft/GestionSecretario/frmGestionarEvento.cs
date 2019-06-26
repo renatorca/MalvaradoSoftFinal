@@ -99,9 +99,11 @@ namespace MalvaradoSoft.GestionSecretario
             {
                 for (int fila = 0; fila < dgvEventos.Rows.Count - 1; fila++)
                 {
+
                     MAlvaradoWS.@event evento = new MAlvaradoWS.@event();
                     evento = (MAlvaradoWS.@event)dgvEventos.Rows[fila].DataBoundItem;
                     controller.updateEvent(evento);
+
                 }
                 DialogResult = DialogResult.OK;
             }

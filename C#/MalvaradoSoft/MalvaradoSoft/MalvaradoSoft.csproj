@@ -87,9 +87,6 @@
     <Compile Include="GenerarReportes\frmReporteLibretaNotas_apoderado.Designer.cs">
       <DependentUpon>frmReporteLibretaNotas_apoderado.cs</DependentUpon>
     </Compile>
-    <Compile Include="GenerarReportes\frmReporteEstadisticoPorEvaluacion_profesor.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="GestionSecretario\frmAsignarAlumnos_secretario.Designer.cs">
       <DependentUpon>frmAsignarAlumnos_secretario.cs</DependentUpon>
     </Compile>
@@ -99,6 +96,7 @@
     <Compile Include="GestionSecretario\frmBuscarCurso_secretario.Designer.cs">
       <DependentUpon>frmBuscarCurso_secretario.cs</DependentUpon>
     </Compile>
+
     <Compile Include="GestionSecretario\frmCrearEvento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,10 +116,13 @@
       <DependentUpon>frmGestionarCursos_secretario.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSecretario\frmGestionarCursosPorSeccion_secretario.cs">
+
+    <Compile Include="GestionSecretario\frmBuscarUsuario_secretario.cs">
+
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GestionSecretario\frmGestionarCursosPorSeccion_secretario.Designer.cs">
-      <DependentUpon>frmGestionarCursosPorSeccion_secretario.cs</DependentUpon>
+    <Compile Include="GestionSecretario\frmBuscarUsuario_secretario.Designer.cs">
+      <DependentUpon>frmBuscarUsuario_secretario.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSecretario\frmGestionarMatricula_secretario.cs">
       <SubType>Form</SubType>
@@ -244,6 +245,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmGestionarCursosPorSeccion_secretario.resx">
       <DependentUpon>frmGestionarCursosPorSeccion_secretario.cs</DependentUpon>
+
+    <EmbeddedResource Include="GestionSecretario\frmBuscarUsuario_secretario.resx">
+      <DependentUpon>frmBuscarUsuario_secretario.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmGestionarMatricula_secretario.resx">
       <DependentUpon>frmGestionarMatricula_secretario.cs</DependentUpon>
@@ -487,5 +492,6 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
   </ItemGroup>
+
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
