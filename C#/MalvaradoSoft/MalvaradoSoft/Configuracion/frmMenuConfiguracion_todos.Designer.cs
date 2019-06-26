@@ -155,7 +155,7 @@
             this.txtApMaterno.Location = new System.Drawing.Point(610, 218);
             this.txtApMaterno.Name = "txtApMaterno";
             this.txtApMaterno.Size = new System.Drawing.Size(151, 20);
-            this.txtApMaterno.TabIndex = 56;
+            this.txtApMaterno.TabIndex = 45;
             this.txtApMaterno.Text = "Apellido Materno";
             this.txtApMaterno.Visible = false;
             this.txtApMaterno.Enter += new System.EventHandler(this.TxtApMaterno_Enter);
@@ -167,7 +167,7 @@
             this.txtApPaterno.Location = new System.Drawing.Point(453, 218);
             this.txtApPaterno.Name = "txtApPaterno";
             this.txtApPaterno.Size = new System.Drawing.Size(151, 20);
-            this.txtApPaterno.TabIndex = 55;
+            this.txtApPaterno.TabIndex = 44;
             this.txtApPaterno.Text = "Apellido Paterno";
             this.txtApPaterno.Visible = false;
             this.txtApPaterno.Enter += new System.EventHandler(this.TxtApPaterno_Enter);
@@ -182,8 +182,8 @@
             this.btnCancelarContraseña.Location = new System.Drawing.Point(138, 349);
             this.btnCancelarContraseña.Name = "btnCancelarContraseña";
             this.btnCancelarContraseña.Size = new System.Drawing.Size(128, 24);
-            this.btnCancelarContraseña.TabIndex = 54;
-            this.btnCancelarContraseña.Text = "Cancelar";
+            this.btnCancelarContraseña.TabIndex = 12;
+            this.btnCancelarContraseña.Text = "Regresar";
             this.btnCancelarContraseña.UseVisualStyleBackColor = false;
             this.btnCancelarContraseña.Visible = false;
             this.btnCancelarContraseña.Click += new System.EventHandler(this.BtnCancelarContraseña_Click);
@@ -197,7 +197,7 @@
             this.btnGuardarContraseña.Location = new System.Drawing.Point(4, 349);
             this.btnGuardarContraseña.Name = "btnGuardarContraseña";
             this.btnGuardarContraseña.Size = new System.Drawing.Size(128, 24);
-            this.btnGuardarContraseña.TabIndex = 53;
+            this.btnGuardarContraseña.TabIndex = 11;
             this.btnGuardarContraseña.Text = "Guardar cambios";
             this.btnGuardarContraseña.UseVisualStyleBackColor = false;
             this.btnGuardarContraseña.Visible = false;
@@ -212,8 +212,8 @@
             this.btnCancelarDni.Location = new System.Drawing.Point(137, 321);
             this.btnCancelarDni.Name = "btnCancelarDni";
             this.btnCancelarDni.Size = new System.Drawing.Size(128, 24);
-            this.btnCancelarDni.TabIndex = 52;
-            this.btnCancelarDni.Text = "Cancelar";
+            this.btnCancelarDni.TabIndex = 16;
+            this.btnCancelarDni.Text = "Regresar";
             this.btnCancelarDni.UseVisualStyleBackColor = false;
             this.btnCancelarDni.Visible = false;
             this.btnCancelarDni.Click += new System.EventHandler(this.BtnCancelarDni_Click);
@@ -227,7 +227,7 @@
             this.btnGuardarDni.Location = new System.Drawing.Point(3, 321);
             this.btnGuardarDni.Name = "btnGuardarDni";
             this.btnGuardarDni.Size = new System.Drawing.Size(128, 24);
-            this.btnGuardarDni.TabIndex = 51;
+            this.btnGuardarDni.TabIndex = 15;
             this.btnGuardarDni.Text = "Guardar cambios";
             this.btnGuardarDni.UseVisualStyleBackColor = false;
             this.btnGuardarDni.Visible = false;
@@ -242,8 +242,8 @@
             this.btnCancelarCelular.Location = new System.Drawing.Point(137, 295);
             this.btnCancelarCelular.Name = "btnCancelarCelular";
             this.btnCancelarCelular.Size = new System.Drawing.Size(128, 24);
-            this.btnCancelarCelular.TabIndex = 50;
-            this.btnCancelarCelular.Text = "Cancelar";
+            this.btnCancelarCelular.TabIndex = 18;
+            this.btnCancelarCelular.Text = "Regresar";
             this.btnCancelarCelular.UseVisualStyleBackColor = false;
             this.btnCancelarCelular.Visible = false;
             this.btnCancelarCelular.Click += new System.EventHandler(this.BtnCancelarCelular_Click);
@@ -257,7 +257,7 @@
             this.btnGuardarCelular.Location = new System.Drawing.Point(3, 295);
             this.btnGuardarCelular.Name = "btnGuardarCelular";
             this.btnGuardarCelular.Size = new System.Drawing.Size(128, 24);
-            this.btnGuardarCelular.TabIndex = 49;
+            this.btnGuardarCelular.TabIndex = 17;
             this.btnGuardarCelular.Text = "Guardar cambios";
             this.btnGuardarCelular.UseVisualStyleBackColor = false;
             this.btnGuardarCelular.Visible = false;
@@ -272,8 +272,8 @@
             this.btnCancelarCorreo.Location = new System.Drawing.Point(137, 269);
             this.btnCancelarCorreo.Name = "btnCancelarCorreo";
             this.btnCancelarCorreo.Size = new System.Drawing.Size(128, 24);
-            this.btnCancelarCorreo.TabIndex = 48;
-            this.btnCancelarCorreo.Text = "Cancelar";
+            this.btnCancelarCorreo.TabIndex = 22;
+            this.btnCancelarCorreo.Text = "Regresar";
             this.btnCancelarCorreo.UseVisualStyleBackColor = false;
             this.btnCancelarCorreo.Visible = false;
             this.btnCancelarCorreo.Click += new System.EventHandler(this.BtnCancelarCorreo_Click);
@@ -287,7 +287,7 @@
             this.btnGuardarCorreo.Location = new System.Drawing.Point(3, 269);
             this.btnGuardarCorreo.Name = "btnGuardarCorreo";
             this.btnGuardarCorreo.Size = new System.Drawing.Size(128, 24);
-            this.btnGuardarCorreo.TabIndex = 47;
+            this.btnGuardarCorreo.TabIndex = 21;
             this.btnGuardarCorreo.Text = "Guardar cambios";
             this.btnGuardarCorreo.UseVisualStyleBackColor = false;
             this.btnGuardarCorreo.Visible = false;
@@ -302,8 +302,8 @@
             this.btnCancelarNombreUsuario.Location = new System.Drawing.Point(137, 244);
             this.btnCancelarNombreUsuario.Name = "btnCancelarNombreUsuario";
             this.btnCancelarNombreUsuario.Size = new System.Drawing.Size(128, 24);
-            this.btnCancelarNombreUsuario.TabIndex = 46;
-            this.btnCancelarNombreUsuario.Text = "Cancelar";
+            this.btnCancelarNombreUsuario.TabIndex = 39;
+            this.btnCancelarNombreUsuario.Text = "Regresar";
             this.btnCancelarNombreUsuario.UseVisualStyleBackColor = false;
             this.btnCancelarNombreUsuario.Visible = false;
             this.btnCancelarNombreUsuario.Click += new System.EventHandler(this.BtnCancelarNombreUsuario_Click);
@@ -317,7 +317,7 @@
             this.btnGuardarNombreUsuario.Location = new System.Drawing.Point(3, 244);
             this.btnGuardarNombreUsuario.Name = "btnGuardarNombreUsuario";
             this.btnGuardarNombreUsuario.Size = new System.Drawing.Size(128, 24);
-            this.btnGuardarNombreUsuario.TabIndex = 45;
+            this.btnGuardarNombreUsuario.TabIndex = 38;
             this.btnGuardarNombreUsuario.Text = "Guardar cambios";
             this.btnGuardarNombreUsuario.UseVisualStyleBackColor = false;
             this.btnGuardarNombreUsuario.Visible = false;
@@ -332,8 +332,8 @@
             this.btnCancelarNombre.Location = new System.Drawing.Point(137, 218);
             this.btnCancelarNombre.Name = "btnCancelarNombre";
             this.btnCancelarNombre.Size = new System.Drawing.Size(128, 24);
-            this.btnCancelarNombre.TabIndex = 44;
-            this.btnCancelarNombre.Text = "Cancelar";
+            this.btnCancelarNombre.TabIndex = 47;
+            this.btnCancelarNombre.Text = "Regresar";
             this.btnCancelarNombre.UseVisualStyleBackColor = false;
             this.btnCancelarNombre.Visible = false;
             this.btnCancelarNombre.Click += new System.EventHandler(this.BtnCancelarNombre_Click);
@@ -347,7 +347,7 @@
             this.btnGuardarNombre.Location = new System.Drawing.Point(3, 218);
             this.btnGuardarNombre.Name = "btnGuardarNombre";
             this.btnGuardarNombre.Size = new System.Drawing.Size(128, 24);
-            this.btnGuardarNombre.TabIndex = 29;
+            this.btnGuardarNombre.TabIndex = 46;
             this.btnGuardarNombre.Text = "Guardar cambios";
             this.btnGuardarNombre.UseVisualStyleBackColor = false;
             this.btnGuardarNombre.Visible = false;
@@ -362,6 +362,7 @@
             this.txtNombre.TabIndex = 43;
             this.txtNombre.Text = "Nombre";
             this.txtNombre.Visible = false;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             this.txtNombre.Enter += new System.EventHandler(this.TxtNombre_Enter);
             this.txtNombre.Leave += new System.EventHandler(this.TxtNombre_Leave);
             // 
@@ -371,7 +372,7 @@
             this.txtConfirmarContraseña.Location = new System.Drawing.Point(296, 381);
             this.txtConfirmarContraseña.Name = "txtConfirmarContraseña";
             this.txtConfirmarContraseña.Size = new System.Drawing.Size(151, 20);
-            this.txtConfirmarContraseña.TabIndex = 42;
+            this.txtConfirmarContraseña.TabIndex = 10;
             this.txtConfirmarContraseña.Text = "Nueva Contraseña";
             this.txtConfirmarContraseña.Visible = false;
             this.txtConfirmarContraseña.TextChanged += new System.EventHandler(this.TxtConfirmarContraseña_TextChanged);
@@ -384,7 +385,7 @@
             this.txtContraseña.Location = new System.Drawing.Point(296, 355);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(151, 20);
-            this.txtContraseña.TabIndex = 41;
+            this.txtContraseña.TabIndex = 9;
             this.txtContraseña.Text = "Nueva Contraseña";
             this.txtContraseña.Visible = false;
             this.txtContraseña.TextChanged += new System.EventHandler(this.TxtContraseña_TextChanged);
@@ -397,7 +398,7 @@
             this.txtDni.Location = new System.Drawing.Point(296, 325);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(262, 20);
-            this.txtDni.TabIndex = 40;
+            this.txtDni.TabIndex = 14;
             this.txtDni.Text = "DNI";
             this.txtDni.Visible = false;
             this.txtDni.Enter += new System.EventHandler(this.TxtDni_Enter);
@@ -409,7 +410,7 @@
             this.txtCelular.Location = new System.Drawing.Point(296, 299);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(262, 20);
-            this.txtCelular.TabIndex = 39;
+            this.txtCelular.TabIndex = 16;
             this.txtCelular.Text = "Celular";
             this.txtCelular.Visible = false;
             this.txtCelular.Enter += new System.EventHandler(this.TxtCelular_Enter);
@@ -421,7 +422,7 @@
             this.txtCorreo.Location = new System.Drawing.Point(296, 273);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(262, 20);
-            this.txtCorreo.TabIndex = 38;
+            this.txtCorreo.TabIndex = 20;
             this.txtCorreo.Text = "Correo electrónico";
             this.txtCorreo.Visible = false;
             this.txtCorreo.Enter += new System.EventHandler(this.TxtCorreo_Enter);

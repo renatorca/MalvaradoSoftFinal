@@ -15,6 +15,14 @@ namespace MalvaradoSoft.Configuracion
     {
         MAlvaradoWS.DBControllerWSClient controller;
         private MAlvaradoWS.user user;
+
+        public frmMenuConfiguracion_todos(MAlvaradoWS.user user_)
+        {
+            InitializeComponent();
+            controller = new MAlvaradoWS.DBControllerWSClient();
+            user = user_;
+        }
+
         public frmMenuConfiguracion_todos()
         {
             InitializeComponent();
@@ -257,7 +265,15 @@ namespace MalvaradoSoft.Configuracion
             btnEditCorreo.Enabled = true;
             btnEditCelular.Enabled = true;
             btnEditDni.Enabled = true;
-            btnEditNombre.Enabled = true;
+            btnEditContraseña.Enabled = true;
+
+            txtNombre.Text = "Nombres";
+            txtDni.Text = "Dni";
+            txtCorreo.Text = "Correo electrónico";
+            txtContraseña.Text = "Nueva contraseña";
+            txtConfirmarContraseña.Text = "Nueva contraseña";
+            txtApMaterno.Text = "Apellido Materno";
+            txtApPaterno.Text = "Apellido Paterno";
         }
         private void BtnCancelarNombre_Click(object sender, EventArgs e)
         {
@@ -307,24 +323,30 @@ namespace MalvaradoSoft.Configuracion
             user.firstLastName = txtApPaterno.Text;
             user.secondLastName = txtApMaterno.Text;
             controller.updateUser(user);
+            lblNombre.Text = txtNombre.Text +" " + txtApPaterno.Text + " " + txtApMaterno.Text;
+
+
         }
 
         private void BtnGuardarNombreUsuario_Click(object sender, EventArgs e)
         {
             user.username = txtNombreUsuario.Text;
             controller.updateUser(user);
+            lblNombreUsuario.Text = txtNombreUsuario.Text;
         }
 
         private void BtnGuardarCorreo_Click(object sender, EventArgs e)
         {
             user.email = txtCorreo.Text;
             controller.updateUser(user);
+            lblCorreo.Text = txtCorreo.Text; 
         }
 
         private void BtnGuardarCelular_Click(object sender, EventArgs e)
         {
             user.cellPhone = Int32.Parse(txtCelular.Text);
             controller.updateUser(user);
+            lblTelefono.Text = txtCelular.Text;
         }
 
         private void BtnGuardarDni_Click(object sender, EventArgs e)
@@ -495,7 +517,7 @@ namespace MalvaradoSoft.Configuracion
 
         private void TxtNombre_Enter(object sender, EventArgs e)
         {
-            if (txtNombre.Text == "Nombres")
+            if (txtNombre.Text == "Nombre")
             {
                 txtNombre.Text = "";
                 txtNombre.ForeColor = Color.DimGray;
@@ -544,6 +566,11 @@ namespace MalvaradoSoft.Configuracion
             lblNombreUsuario.Text = user.username;
             lblTelefono.Text = user.cellPhone.ToString();
             lblContraseña.Text = "************";
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

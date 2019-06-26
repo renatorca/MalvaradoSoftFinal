@@ -15,6 +15,7 @@ namespace MalvaradoSoft.GenerarReportes
         public frmReporteEstadisticoPorEvaluacion_profesor()
         {
             //InitializeComponent();
+
         }
     }
 }

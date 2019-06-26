@@ -36,16 +36,20 @@
             this.ApellidoPat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ticket = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnMatricular = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnDeseleccionarTodo = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnSeleccionarTodo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -69,31 +73,36 @@
             // 
             this.Dni.HeaderText = "DNI";
             this.Dni.Name = "Dni";
-            this.Dni.ReadOnly = true;
             // 
             // Nombre
             // 
             this.Nombre.HeaderText = "Nombre";
             this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
             // 
             // ApellidoPat
             // 
             this.ApellidoPat.HeaderText = "Apel. Paterno";
             this.ApellidoPat.Name = "ApellidoPat";
-            this.ApellidoPat.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Apel. Materno";
             this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
             // 
             // Ticket
             // 
             this.Ticket.HeaderText = "Numero Boleta";
             this.Ticket.Name = "Ticket";
-            this.Ticket.ReadOnly = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(245, 31);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Matricular Alumnos";
             // 
             // btnMatricular
             // 
@@ -101,14 +110,33 @@
             this.btnMatricular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMatricular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnMatricular.ForeColor = System.Drawing.Color.White;
+
             this.btnMatricular.Image = ((System.Drawing.Image)(resources.GetObject("btnMatricular.Image")));
             this.btnMatricular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMatricular.Location = new System.Drawing.Point(400, 513);
+
             this.btnMatricular.Name = "btnMatricular";
             this.btnMatricular.Size = new System.Drawing.Size(146, 34);
             this.btnMatricular.TabIndex = 3;
             this.btnMatricular.Text = "Matricular";
             this.btnMatricular.UseVisualStyleBackColor = false;
+
+            this.btnMatricular.Click += new System.EventHandler(this.btnMatricular_Click);
+            // 
+            // btnDeseleccionarTodo
+            // 
+            this.btnDeseleccionarTodo.BackColor = System.Drawing.Color.Firebrick;
+            this.btnDeseleccionarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeseleccionarTodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnDeseleccionarTodo.ForeColor = System.Drawing.Color.White;
+            this.btnDeseleccionarTodo.Location = new System.Drawing.Point(216, 447);
+            this.btnDeseleccionarTodo.Name = "btnDeseleccionarTodo";
+            this.btnDeseleccionarTodo.Size = new System.Drawing.Size(164, 34);
+            this.btnDeseleccionarTodo.TabIndex = 4;
+            this.btnDeseleccionarTodo.Text = "Deseleccionar Todo";
+            this.btnDeseleccionarTodo.UseVisualStyleBackColor = false;
+            this.btnDeseleccionarTodo.Click += new System.EventHandler(this.btnDeseleccionarTodo_Click);
+
             // 
             // btnCancelar
             // 
@@ -124,6 +152,7 @@
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+
             // 
             // panel1
             // 
@@ -145,13 +174,30 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Matricular Alumnos";
             // 
+            // btnSeleccionarTodo
+            // 
+            this.btnSeleccionarTodo.BackColor = System.Drawing.Color.Firebrick;
+            this.btnSeleccionarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeleccionarTodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnSeleccionarTodo.ForeColor = System.Drawing.Color.White;
+            this.btnSeleccionarTodo.Location = new System.Drawing.Point(19, 447);
+            this.btnSeleccionarTodo.Name = "btnSeleccionarTodo";
+            this.btnSeleccionarTodo.Size = new System.Drawing.Size(164, 34);
+            this.btnSeleccionarTodo.TabIndex = 26;
+            this.btnSeleccionarTodo.Text = "Seleccionar Todo";
+            this.btnSeleccionarTodo.UseVisualStyleBackColor = false;
+            this.btnSeleccionarTodo.Click += new System.EventHandler(this.btnSeleccionarTodo_Click);
+            // 
             // frmGestionarMatricula_secretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 600);
+
+            this.ClientSize = new System.Drawing.Size(828, 493);
+            this.Controls.Add(this.btnSeleccionarTodo);
+
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnDeseleccionarTodo);
             this.Controls.Add(this.btnMatricular);
             this.Controls.Add(this.dataGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -168,7 +214,7 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnMatricular;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnDeseleccionarTodo;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dni;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
@@ -177,5 +223,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Ticket;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSeleccionarTodo;
     }
 }

@@ -20,11 +20,15 @@ namespace MalvaradoSoft.Menu_Principal
         private MAlvaradoWS.user user;
         
 
-        public frmMenuPrincipal_profesor()
+        public frmMenuPrincipal_profesor(MAlvaradoWS.user user_)
         {
             InitializeComponent();
+<<<<<<< HEAD
             user = new MAlvaradoWS.user();
             user.idUser = 3; //PRUEBAAAAs
+=======
+            user = user_;
+>>>>>>> cbdef1954b37e372080f58b5d178366059b483d3
         }
         #region Funcionalidades del formulario
         //RESIZE METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO EN TIEMPO DE EJECUCION ----------------------------------------------------------
@@ -133,7 +137,7 @@ namespace MalvaradoSoft.Menu_Principal
 
         private void BtnAjustes_Click(object sender, EventArgs e)
         {
-            OpenForm<frmMenuConfiguracion_todos>();
+            open_menuConfiguracion();
         }
 
         private void BtnCursos_Click(object sender, EventArgs e)
@@ -143,8 +147,12 @@ namespace MalvaradoSoft.Menu_Principal
 
         private void BtnGestionarCursos_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             OpenForm<frmListarCursos_profesor>();
 
+=======
+            //open_listarCursos(user.idUser);
+>>>>>>> cbdef1954b37e372080f58b5d178366059b483d3
         }
 
         private void TimerFecha_Tick(object sender, EventArgs e)
@@ -195,7 +203,55 @@ namespace MalvaradoSoft.Menu_Principal
             }
         }
 
+<<<<<<< HEAD
         
 
+=======
+        private void open_menuConfiguracion()
+        {
+            frmMenuConfiguracion_todos formulario;
+            formulario = panelFormularios.Controls.OfType<frmMenuConfiguracion_todos>().FirstOrDefault(); //Busca en la coleccion  el formulario
+            //Si el formulario no existe
+            if (formulario == null)
+            {
+                formulario = new frmMenuConfiguracion_todos(user);
+                formulario.TopLevel = false;
+                panelFormularios.Controls.Add(formulario);
+                formulario.Dock = DockStyle.Fill;
+                panelFormularios.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            //si el formulario existe
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+
+        /*
+        private void open_listarCursos(int idTeacher)
+        {
+            frmListarCursos_profesor formulario;
+            formulario = panelFormularios.Controls.OfType<frmListarCursos_profesor>().FirstOrDefault(); //Busca en la coleccion  el formulario
+            //Si el formulario no existe
+            if (formulario == null)
+            {
+                formulario = new frmListarCursos_profesor(idTeacher);
+                formulario.TopLevel = false;
+                panelFormularios.Controls.Add(formulario);
+                formulario.Dock = DockStyle.Fill;
+                panelFormularios.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            //si el formulario existe
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+        */
+>>>>>>> cbdef1954b37e372080f58b5d178366059b483d3
     }
 }

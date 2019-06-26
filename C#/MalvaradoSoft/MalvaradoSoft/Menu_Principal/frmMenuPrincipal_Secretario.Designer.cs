@@ -78,11 +78,18 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.lblFecha.ForeColor = System.Drawing.Color.DimGray;
+
             this.lblFecha.Location = new System.Drawing.Point(281, 393);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(21, 31);
             this.lblFecha.TabIndex = 3;
             this.lblFecha.Text = " ";
+
+            //this.lblFecha.Location = new System.Drawing.Point(227, 398);
+            //this.lblFecha.Name = "lblFecha";
+            //this.lblFecha.Size = new System.Drawing.Size(0, 31);
+            //this.lblFecha.TabIndex = 3;
+
             // 
             // lblHora
             // 
@@ -91,9 +98,14 @@
             this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.lblHora.Location = new System.Drawing.Point(267, 322);
             this.lblHora.Name = "lblHora";
+
             this.lblHora.Size = new System.Drawing.Size(30, 44);
             this.lblHora.TabIndex = 2;
             this.lblHora.Text = " ";
+
+            //this.lblHora.Size = new System.Drawing.Size(0, 44);
+            //this.lblHora.TabIndex = 2;
+
             // 
             // label1
             // 

@@ -39,7 +39,16 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.gbDatosGenerales = new System.Windows.Forms.GroupBox();
-            this.btnBuscarUs = new System.Windows.Forms.Button();
+
+            this.lbly6 = new System.Windows.Forms.Label();
+            this.lbly5 = new System.Windows.Forms.Label();
+            this.lbly4 = new System.Windows.Forms.Label();
+            this.lbly3 = new System.Windows.Forms.Label();
+            this.lbly2 = new System.Windows.Forms.Label();
+            this.lblx2 = new System.Windows.Forms.Label();
+            this.lblx1 = new System.Windows.Forms.Label();
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario = new System.Windows.Forms.Button();
+
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTel = new System.Windows.Forms.TextBox();
             this.txtApMat = new System.Windows.Forms.TextBox();
@@ -57,6 +66,7 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.gbTipoUsuario.SuspendLayout();
             this.gbDatosGenerales.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -69,14 +79,21 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
+            this.btnEliminar.Location = new System.Drawing.Point(394, 453);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(83, 34);
+=======
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminar.Location = new System.Drawing.Point(181, 506);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(123, 34);
+>>>>>>> bcd3f7856bacad7ce29eb915987c42a38d4e609f
             this.btnEliminar.TabIndex = 35;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // gbTipoUsuario
             // 
@@ -87,7 +104,7 @@
             this.gbTipoUsuario.Controls.Add(this.ckApoderado);
             this.gbTipoUsuario.Location = new System.Drawing.Point(12, 74);
             this.gbTipoUsuario.Name = "gbTipoUsuario";
-            this.gbTipoUsuario.Size = new System.Drawing.Size(597, 51);
+            this.gbTipoUsuario.Size = new System.Drawing.Size(604, 51);
             this.gbTipoUsuario.TabIndex = 34;
             this.gbTipoUsuario.TabStop = false;
             this.gbTipoUsuario.Text = "Tipo Usuario";
@@ -112,6 +129,7 @@
             this.ckSecretaria.TabIndex = 12;
             this.ckSecretaria.Text = "Secretaria";
             this.ckSecretaria.UseVisualStyleBackColor = true;
+            this.ckSecretaria.CheckedChanged += new System.EventHandler(this.ckSecretaria_CheckedChanged);
             // 
             // ckAuxiliar
             // 
@@ -122,6 +140,7 @@
             this.ckAuxiliar.TabIndex = 11;
             this.ckAuxiliar.Text = "Auxiliar";
             this.ckAuxiliar.UseVisualStyleBackColor = true;
+            this.ckAuxiliar.CheckedChanged += new System.EventHandler(this.ckAuxiliar_CheckedChanged);
             // 
             // ckAlumno
             // 
@@ -151,14 +170,21 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
+            this.btnGuardar.Location = new System.Drawing.Point(269, 453);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(83, 34);
+=======
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(498, 506);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(127, 34);
+>>>>>>> bcd3f7856bacad7ce29eb915987c42a38d4e609f
             this.btnGuardar.TabIndex = 33;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
@@ -166,18 +192,34 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
+            this.btnCancelar.Location = new System.Drawing.Point(519, 453);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(83, 34);
+=======
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(16, 506);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(135, 34);
+>>>>>>> bcd3f7856bacad7ce29eb915987c42a38d4e609f
             this.btnCancelar.TabIndex = 32;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // gbDatosGenerales
             // 
-            this.gbDatosGenerales.Controls.Add(this.btnBuscarUs);
+
+            this.gbDatosGenerales.Controls.Add(this.lbly6);
+            this.gbDatosGenerales.Controls.Add(this.lbly5);
+            this.gbDatosGenerales.Controls.Add(this.lbly4);
+            this.gbDatosGenerales.Controls.Add(this.lbly3);
+            this.gbDatosGenerales.Controls.Add(this.lbly2);
+            this.gbDatosGenerales.Controls.Add(this.lblx2);
+            this.gbDatosGenerales.Controls.Add(this.lblx1);
+            this.gbDatosGenerales.Controls.Add(this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario);
+
             this.gbDatosGenerales.Controls.Add(this.txtEmail);
             this.gbDatosGenerales.Controls.Add(this.txtTel);
             this.gbDatosGenerales.Controls.Add(this.txtApMat);
@@ -194,20 +236,105 @@
             this.gbDatosGenerales.Controls.Add(this.label2);
             this.gbDatosGenerales.Location = new System.Drawing.Point(19, 147);
             this.gbDatosGenerales.Name = "gbDatosGenerales";
-            this.gbDatosGenerales.Size = new System.Drawing.Size(597, 271);
+            this.gbDatosGenerales.Size = new System.Drawing.Size(595, 300);
             this.gbDatosGenerales.TabIndex = 30;
             this.gbDatosGenerales.TabStop = false;
             this.gbDatosGenerales.Text = "Datos Generales";
+
+            // lbly6
             // 
-            // btnBuscarUs
+            this.lbly6.AutoSize = true;
+            this.lbly6.Location = new System.Drawing.Point(110, 225);
+            this.lbly6.Name = "lbly6";
+            this.lbly6.Size = new System.Drawing.Size(10, 13);
+            this.lbly6.TabIndex = 32;
+            this.lbly6.Text = " ";
             // 
-            this.btnBuscarUs.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarUs.Image")));
-            this.btnBuscarUs.Location = new System.Drawing.Point(540, 23);
-            this.btnBuscarUs.Name = "btnBuscarUs";
-            this.btnBuscarUs.Size = new System.Drawing.Size(36, 33);
-            this.btnBuscarUs.TabIndex = 26;
-            this.btnBuscarUs.UseVisualStyleBackColor = true;
-            this.btnBuscarUs.Click += new System.EventHandler(this.BtnBuscarUs_Click);
+            // lbly5
+            // 
+            this.lbly5.AutoSize = true;
+            this.lbly5.Location = new System.Drawing.Point(110, 161);
+            this.lbly5.Name = "lbly5";
+            this.lbly5.Size = new System.Drawing.Size(10, 13);
+            this.lbly5.TabIndex = 31;
+            this.lbly5.Text = " ";
+            // 
+            // lbly4
+            // 
+            this.lbly4.AutoSize = true;
+            this.lbly4.Location = new System.Drawing.Point(110, 129);
+            this.lbly4.Name = "lbly4";
+            this.lbly4.Size = new System.Drawing.Size(10, 13);
+            this.lbly4.TabIndex = 30;
+            this.lbly4.Text = " ";
+            // 
+            // lbly3
+            // 
+            this.lbly3.AutoSize = true;
+            this.lbly3.Location = new System.Drawing.Point(110, 97);
+            this.lbly3.Name = "lbly3";
+            this.lbly3.Size = new System.Drawing.Size(10, 13);
+            this.lbly3.TabIndex = 29;
+            this.lbly3.Text = " ";
+            // 
+            // lbly2
+            // 
+            this.lbly2.AutoSize = true;
+            this.lbly2.Location = new System.Drawing.Point(110, 65);
+            this.lbly2.Name = "lbly2";
+            this.lbly2.Size = new System.Drawing.Size(10, 13);
+            this.lbly2.TabIndex = 28;
+            this.lbly2.Text = " ";
+            // 
+            // lblx2
+            // 
+            this.lblx2.AutoSize = true;
+            this.lblx2.Location = new System.Drawing.Point(110, 193);
+            this.lblx2.Name = "lblx2";
+            this.lblx2.Size = new System.Drawing.Size(10, 13);
+            this.lblx2.TabIndex = 27;
+            this.lblx2.Text = " ";
+            // 
+            // lblx1
+            // 
+            this.lblx1.AutoSize = true;
+            this.lblx1.Location = new System.Drawing.Point(110, 33);
+            this.lblx1.Name = "lblx1";
+            this.lblx1.Size = new System.Drawing.Size(10, 13);
+            this.lblx1.TabIndex = 26;
+            this.lblx1.Text = " ";
+            // 
+            // btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario
+            // 
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Location = new System.Drawing.Point(500, 260);
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Name = "btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario";
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Size = new System.Drawing.Size(83, 34);
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.TabIndex = 25;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Text = "Buscar";
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.UseVisualStyleBackColor = false;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Click += new System.EventHandler(this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario_Click);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(126, 222);
+            this.txtEmail.MaxLength = 45;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(438, 20);
+            this.txtEmail.TabIndex = 10;
+            // 
+            // btnBuscarUsuariouariouariouariouariouariouariouariouariouariouario
+            // 
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Image")));
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Location = new System.Drawing.Point(540, 23);
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Name = "btnBuscarUsuariouariouariouariouariouariouariouariouariouariouario";
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Size = new System.Drawing.Size(36, 33);
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.TabIndex = 26;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.UseVisualStyleBackColor = true;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Click += new System.EventHandler(this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario_Click);
             // 
             // txtEmail
             // 
@@ -216,18 +343,21 @@
             this.txtEmail.Size = new System.Drawing.Size(379, 20);
             this.txtEmail.TabIndex = 10;
             // 
+
             // txtTel
             // 
             this.txtTel.Location = new System.Drawing.Point(126, 190);
+            this.txtTel.MaxLength = 9;
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(379, 20);
+            this.txtTel.Size = new System.Drawing.Size(438, 20);
             this.txtTel.TabIndex = 9;
             // 
             // txtApMat
             // 
             this.txtApMat.Location = new System.Drawing.Point(126, 126);
+            this.txtApMat.MaxLength = 45;
             this.txtApMat.Name = "txtApMat";
-            this.txtApMat.Size = new System.Drawing.Size(379, 20);
+            this.txtApMat.Size = new System.Drawing.Size(438, 20);
             this.txtApMat.TabIndex = 9;
             // 
             // label8
@@ -244,15 +374,16 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(17, 193);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 13);
+            this.label7.Size = new System.Drawing.Size(39, 13);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Teléfono";
+            this.label7.Text = "Celular";
             // 
             // txtApDir
             // 
             this.txtApDir.Location = new System.Drawing.Point(126, 158);
+            this.txtApDir.MaxLength = 45;
             this.txtApDir.Name = "txtApDir";
-            this.txtApDir.Size = new System.Drawing.Size(379, 20);
+            this.txtApDir.Size = new System.Drawing.Size(438, 20);
             this.txtApDir.TabIndex = 5;
             // 
             // label6
@@ -267,22 +398,25 @@
             // txtApPat
             // 
             this.txtApPat.Location = new System.Drawing.Point(126, 94);
+            this.txtApPat.MaxLength = 45;
             this.txtApPat.Name = "txtApPat";
-            this.txtApPat.Size = new System.Drawing.Size(379, 20);
+            this.txtApPat.Size = new System.Drawing.Size(438, 20);
             this.txtApPat.TabIndex = 5;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(126, 62);
+            this.txtNombre.MaxLength = 45;
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(379, 20);
+            this.txtNombre.Size = new System.Drawing.Size(438, 20);
             this.txtNombre.TabIndex = 4;
             // 
             // txtDNI
             // 
             this.txtDNI.Location = new System.Drawing.Point(126, 30);
+            this.txtDNI.MaxLength = 8;
             this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(379, 20);
+            this.txtDNI.Size = new System.Drawing.Size(438, 20);
             this.txtDNI.TabIndex = 4;
             // 
             // label5
@@ -328,14 +462,17 @@
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Location = new System.Drawing.Point(144, 453);
+            this.btnEditar.Size = new System.Drawing.Size(83, 34);
             this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
             this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditar.Location = new System.Drawing.Point(339, 506);
+            //this.btnEditar.Location = new System.Drawing.Point(339, 506);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(126, 34);
+            //this.btnEditar.Size = new System.Drawing.Size(126, 34);
             this.btnEditar.TabIndex = 36;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // panel1
             // 
@@ -357,11 +494,28 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Gestionar Usuario";
             // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnNuevo.ForeColor = System.Drawing.Color.White;
+            this.btnNuevo.Location = new System.Drawing.Point(19, 453);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(83, 34);
+            this.btnNuevo.TabIndex = 38;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
             // frmGestionarUsuario_secretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 600);
+
+            this.ClientSize = new System.Drawing.Size(636, 505);
+            this.Controls.Add(this.btnNuevo);
+
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnEliminar);
@@ -411,6 +565,15 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnBuscarUs;
+        private System.Windows.Forms.Button btnBuscarUsuario;
+        private System.Windows.Forms.Label lblx2;
+        private System.Windows.Forms.Label lblx1;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Label lbly6;
+        private System.Windows.Forms.Label lbly5;
+        private System.Windows.Forms.Label lbly4;
+        private System.Windows.Forms.Label lbly3;
+        private System.Windows.Forms.Label lbly2;
+
     }
 }

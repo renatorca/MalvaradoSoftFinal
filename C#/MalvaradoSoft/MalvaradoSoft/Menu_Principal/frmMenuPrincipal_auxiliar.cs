@@ -18,10 +18,10 @@ namespace MalvaradoSoft.Menu_Principal
     {
         private MAlvaradoWS.user user;        
 
-        public frmMenuPrincipal_auxiliar()
+        public frmMenuPrincipal_auxiliar(MAlvaradoWS.user user_)
         {
             InitializeComponent();
-            user = new MAlvaradoWS.user();
+            user = user_;
         }
 
         #region Funcionalidades del formulario
@@ -129,9 +129,30 @@ namespace MalvaradoSoft.Menu_Principal
             Application.Exit();
         }
 
+        private void open_menuConfiguracion()
+        {
+            frmMenuConfiguracion_todos formulario;
+            formulario = panelFormularios.Controls.OfType<frmMenuConfiguracion_todos>().FirstOrDefault(); //Busca en la coleccion  el formulario
+            //Si el formulario no existe
+            if (formulario == null)
+            {
+                formulario = new frmMenuConfiguracion_todos(user);
+                formulario.TopLevel = false;
+                panelFormularios.Controls.Add(formulario);
+                formulario.Dock = DockStyle.Fill;
+                panelFormularios.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }
+            //si el formulario existe
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
         private void BtnAjustes_Click(object sender, EventArgs e)
         {
-            OpenForm<frmMenuConfiguracion_todos>();
+            open_menuConfiguracion();
         }
 
         private void BtnAlumnos_Click(object sender, EventArgs e)
