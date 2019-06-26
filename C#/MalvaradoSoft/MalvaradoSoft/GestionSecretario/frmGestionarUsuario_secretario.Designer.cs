@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionarUsuario_secretario));
             this.btnEliminar = new System.Windows.Forms.Button();
             this.gbTipoUsuario = new System.Windows.Forms.GroupBox();
             this.ckProfesor = new System.Windows.Forms.CheckBox();
@@ -38,6 +39,7 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.gbDatosGenerales = new System.Windows.Forms.GroupBox();
+
             this.lbly6 = new System.Windows.Forms.Label();
             this.lbly5 = new System.Windows.Forms.Label();
             this.lbly4 = new System.Windows.Forms.Label();
@@ -45,7 +47,8 @@
             this.lbly2 = new System.Windows.Forms.Label();
             this.lblx2 = new System.Windows.Forms.Label();
             this.lblx1 = new System.Windows.Forms.Label();
-            this.btnBuscarUsuario = new System.Windows.Forms.Button();
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario = new System.Windows.Forms.Button();
+
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtTel = new System.Windows.Forms.TextBox();
             this.txtApMat = new System.Windows.Forms.TextBox();
@@ -76,9 +79,17 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnEliminar.Location = new System.Drawing.Point(394, 453);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(83, 34);
+=======
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(181, 506);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(123, 34);
+>>>>>>> bcd3f7856bacad7ce29eb915987c42a38d4e609f
             this.btnEliminar.TabIndex = 35;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -159,9 +170,17 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnGuardar.Location = new System.Drawing.Point(269, 453);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(83, 34);
+=======
+            this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
+            this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.Location = new System.Drawing.Point(498, 506);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(127, 34);
+>>>>>>> bcd3f7856bacad7ce29eb915987c42a38d4e609f
             this.btnGuardar.TabIndex = 33;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -173,9 +192,17 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.btnCancelar.Location = new System.Drawing.Point(519, 453);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(83, 34);
+=======
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(16, 506);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(135, 34);
+>>>>>>> bcd3f7856bacad7ce29eb915987c42a38d4e609f
             this.btnCancelar.TabIndex = 32;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -183,6 +210,7 @@
             // 
             // gbDatosGenerales
             // 
+
             this.gbDatosGenerales.Controls.Add(this.lbly6);
             this.gbDatosGenerales.Controls.Add(this.lbly5);
             this.gbDatosGenerales.Controls.Add(this.lbly4);
@@ -190,7 +218,8 @@
             this.gbDatosGenerales.Controls.Add(this.lbly2);
             this.gbDatosGenerales.Controls.Add(this.lblx2);
             this.gbDatosGenerales.Controls.Add(this.lblx1);
-            this.gbDatosGenerales.Controls.Add(this.btnBuscarUsuario);
+            this.gbDatosGenerales.Controls.Add(this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario);
+
             this.gbDatosGenerales.Controls.Add(this.txtEmail);
             this.gbDatosGenerales.Controls.Add(this.txtTel);
             this.gbDatosGenerales.Controls.Add(this.txtApMat);
@@ -211,7 +240,7 @@
             this.gbDatosGenerales.TabIndex = 30;
             this.gbDatosGenerales.TabStop = false;
             this.gbDatosGenerales.Text = "Datos Generales";
-            // 
+
             // lbly6
             // 
             this.lbly6.AutoSize = true;
@@ -275,19 +304,19 @@
             this.lblx1.TabIndex = 26;
             this.lblx1.Text = " ";
             // 
-            // btnBuscarUsuario
+            // btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario
             // 
-            this.btnBuscarUsuario.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnBuscarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnBuscarUsuario.Location = new System.Drawing.Point(500, 260);
-            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
-            this.btnBuscarUsuario.Size = new System.Drawing.Size(83, 34);
-            this.btnBuscarUsuario.TabIndex = 25;
-            this.btnBuscarUsuario.Text = "Buscar";
-            this.btnBuscarUsuario.UseVisualStyleBackColor = false;
-            this.btnBuscarUsuario.Click += new System.EventHandler(this.btnBuscarUsuario_Click);
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.ForeColor = System.Drawing.Color.White;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Location = new System.Drawing.Point(500, 260);
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Name = "btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario";
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Size = new System.Drawing.Size(83, 34);
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.TabIndex = 25;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Text = "Buscar";
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.UseVisualStyleBackColor = false;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Click += new System.EventHandler(this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario_Click);
             // 
             // txtEmail
             // 
@@ -297,6 +326,24 @@
             this.txtEmail.Size = new System.Drawing.Size(438, 20);
             this.txtEmail.TabIndex = 10;
             // 
+            // btnBuscarUsuariouariouariouariouariouariouariouariouariouariouario
+            // 
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Image")));
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Location = new System.Drawing.Point(540, 23);
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Name = "btnBuscarUsuariouariouariouariouariouariouariouariouariouariouario";
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Size = new System.Drawing.Size(36, 33);
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.TabIndex = 26;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.UseVisualStyleBackColor = true;
+            this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario.Click += new System.EventHandler(this.btnBuscarUsuariouariouariouariouariouariouariouariouariouariouariouario_Click);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(126, 222);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(379, 20);
+            this.txtEmail.TabIndex = 10;
+            // 
+
             // txtTel
             // 
             this.txtTel.Location = new System.Drawing.Point(126, 190);
@@ -416,8 +463,12 @@
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnEditar.ForeColor = System.Drawing.Color.White;
             this.btnEditar.Location = new System.Drawing.Point(144, 453);
-            this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(83, 34);
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            //this.btnEditar.Location = new System.Drawing.Point(339, 506);
+            this.btnEditar.Name = "btnEditar";
+            //this.btnEditar.Size = new System.Drawing.Size(126, 34);
             this.btnEditar.TabIndex = 36;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -427,9 +478,9 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Location = new System.Drawing.Point(0, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(636, 51);
+            this.panel1.Size = new System.Drawing.Size(804, 51);
             this.panel1.TabIndex = 37;
             // 
             // label1
@@ -461,8 +512,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(636, 505);
             this.Controls.Add(this.btnNuevo);
+
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnEliminar);
@@ -470,6 +523,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.gbDatosGenerales);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGestionarUsuario_secretario";
             this.Text = "frmGestionarUsuario_secretario";
             this.gbTipoUsuario.ResumeLayout(false);
@@ -520,5 +574,6 @@
         private System.Windows.Forms.Label lbly4;
         private System.Windows.Forms.Label lbly3;
         private System.Windows.Forms.Label lbly2;
+
     }
 }

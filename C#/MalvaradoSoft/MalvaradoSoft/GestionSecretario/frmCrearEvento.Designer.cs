@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCrearEvento));
             this.label1 = new System.Windows.Forms.Label();
             this.cmbDia = new System.Windows.Forms.ComboBox();
             this.txtHoraInicio = new System.Windows.Forms.TextBox();
@@ -40,7 +41,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -102,9 +105,11 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(236, 177);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(110, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(130, 34);
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -115,9 +120,11 @@
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrar.Image")));
+            this.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegistrar.Location = new System.Drawing.Point(80, 177);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(110, 34);
+            this.btnRegistrar.Size = new System.Drawing.Size(135, 34);
             this.btnRegistrar.TabIndex = 7;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = false;
@@ -144,11 +151,14 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.panel1.Controls.Add(this.btnCerrar);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(382, 51);
             this.panel1.TabIndex = 22;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
+            this.panel1.Move += new System.EventHandler(this.Panel1_Move);
             // 
             // label6
             // 
@@ -160,6 +170,17 @@
             this.label6.Size = new System.Drawing.Size(193, 33);
             this.label6.TabIndex = 13;
             this.label6.Text = "Crear evento";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(345, 10);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(21, 18);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 42;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // frmCrearEvento
             // 
@@ -177,10 +198,12 @@
             this.Controls.Add(this.txtHoraInicio);
             this.Controls.Add(this.cmbDia);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCrearEvento";
             this.Text = "frmCrearEvento";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,5 +223,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox btnCerrar;
     }
 }

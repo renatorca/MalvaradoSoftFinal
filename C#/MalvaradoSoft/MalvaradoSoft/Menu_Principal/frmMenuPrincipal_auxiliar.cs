@@ -139,6 +139,12 @@ namespace MalvaradoSoft.Menu_Principal
             OpenForm<frmGestionarAsistencia_auxiliar>();
         }
 
+        private void TimerFecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToLongTimeString();
+            lblFecha.Text = DateTime.Now.ToString("dddd:MMMM:yyy");
+        }
+
         private void BtnSlide_Click(object sender, EventArgs e)
         {
             if (MenuVertical.Width == 250)

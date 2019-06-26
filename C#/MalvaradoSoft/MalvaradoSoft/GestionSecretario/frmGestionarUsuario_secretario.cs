@@ -401,6 +401,7 @@ namespace MalvaradoSoft.GestionSecretario
             return random.Next(min, max);
         }
 
+
         public string RandomString(int size, bool lowerCase)
         {
             StringBuilder builder = new StringBuilder();

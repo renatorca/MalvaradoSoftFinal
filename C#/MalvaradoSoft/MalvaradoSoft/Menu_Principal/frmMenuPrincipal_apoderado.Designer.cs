@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuPrincipal_apoderado));
             this.panelFormularios = new System.Windows.Forms.Panel();
             this.BarraTitulo = new System.Windows.Forms.Panel();
@@ -38,10 +39,16 @@
             this.btnSlide = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.btnCursos = new System.Windows.Forms.Button();
             this.btnAjustes = new System.Windows.Forms.Button();
             this.btnAlumnos = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCursos = new System.Windows.Forms.Button();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timerFecha = new System.Windows.Forms.Timer(this.components);
+            this.panelFormularios.SuspendLayout();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -50,10 +57,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelFormularios
             // 
+            this.panelFormularios.Controls.Add(this.lblFecha);
+            this.panelFormularios.Controls.Add(this.pictureBox2);
+            this.panelFormularios.Controls.Add(this.lblHora);
+            this.panelFormularios.Controls.Add(this.label1);
             this.panelFormularios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormularios.Location = new System.Drawing.Point(250, 50);
             this.panelFormularios.Name = "panelFormularios";
@@ -172,6 +184,23 @@
             this.btnCerrarSesion.UseVisualStyleBackColor = true;
             this.btnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click);
             // 
+            // btnCursos
+            // 
+            this.btnCursos.FlatAppearance.BorderSize = 0;
+            this.btnCursos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCursos.ForeColor = System.Drawing.Color.White;
+            this.btnCursos.Image = ((System.Drawing.Image)(resources.GetObject("btnCursos.Image")));
+            this.btnCursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCursos.Location = new System.Drawing.Point(3, 249);
+            this.btnCursos.Name = "btnCursos";
+            this.btnCursos.Size = new System.Drawing.Size(250, 38);
+            this.btnCursos.TabIndex = 2;
+            this.btnCursos.Text = "Libreta de Notas";
+            this.btnCursos.UseVisualStyleBackColor = true;
+            this.btnCursos.Click += new System.EventHandler(this.BtnCursos_Click);
+            // 
             // btnAjustes
             // 
             this.btnAjustes.FlatAppearance.BorderSize = 0;
@@ -216,22 +245,53 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnCursos
+            // lblFecha
             // 
-            this.btnCursos.FlatAppearance.BorderSize = 0;
-            this.btnCursos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnCursos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCursos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCursos.ForeColor = System.Drawing.Color.White;
-            this.btnCursos.Image = ((System.Drawing.Image)(resources.GetObject("btnCursos.Image")));
-            this.btnCursos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCursos.Location = new System.Drawing.Point(3, 249);
-            this.btnCursos.Name = "btnCursos";
-            this.btnCursos.Size = new System.Drawing.Size(250, 38);
-            this.btnCursos.TabIndex = 2;
-            this.btnCursos.Text = "Libreta de Notas";
-            this.btnCursos.UseVisualStyleBackColor = true;
-            this.btnCursos.Click += new System.EventHandler(this.BtnCursos_Click);
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.lblFecha.ForeColor = System.Drawing.Color.DimGray;
+            this.lblFecha.Location = new System.Drawing.Point(317, 451);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(86, 31);
+            this.lblFecha.TabIndex = 18;
+            this.lblFecha.Text = "label2";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(235, 78);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(327, 240);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F);
+            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblHora.Location = new System.Drawing.Point(303, 380);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(122, 44);
+            this.lblHora.TabIndex = 17;
+            this.lblHora.Text = "label2";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.label1.Location = new System.Drawing.Point(198, 323);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(388, 29);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Bienvenido a Sistema MAlvarado";
+            // 
+            // timerFecha
+            // 
+            this.timerFecha.Enabled = true;
+            this.timerFecha.Interval = 1000;
+            this.timerFecha.Tick += new System.EventHandler(this.TimerFecha_Tick);
             // 
             // frmMenuPrincipal_apoderado
             // 
@@ -244,6 +304,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMenuPrincipal_apoderado";
             this.Text = "frmMenuPrincipal_apoderado";
+            this.panelFormularios.ResumeLayout(false);
+            this.panelFormularios.PerformLayout();
             this.BarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
@@ -252,6 +314,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
             this.MenuVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,5 +334,10 @@
         private System.Windows.Forms.Button btnAlumnos;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCursos;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timerFecha;
     }
 }

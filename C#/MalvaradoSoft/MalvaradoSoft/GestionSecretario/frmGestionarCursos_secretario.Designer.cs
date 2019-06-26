@@ -77,9 +77,11 @@
             this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Location = new System.Drawing.Point(408, 514);
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(399, 514);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(161, 34);
+            this.btnRegresar.Size = new System.Drawing.Size(179, 34);
             this.btnRegresar.TabIndex = 33;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -91,11 +93,14 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(193, 514);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(161, 34);
+            this.button4.Size = new System.Drawing.Size(174, 34);
             this.button4.TabIndex = 32;
             this.button4.Text = "Agregar Evaluación";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -105,9 +110,11 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(193, 222);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(161, 34);
+            this.button3.Size = new System.Drawing.Size(174, 34);
             this.button3.TabIndex = 31;
             this.button3.Text = "Registrar Curso";
             this.button3.UseVisualStyleBackColor = false;
@@ -118,9 +125,11 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(408, 222);
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(399, 222);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 34);
+            this.button2.Size = new System.Drawing.Size(179, 34);
             this.button2.TabIndex = 30;
             this.button2.Text = "Borrar Curso";
             this.button2.UseVisualStyleBackColor = false;
