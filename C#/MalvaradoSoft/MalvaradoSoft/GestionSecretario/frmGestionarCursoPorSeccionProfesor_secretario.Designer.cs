@@ -34,8 +34,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvCursosPorGrado = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.profesor = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtSeccion = new System.Windows.Forms.TextBox();
             this.txtGrado = new System.Windows.Forms.TextBox();
@@ -43,8 +41,10 @@
             this.labelSeccion = new System.Windows.Forms.Label();
             this.queryAllUsersByUserTypeResponseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.profesor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursosPorGrado)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -105,21 +105,8 @@
             this.dgvCursosPorGrado.Name = "dgvCursosPorGrado";
             this.dgvCursosPorGrado.Size = new System.Drawing.Size(383, 192);
             this.dgvCursosPorGrado.TabIndex = 8;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "name";
-            this.Column1.Frozen = true;
-            this.Column1.HeaderText = "Nombre";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 160;
-            // 
-            // profesor
-            // 
-            this.profesor.HeaderText = "Profesor";
-            this.profesor.Name = "profesor";
-            this.profesor.Width = 180;
+//            this.dgvCursosPorGrado.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCursosPorGrado_CellContentDoubleClick);
+            this.dgvCursosPorGrado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCursosPorGrado_CellDoubleClick);
             // 
             // groupBox1
             // 
@@ -178,6 +165,17 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
             this.panel1.Move += new System.EventHandler(this.Panel1_Move);
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(391, 10);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(21, 18);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 43;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -189,16 +187,23 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Gestionar Curso";
             // 
-            // btnCerrar
+            // Column1
             // 
-            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(391, 10);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(21, 18);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 43;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            this.Column1.DataPropertyName = "cursoJoel";
+            this.Column1.Frozen = true;
+            this.Column1.HeaderText = "Nombre";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 160;
+            // 
+            // profesor
+            // 
+            this.profesor.DataPropertyName = "name";
+            this.profesor.HeaderText = "Profesor";
+            this.profesor.Name = "profesor";
+            this.profesor.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.profesor.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.profesor.Width = 180;
             // 
             // frmGestionarCursoPorSeccionProfesor_secretario
             // 
@@ -237,10 +242,10 @@
         private System.Windows.Forms.Label labelGrado;
         private System.Windows.Forms.Label labelSeccion;
         private System.Windows.Forms.BindingSource queryAllUsersByUserTypeResponseBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewComboBoxColumn profesor;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox btnCerrar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn profesor;
     }
 }

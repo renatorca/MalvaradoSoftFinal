@@ -20,7 +20,7 @@ namespace MalvaradoSoft.GestionSecretario
             InitializeComponent();
             controller = new MAlvaradoWS.DBControllerWSClient();
             dgvEventos.AutoGenerateColumns = false;
-            dgvEventos.DataSource = controller.queryAllEventsByCourse(1);
+            //dgvEventos.DataSource = controller.queryAllEventsByCourse(1);
             curso = c;
             txtCurso.Text = c.course.name;
             txtCurso.Enabled = false;
@@ -41,32 +41,32 @@ namespace MalvaradoSoft.GestionSecretario
             if (cmbDia.Text == "Lunes")
             {
                 idDay = 1;
-                dgvEventos.DataSource = controller.queryAllEventsByCourseByDay(curso.id, idDay);
+                //dgvEventos.DataSource = controller.queryAllEventsByCourseByDay(curso.id, idDay);
             }
             else if (cmbDia.Text == "Martes")
             {
                 idDay = 2;
-                dgvEventos.DataSource = controller.queryAllEventsByCourseByDay(curso.id, idDay);
+                //dgvEventos.DataSource = controller.queryAllEventsByCourseByDay(curso.id, idDay);
             }
             else if (cmbDia.Text == "Miercoles")
             {
                 idDay = 3;
-                dgvEventos.DataSource = controller.queryAllEventsByCourseByDay(curso.id, idDay);
+                //dgvEventos.DataSource = controller.queryAllEventsByCourseByDay(curso.id, idDay);
             }
             else if (cmbDia.Text == "Jueves")
             {
                 idDay = 4;
-                dgvEventos.DataSource = controller.queryAllEventsByCourseByDay(curso.id, idDay);
+                //dgvEventos.DataSource = controller.queryAllEventsByCourseByDay(curso.id, idDay);
             }
             else if (cmbDia.Text == "Viernes")
             {
                 idDay = 5;
-                dgvEventos.DataSource = controller.queryAllEventsByCourseByDay(curso.id, idDay);
+                //dgvEventos.DataSource = controller.queryAllEventsByCourseByDay(curso.id, idDay);
             }
             else if (cmbDia.Text == "(Todos)")
             {
                 idDay = 5;
-                dgvEventos.DataSource = controller.queryAllEventsByCourse(curso.id);
+                //dgvEventos.DataSource = controller.queryAllEventsByCourse(curso.id);
             }
 
             
@@ -86,9 +86,9 @@ namespace MalvaradoSoft.GestionSecretario
             DialogResult msg = MessageBox.Show("¿Está seguro de eliminar el evento del curso?", "Mensaje de validación", MessageBoxButtons.YesNo);
             if (msg == DialogResult.Yes)
             {
-                MAlvaradoWS.@event eve;
-                eve = (MAlvaradoWS.@event)dgvEventos.CurrentRow.DataBoundItem;
-                controller.deleteEvent(eve);
+                //MAlvaradoWS.@event eve;
+                //eve = (MAlvaradoWS.@event)dgvEventos.CurrentRow.DataBoundItem;
+                //controller.deleteEvent(eve);
             }
         }
 
@@ -99,9 +99,9 @@ namespace MalvaradoSoft.GestionSecretario
             {
                 for (int fila = 0; fila < dgvEventos.Rows.Count - 1; fila++)
                 {
-                    MAlvaradoWS.@event evento = new MAlvaradoWS.@event();
-                    evento = (MAlvaradoWS.@event)dgvEventos.Rows[fila].DataBoundItem;
-                    controller.updateEvent(evento);
+                    //MAlvaradoWS.@event evento = new MAlvaradoWS.@event();
+                    //evento = (MAlvaradoWS.@event)dgvEventos.Rows[fila].DataBoundItem;
+                    //controller.updateEvent(evento);
                 }
                 DialogResult = DialogResult.OK;
             }

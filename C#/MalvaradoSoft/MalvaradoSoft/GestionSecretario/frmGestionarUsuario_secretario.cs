@@ -88,21 +88,21 @@ namespace MalvaradoSoft.GestionSecretario
         private void BuscarAlumno_Click(object sender, EventArgs e)
         {
             //frmBuscarUsuario_secretario fbuscarA = new frmBuscarUsuario_secretario();
-            if (fbuscarA.ShowDialog() == DialogResult.OK)
-            {
-                //Editar los parametros de los textBox según el alumno elegido
+            //if (fbuscarA.ShowDialog() == DialogResult.OK)
+            //{
+            //    //Editar los parametros de los textBox según el alumno elegido
 
-            }
+            //}
         }
 
         private void buscarApoderado_Click(object sender, EventArgs e)
         {
-            frmBuscarUsuario_secretario fbuscarAp = new frmBuscarUsuario_secretario();
-            if (fbuscarAp.ShowDialog() == DialogResult.OK)
-            {
-                //Editar los parametros de los textBox según el alumno elegido
+            //frmBuscarUsuario_secretario fbuscarAp = new frmBuscarUsuario_secretario();
+            //if (fbuscarAp.ShowDialog() == DialogResult.OK)
+            //{
+            //    //Editar los parametros de los textBox según el alumno elegido
 
-            }
+            //}
         }
 
 

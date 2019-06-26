@@ -30,8 +30,8 @@ namespace MalvaradoSoft.GestionSecretario
 
         private void CmbGrado_SelectedValueChanged(object sender, EventArgs e)
         {
-            int grado = Int32.Parse(cmbGrado.Text);            
-            cmbSeccion.DataSource= controller.queryAllClassSectionByLevel(grado);
+            int grado = Int32.Parse(cmbGrado.Text);
+            cmbSeccion.DataSource = controller.queryAllClassSectionByLevel(grado);
             cmbSeccion.DisplayMember = "name";
         }
 

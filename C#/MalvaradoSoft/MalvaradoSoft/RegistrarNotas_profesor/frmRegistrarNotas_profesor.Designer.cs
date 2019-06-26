@@ -135,6 +135,7 @@
             // 
             // cboAno
             // 
+            this.cboAno.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboAno.FormattingEnabled = true;
             this.cboAno.Location = new System.Drawing.Point(324, 77);
             this.cboAno.Name = "cboAno";
@@ -143,6 +144,7 @@
             // 
             // cboBimestre
             // 
+            this.cboBimestre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBimestre.FormattingEnabled = true;
             this.cboBimestre.Location = new System.Drawing.Point(324, 107);
             this.cboBimestre.Name = "cboBimestre";

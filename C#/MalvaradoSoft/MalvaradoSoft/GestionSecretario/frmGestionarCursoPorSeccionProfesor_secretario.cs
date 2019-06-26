@@ -14,17 +14,33 @@ namespace MalvaradoSoft.GestionSecretario
     public partial class frmGestionarCursoPorSeccionProfesor_secretario : Form
     {
         MAlvaradoWS.courseSchedule curso = new MAlvaradoWS.courseSchedule();
+        MAlvaradoWS.classSection classSection = new MAlvaradoWS.classSection();
         MAlvaradoWS.DBControllerWSClient controller;
+        MAlvaradoWS.teacherXYear txy = new MAlvaradoWS.teacherXYear();
+        BindingList<MAlvaradoWS.courseSchedule> courseSchedules;
+        BindingList<MAlvaradoWS.course> courses;
         public frmGestionarCursoPorSeccionProfesor_secretario(MAlvaradoWS.classSection cs)
         {
             InitializeComponent();
+            classSection = cs;
             controller = new MAlvaradoWS.DBControllerWSClient();
             txtGrado.Text = cs.level.ToString();
             txtSeccion.Text = cs.name;
             txtSeccion.Enabled = false;
             txtGrado.Enabled = false;
             dgvCursosPorGrado.AutoGenerateColumns = false;
-            dgvCursosPorGrado.DataSource = controller.queryAllCourseByLevel(cs.level);
+            //dgvCursosPorGrado.DataSource = controller.queryAllCourseByLevel(cs.level);
+            courses = new BindingList<MAlvaradoWS.course>(controller.queryAllCourseByLevel(cs.level));
+            courseSchedules = new BindingList<MAlvaradoWS.courseSchedule>();
+
+            foreach(MAlvaradoWS.course c in courses)
+            {
+                MAlvaradoWS.courseSchedule aux = new MAlvaradoWS.courseSchedule();
+                aux.course = c;
+                courseSchedules.Add(aux);
+
+            }
+            dgvCursosPorGrado.DataSource = courseSchedules;
             
         }
 
@@ -49,6 +65,21 @@ namespace MalvaradoSoft.GestionSecretario
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+
+
+        private void dgvCursosPorGrado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 1)
+            {
+                curso = (MAlvaradoWS.courseSchedule)dgvCursosPorGrado.CurrentRow.DataBoundItem;
+                frmAsignarProfesor_secretario frmAsignarProfesor = new frmAsignarProfesor_secretario(classSection, curso);
+                if (frmAsignarProfesor.ShowDialog() == DialogResult.OK)
+                {
+
+                }
+            }
         }
     }
 }

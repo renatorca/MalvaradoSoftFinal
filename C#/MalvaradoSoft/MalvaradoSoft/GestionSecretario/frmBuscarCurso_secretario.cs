@@ -13,9 +13,11 @@ namespace MalvaradoSoft.GestionSecretario
 {
     public partial class frmBuscarCurso_secretario : Form
     {
+        private MAlvaradoWS.DBControllerWSClient controller;
         public frmBuscarCurso_secretario()
         {
             InitializeComponent();
+            controller = new MAlvaradoWS.DBControllerWSClient();
         }
 
         private void frmBuscarCurso_secretario_FormClosing(object sender, FormClosingEventArgs e)

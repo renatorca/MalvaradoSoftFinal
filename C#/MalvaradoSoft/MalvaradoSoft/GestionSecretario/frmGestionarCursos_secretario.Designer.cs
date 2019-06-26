@@ -32,22 +32,23 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAgregarTipoNota = new System.Windows.Forms.Button();
+            this.btnAgregarCurso = new System.Windows.Forms.Button();
+            this.btnBorrarCurso = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCursos = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnBuscarUsuario = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmbLevel = new System.Windows.Forms.ComboBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnModificarCurso = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,94 +88,86 @@
             this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
-            // button4
+            // btnAgregarTipoNota
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(193, 514);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(174, 34);
-            this.button4.TabIndex = 32;
-            this.button4.Text = "Agregar Evaluación";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnAgregarTipoNota.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnAgregarTipoNota.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarTipoNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnAgregarTipoNota.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarTipoNota.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarTipoNota.Image")));
+            this.btnAgregarTipoNota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarTipoNota.Location = new System.Drawing.Point(193, 514);
+            this.btnAgregarTipoNota.Name = "btnAgregarTipoNota";
+            this.btnAgregarTipoNota.Size = new System.Drawing.Size(174, 34);
+            this.btnAgregarTipoNota.TabIndex = 32;
+            this.btnAgregarTipoNota.Text = "Agregar Evaluación";
+            this.btnAgregarTipoNota.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregarTipoNota.UseVisualStyleBackColor = false;
+            this.btnAgregarTipoNota.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button3
+            // btnAgregarCurso
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(193, 222);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(174, 34);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "Registrar Curso";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnAgregarCurso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnAgregarCurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnAgregarCurso.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarCurso.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarCurso.Image")));
+            this.btnAgregarCurso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarCurso.Location = new System.Drawing.Point(193, 222);
+            this.btnAgregarCurso.Name = "btnAgregarCurso";
+            this.btnAgregarCurso.Size = new System.Drawing.Size(174, 34);
+            this.btnAgregarCurso.TabIndex = 31;
+            this.btnAgregarCurso.Text = "Registrar Curso";
+            this.btnAgregarCurso.UseVisualStyleBackColor = false;
+            this.btnAgregarCurso.Click += new System.EventHandler(this.btnAgregarCurso_Click);
             // 
-            // button2
+            // btnBorrarCurso
             // 
-            this.button2.BackColor = System.Drawing.Color.Firebrick;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(399, 222);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(179, 34);
-            this.button2.TabIndex = 30;
-            this.button2.Text = "Borrar Curso";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnBorrarCurso.BackColor = System.Drawing.Color.Firebrick;
+            this.btnBorrarCurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrarCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnBorrarCurso.ForeColor = System.Drawing.Color.White;
+            this.btnBorrarCurso.Image = ((System.Drawing.Image)(resources.GetObject("btnBorrarCurso.Image")));
+            this.btnBorrarCurso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBorrarCurso.Location = new System.Drawing.Point(399, 222);
+            this.btnBorrarCurso.Name = "btnBorrarCurso";
+            this.btnBorrarCurso.Size = new System.Drawing.Size(179, 34);
+            this.btnBorrarCurso.TabIndex = 30;
+            this.btnBorrarCurso.Text = "Borrar Curso";
+            this.btnBorrarCurso.UseVisualStyleBackColor = false;
+            this.btnBorrarCurso.Click += new System.EventHandler(this.btnBorrarCurso_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.dgvCursos);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.groupBox2.Location = new System.Drawing.Point(175, 312);
+            this.groupBox2.Location = new System.Drawing.Point(165, 312);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(403, 156);
+            this.groupBox2.Size = new System.Drawing.Size(467, 156);
             this.groupBox2.TabIndex = 29;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Evaluaciones";
+            this.groupBox2.Text = "Cursos";
             // 
-            // dataGridView1
+            // dgvCursos
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCursos.AllowUserToAddRows = false;
+            this.dgvCursos.AllowUserToDeleteRows = false;
+            this.dgvCursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCursos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 20);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(385, 153);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nombre";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 282;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Peso";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 60;
+            this.dgvCursos.Location = new System.Drawing.Point(9, 20);
+            this.dgvCursos.Name = "dgvCursos";
+            this.dgvCursos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCursos.Size = new System.Drawing.Size(452, 153);
+            this.dgvCursos.TabIndex = 0;
+            this.dgvCursos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCursos_CellDoubleClick);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnBuscarUsuario);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cmbLevel);
+            this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
@@ -195,20 +188,21 @@
             this.btnBuscarUsuario.UseVisualStyleBackColor = true;
             this.btnBuscarUsuario.Click += new System.EventHandler(this.btnBuscarUsuario_Click);
             // 
-            // comboBox1
+            // cmbLevel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(144, 57);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(227, 28);
-            this.comboBox1.TabIndex = 14;
+            this.cmbLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbLevel.FormattingEnabled = true;
+            this.cmbLevel.Location = new System.Drawing.Point(144, 57);
+            this.cmbLevel.Name = "cmbLevel";
+            this.cmbLevel.Size = new System.Drawing.Size(227, 28);
+            this.cmbLevel.TabIndex = 14;
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 26);
-            this.textBox1.TabIndex = 13;
+            this.txtName.Location = new System.Drawing.Point(144, 26);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(227, 26);
+            this.txtName.TabIndex = 13;
             // 
             // label2
             // 
@@ -230,16 +224,45 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Grado:";
             // 
+            // btnModificarCurso
+            // 
+            this.btnModificarCurso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnModificarCurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.btnModificarCurso.ForeColor = System.Drawing.Color.White;
+            this.btnModificarCurso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarCurso.Location = new System.Drawing.Point(300, 272);
+            this.btnModificarCurso.Name = "btnModificarCurso";
+            this.btnModificarCurso.Size = new System.Drawing.Size(174, 34);
+            this.btnModificarCurso.TabIndex = 35;
+            this.btnModificarCurso.Text = "Modificar Curso";
+            this.btnModificarCurso.UseVisualStyleBackColor = false;
+            this.btnModificarCurso.Click += new System.EventHandler(this.btnModificarCurso_Click);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "name";
+            this.Column1.HeaderText = "Nombre";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 282;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "level";
+            this.Column2.HeaderText = "Grado";
+            this.Column2.Name = "Column2";
+            // 
             // frmGestionarCursos_secretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.btnModificarCurso);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRegresar);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAgregarTipoNota);
+            this.Controls.Add(this.btnAgregarCurso);
+            this.Controls.Add(this.btnBorrarCurso);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -248,7 +271,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -259,18 +282,19 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAgregarTipoNota;
+        private System.Windows.Forms.Button btnAgregarCurso;
+        private System.Windows.Forms.Button btnBorrarCurso;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridView dgvCursos;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnBuscarUsuario;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmbLevel;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnModificarCurso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

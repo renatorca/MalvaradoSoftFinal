@@ -305,7 +305,7 @@ namespace MalvaradoSoft.Configuracion
         {
             user.names = txtNombre.Text;
             user.firstLastName = txtApPaterno.Text;
-            user.SecondLastName = txtApMaterno.Text;
+            user.secondLastName = txtApMaterno.Text;
             controller.updateUser(user);
         }
 
@@ -542,7 +542,7 @@ namespace MalvaradoSoft.Configuracion
             lblCorreo.Text = user.email;
             lblDni.Text = user.dni;
             lblNombreUsuario.Text = user.username;
-            lblTelefono.Text = user.cellPhone;
+            lblTelefono.Text = user.cellPhone.ToString();
             lblContraseña.Text = "************";
         }
     }

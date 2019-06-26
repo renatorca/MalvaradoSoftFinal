@@ -50,7 +50,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
             cboAno.DisplayMember = "yearJoel";
             MAlvaradoWS.year y;      
             cboBimestre.DataSource = controller.queryAllB();
-            cboBimestre.DisplayMember = "valorBimester";
+            cboBimestre.DisplayMember = "bimesterJoel";
 
 
             dgvRegistroNotas.ColumnCount = grades.Count + 1;
@@ -86,8 +86,8 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
             this.idYear = ((MAlvaradoWS.year)cboAno.SelectedItem).idYear;
             this.idBimester = ((MAlvaradoWS.bimester)cboBimestre.SelectedItem).idBimester;
 
-            students = new BindingList<MAlvaradoWS.bimesterXStudentXYear>(controller.queryAllBimesterXStudentXYear(
-                courseScheduleSelected.id, this.idYear, this.idBimester)); //, courseScheduleSelected.classSection.id));
+            //students = new BindingList<MAlvaradoWS.bimesterXStudentXYear>(controller.queryAllBimesterXStudentXYear(
+                //courseScheduleSelected.id, this.idYear, this.idBimester)); //, courseScheduleSelected.classSection.id));
 
             data = new Object[students.Count, dgvRegistroNotas.ColumnCount];
 
@@ -107,7 +107,7 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
                 foreach (MAlvaradoWS.gradeXStudent gxs in s.gradeXStudents)
                 {
                     int ind = dgvRegistroNotas.Columns[gxs.grade.idGrade.ToString()].Index;
-                    row[ind] = gxs.value_;
+                    //row[ind] = gxs.value_;
                     data[i, j] = gxs;
                     j++;
                 }
@@ -125,17 +125,17 @@ namespace MalvaradoSoft.RegistrarNotas_profesor
                 int j;
                 editado = true;
                 Point celda = this.dgvRegistroNotas.CurrentCellAddress;
-                double anteriorNota = (((MAlvaradoWS.gradeXStudent)data[e.RowIndex, e.ColumnIndex]).value_);
+              //  double anteriorNota = (((MAlvaradoWS.gradeXStudent)data[e.RowIndex, e.ColumnIndex]).value_);
                 double nuevaNota;
                 if (Double.TryParse(dgvRegistroNotas.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString(), out nuevaNota) &&
                     nuevaNota >=0 && nuevaNota<=20)
                 {
-                    (((MAlvaradoWS.gradeXStudent)data[e.RowIndex, e.ColumnIndex]).value_) = nuevaNota;
+                   // (((MAlvaradoWS.gradeXStudent)data[e.RowIndex, e.ColumnIndex]).value_) = nuevaNota;
                 }
                 else
                 {
                     //(((MAlvaradoWS.gradeXStudent)data[e.RowIndex, e.ColumnIndex]).value_) = anteriorNota;
-                    dgvRegistroNotas.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = anteriorNota;
+                   // dgvRegistroNotas.Rows[e.RowIndex].Cells[e.ColumnIndex].Value = anteriorNota;
                     MessageBox.Show("Por favor ingrese un valor valido para la nota, entre 0 y 20", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }

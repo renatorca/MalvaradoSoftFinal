@@ -31,7 +31,7 @@ namespace MalvaradoSoft.GestionSecretario
 
         private void BtnRegistrar_Click(object sender, EventArgs e)
         {
-            MAlvaradoWS.@event evento = new MAlvaradoWS.@event();
+            //MAlvaradoWS.@event evento = new MAlvaradoWS.@event();
             string startTime = txtHoraInicio.Text;
             string endTime = txtHoraFin.Text;
             if (!(Validacion(startTime) && Validacion(endTime)))
@@ -48,11 +48,11 @@ namespace MalvaradoSoft.GestionSecretario
                 else if (dia.Contains("Miercoles")) idDia = 3;
                 else if (dia.Contains("Jueves")) idDia = 4;
                 else if (dia.Contains("Viernes")) idDia = 5;
-                evento.day = idDia;
-                evento.courseSchedule = courseSchedule;
-                evento.endTime = endTime;
-                evento.startTime = startTime;
-                controller.insertEvent(evento);
+                //evento.day = idDia;
+                //evento.courseSchedule = courseSchedule;
+                //evento.endTime = endTime;
+                //evento.startTime = startTime;
+                //controller.insertEvent(evento);
                 MessageBox.Show("El evento se registró correctamente", "Aviso", MessageBoxButtons.OK);
                 this.DialogResult = DialogResult.OK;
             }

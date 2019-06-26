@@ -40,8 +40,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
@@ -68,6 +68,7 @@
             // txtHoraInicio
             // 
             this.txtHoraInicio.Location = new System.Drawing.Point(136, 101);
+            this.txtHoraInicio.MaxLength = 8;
             this.txtHoraInicio.Name = "txtHoraInicio";
             this.txtHoraInicio.Size = new System.Drawing.Size(121, 20);
             this.txtHoraInicio.TabIndex = 2;
@@ -95,6 +96,7 @@
             // txtHoraFin
             // 
             this.txtHoraFin.Location = new System.Drawing.Point(136, 127);
+            this.txtHoraFin.MaxLength = 8;
             this.txtHoraFin.Name = "txtHoraFin";
             this.txtHoraFin.Size = new System.Drawing.Size(121, 20);
             this.txtHoraFin.TabIndex = 4;
@@ -160,17 +162,6 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
             this.panel1.Move += new System.EventHandler(this.Panel1_Move);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(10, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(193, 33);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Crear evento";
-            // 
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
@@ -181,6 +172,17 @@
             this.btnCerrar.TabIndex = 42;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(10, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(193, 33);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Crear evento";
             // 
             // frmCrearEvento
             // 

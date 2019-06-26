@@ -41,8 +41,8 @@
             this.labelGrado = new System.Windows.Forms.Label();
             this.labelSeccion = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursosPorSeccion)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -97,6 +97,7 @@
             // 
             // dgvCursosPorSeccion
             // 
+            this.dgvCursosPorSeccion.AllowUserToAddRows = false;
             this.dgvCursosPorSeccion.AllowUserToDeleteRows = false;
             this.dgvCursosPorSeccion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCursosPorSeccion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -184,17 +185,6 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Panel1_MouseDown);
             this.panel1.Move += new System.EventHandler(this.Panel1_Move);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label4.Location = new System.Drawing.Point(12, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(220, 33);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Asignar Eventos";
-            // 
             // btnCerrar
             // 
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
@@ -205,6 +195,17 @@
             this.btnCerrar.TabIndex = 41;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(12, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(220, 33);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Asignar Eventos";
             // 
             // frmAsignarEventos_secretario
             // 

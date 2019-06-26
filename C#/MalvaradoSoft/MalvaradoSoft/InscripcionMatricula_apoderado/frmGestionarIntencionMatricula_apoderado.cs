@@ -11,10 +11,11 @@ using System.Windows.Forms;
 
 namespace MalvaradoSoft.InscripcionMatricula_apoderado
 {
-    private MAlvaradoWS.student student2;
+    
     public partial class frmGestionarIntencionMatricula_apoderado : Form
     {
-        
+        private MAlvaradoWS.studentXYear student2;
+
         public frmGestionarIntencionMatricula_apoderado()
         {
             InitializeComponent();
@@ -23,12 +24,12 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
         public frmGestionarIntencionMatricula_apoderado(MAlvaradoWS.student student)
         {
             InitializeComponent();
-            student2 = student;
+            //student2 = student;
         }
 
         private void btnGuardarM_Click(object sender, EventArgs e)
         {
-            student2.classSection.level = comboBox1.SelectedItem;
+            //student2.classSection.level = comboBox1.SelectedItem;
 
         }
 

@@ -24,6 +24,7 @@ namespace MalvaradoSoft.Menu_Principal
         {
             InitializeComponent();
             user = new MAlvaradoWS.user();
+            user.idUser = 3; //PRUEBAAAAs
         }
         #region Funcionalidades del formulario
         //RESIZE METODO PARA REDIMENCIONAR/CAMBIAR TAMAÑO A FORMULARIO EN TIEMPO DE EJECUCION ----------------------------------------------------------
@@ -142,7 +143,8 @@ namespace MalvaradoSoft.Menu_Principal
 
         private void BtnGestionarCursos_Click(object sender, EventArgs e)
         {
-            OpenForm<frmListarCursos_profesor>(user.idUser);
+            OpenForm<frmListarCursos_profesor>();
+
         }
 
         private void TimerFecha_Tick(object sender, EventArgs e)
@@ -174,12 +176,17 @@ namespace MalvaradoSoft.Menu_Principal
             if (formulario == null)
             {
                 formulario = new MiForm();
+                if (formulario is frmListarCursos_profesor)
+                {
+                    ((frmListarCursos_profesor)formulario).inicializa(user.idUser);
+                }
                 formulario.TopLevel = false;
                 panelFormularios.Controls.Add(formulario);
                 formulario.Dock = DockStyle.Fill;
                 panelFormularios.Tag = formulario;
                 formulario.Show();
                 formulario.BringToFront();
+                
             }
             //si el formulario existe
             else
@@ -187,5 +194,8 @@ namespace MalvaradoSoft.Menu_Principal
                 formulario.BringToFront();
             }
         }
+
+        
+
     }
 }

@@ -20,7 +20,7 @@ namespace MalvaradoSoft.GestionSecretario
             InitializeComponent();
             controller = new MAlvaradoWS.DBControllerWSClient();
             dgvCursosPorSeccion.AutoGenerateColumns = false;
-            dgvCursosPorSeccion.DataSource = controller.queryAllCourseScheduleByClassSection(cs.id);
+            //dgvCursosPorSeccion.DataSource = controller.queryAllCourseScheduleByClassSection(cs.id);
             txtGrado.Text = cs.level.ToString();
             txtSeccion.Text = cs.name;
             txtGrado.Enabled = false;
