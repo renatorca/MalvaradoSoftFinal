@@ -18,15 +18,15 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
 
     public partial class frmInscribirAlumno_apoderado : Form
     {
-        private JohanaWS.DBControllerWSClient controller2;
-        private JohanaWS.student student2;
+        private MAlvaradoWS.DBControllerWSClient controller2;
+        private MAlvaradoWS.student student2;
         private Boolean state;
 
         FileStream fs1;
         FileStream fs2;
         String ruta;
 
-        public student Student2 { get => student2; set => student2 = value; }
+        public MAlvaradoWS.student Student2 { get => student2; set => student2 = value; }
 
         public bool State { get => state; set => state = value; }
 
@@ -69,18 +69,18 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
         {
             InitializeComponent();
             estadoComponentes(estado.nuevo);
-            controller2 = new JohanaWS.DBControllerWSClient();
+            controller2 = new MAlvaradoWS.DBControllerWSClient();
             fs1 = null;
             fs2 = null;
         }
 
-        public frmInscribirAlumno_apoderado(JohanaWS.student student)
+        public frmInscribirAlumno_apoderado(MAlvaradoWS.student student)
         {
             InitializeComponent();
             estadoComponentes(estado.editar);
-            student2 = new JohanaWS.student();
+            student2 = new MAlvaradoWS.student();
             student2 = student;
-            controller2 = new JohanaWS.DBControllerWSClient();
+            controller2 = new MAlvaradoWS.DBControllerWSClient();
             fs1 = null;
             fs2 = null;
             //se esta editando un alumno existente

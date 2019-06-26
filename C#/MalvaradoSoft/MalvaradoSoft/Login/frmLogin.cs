@@ -58,7 +58,7 @@ namespace MalvaradoSoft.Login
                     {
                         frmIniciarTipoUsuario frmTipo = new frmIniciarTipoUsuario();
                         frmTipo.Permisos = tipo;
-                        frmTipo.user = user;
+                        frmTipo.User = user;
                         frmTipo.FormClosed += Logout;
                         frmTipo.Show();
                     }
@@ -67,31 +67,31 @@ namespace MalvaradoSoft.Login
                         int flag = tipo.ElementAt(0).idUserType;
                         if (flag == 1)
                         {
-                            frmMenuPrincipal_Secretario menu = new frmMenuPrincipal_Secretario();
+                            frmMenuPrincipal_Secretario menu = new frmMenuPrincipal_Secretario(user);
                             menu.FormClosed += Logout;
                             menu.Show();
                         }
                         else if (flag == 2)
                         {
-                            frmMenuPrincipal_apoderado menu = new frmMenuPrincipal_apoderado();
+                            frmMenuPrincipal_apoderado menu = new frmMenuPrincipal_apoderado(user);
                             menu.FormClosed += Logout;
                             menu.Show();
                         }
                         else if (flag == 3)
                         {
-                            frmMenuPrincipal_profesor menu = new frmMenuPrincipal_profesor();
+                            frmMenuPrincipal_profesor menu = new frmMenuPrincipal_profesor(user);
                             menu.FormClosed += Logout;
                             menu.Show();
                         }
                         else if (flag == 4)
                         {
-                            frmMenuPrincipal_alumno menu = new frmMenuPrincipal_alumno();
+                            frmMenuPrincipal_alumno menu = new frmMenuPrincipal_alumno(user);
                             menu.FormClosed += Logout;
                             menu.Show();
                         }
                         else if (flag == 5)
                         {
-                            frmMenuPrincipal_auxiliar menu = new frmMenuPrincipal_auxiliar();
+                            frmMenuPrincipal_auxiliar menu = new frmMenuPrincipal_auxiliar(user);
                             menu.FormClosed += Logout;
                             menu.Show();
                         }

@@ -46,8 +46,8 @@
             this.panelFormularios = new System.Windows.Forms.Panel();
             this.lblFecha = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblHora = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
             this.timerFecha = new System.Windows.Forms.Timer(this.components);
             this.MenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -267,32 +267,20 @@
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.lblFecha.ForeColor = System.Drawing.Color.DimGray;
-            this.lblFecha.Location = new System.Drawing.Point(332, 443);
+            this.lblFecha.Location = new System.Drawing.Point(271, 437);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(86, 31);
+            this.lblFecha.Size = new System.Drawing.Size(0, 31);
             this.lblFecha.TabIndex = 22;
-            this.lblFecha.Text = "label2";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(250, 70);
+            this.pictureBox2.Location = new System.Drawing.Point(233, 59);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(327, 240);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F);
-            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.lblHora.Location = new System.Drawing.Point(318, 372);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(122, 44);
-            this.lblHora.TabIndex = 21;
-            this.lblHora.Text = "label2";
             // 
             // label1
             // 
@@ -303,6 +291,16 @@
             this.label1.Size = new System.Drawing.Size(388, 29);
             this.label1.TabIndex = 20;
             this.label1.Text = "Bienvenido a Sistema MAlvarado";
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.25F);
+            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.lblHora.Location = new System.Drawing.Point(318, 372);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(0, 44);
+            this.lblHora.TabIndex = 21;
             // 
             // timerFecha
             // 

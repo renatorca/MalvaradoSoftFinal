@@ -15,16 +15,18 @@ namespace MalvaradoSoft.Login
     public partial class frmIniciarTipoUsuario : Form
     {
         private BindingList<MAlvaradoWS.userType> tipo;
-        public MAlvaradoWS.user user;
+        private MAlvaradoWS.user user;
         private int pos_x = 40 , pos_y = 87;
 
         public BindingList<userType> Permisos { get => tipo; set => tipo = value; }
+        public user User { get => user; set => user = value; }
 
         public frmIniciarTipoUsuario()
         {
             InitializeComponent();
             estadoInicial();
             tipo = new BindingList<MAlvaradoWS.userType>();
+            user = new MAlvaradoWS.user();
         }
 
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
@@ -81,8 +83,7 @@ namespace MalvaradoSoft.Login
 
         private void ImageAuxiliar_Click(object sender, EventArgs e)
         {
-            frmMenuPrincipal_auxiliar menu = new frmMenuPrincipal_auxiliar();
-            menu.User = user;
+            frmMenuPrincipal_auxiliar menu = new frmMenuPrincipal_auxiliar(user);
             menu.FormClosed += Logout;
             menu.Show();
             this.Hide();
@@ -90,8 +91,7 @@ namespace MalvaradoSoft.Login
 
         private void ImageProfesor_Click(object sender, EventArgs e)
         {
-            frmMenuPrincipal_profesor menu = new frmMenuPrincipal_profesor();
-            menu.User = user;
+            frmMenuPrincipal_profesor menu = new frmMenuPrincipal_profesor(user);
             menu.FormClosed += Logout;
             menu.Show();
             this.Hide();
@@ -99,8 +99,7 @@ namespace MalvaradoSoft.Login
 
         private void ImageSecretario_Click(object sender, EventArgs e)
         {
-            frmMenuPrincipal_Secretario menu = new frmMenuPrincipal_Secretario();
-            menu.User = user;
+            frmMenuPrincipal_Secretario menu = new frmMenuPrincipal_Secretario(user);
             menu.FormClosed += Logout;
             menu.Show();
             this.Hide();
@@ -108,8 +107,7 @@ namespace MalvaradoSoft.Login
 
         private void ImageApoderado_Click(object sender, EventArgs e)
         {
-            frmMenuPrincipal_apoderado menu = new frmMenuPrincipal_apoderado();
-            menu.User = user;
+            frmMenuPrincipal_apoderado menu = new frmMenuPrincipal_apoderado(user);
             menu.FormClosed += Logout;
             menu.Show();
             this.Hide();

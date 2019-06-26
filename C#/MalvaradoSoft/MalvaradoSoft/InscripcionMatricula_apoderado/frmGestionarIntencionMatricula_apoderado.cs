@@ -10,11 +10,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MalvaradoSoft.InscripcionMatricula_apoderado
-{
-    private MAlvaradoWS.student student2;
+{    
     public partial class frmGestionarIntencionMatricula_apoderado : Form
     {
-        
+        private MAlvaradoWS.student student2;
         public frmGestionarIntencionMatricula_apoderado()
         {
             InitializeComponent();

@@ -54,6 +54,11 @@
     <Compile Include="Asistencia\frmTomarAsistencia_auxiliar.Designer.cs">
       <DependentUpon>frmTomarAsistencia_auxiliar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\MAlvaradoWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="GestionSecretario\EstadosFrmGestionarTipoNota.cs" />
     <Compile Include="GestionSecretario\frmAsignarAlumnos_secretario.cs">
       <SubType>Form</SubType>
@@ -88,18 +93,6 @@
     <Compile Include="GestionSecretario\frmAsignarAlumnos_secretario.Designer.cs">
       <DependentUpon>frmAsignarAlumnos_secretario.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSecretario\frmAsignarEventoCursosXSeccion_secretario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionSecretario\frmAsignarEventoCursosXSeccion_secretario.Designer.cs">
-      <DependentUpon>frmAsignarEventoCursosXSeccion_secretario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionSecretario\frmAsignarEventos_secretario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionSecretario\frmAsignarEventos_secretario.Designer.cs">
-      <DependentUpon>frmAsignarEventos_secretario.cs</DependentUpon>
-    </Compile>
     <Compile Include="GestionSecretario\frmBuscarCurso_secretario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,12 +116,6 @@
     </Compile>
     <Compile Include="GestionSecretario\frmGestionarCursos_secretario.Designer.cs">
       <DependentUpon>frmGestionarCursos_secretario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionSecretario\frmGestionarEvento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionSecretario\frmGestionarEvento.Designer.cs">
-      <DependentUpon>frmGestionarEvento.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionSecretario\frmGestionarCursosPorSeccion_secretario.cs">
       <SubType>Form</SubType>
@@ -160,35 +147,17 @@
     <Compile Include="GestionSecretario\frmGestionarTipoNota_secretario.Designer.cs">
       <DependentUpon>frmGestionarTipoNota_secretario.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestionSecretario\frmGestionarUsuario_secretario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionSecretario\frmGestionarUsuario_secretario.Designer.cs">
-      <DependentUpon>frmGestionarUsuario_secretario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Asistencia\frmGestionarAsistencia_auxiliar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Asistencia\frmGestionarAsistencia_auxiliar.Designer.cs">
       <DependentUpon>frmGestionarAsistencia_auxiliar.cs</DependentUpon>
     </Compile>
-    <Compile Include="InscripcionMatricula_apoderado\frmGestionarIntencionMatricula_apoderado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InscripcionMatricula_apoderado\frmGestionarIntencionMatricula_apoderado.Designer.cs">
-      <DependentUpon>frmGestionarIntencionMatricula_apoderado.cs</DependentUpon>
-    </Compile>
     <Compile Include="InscripcionMatricula_apoderado\frmInscribirAlumno_apoderado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="InscripcionMatricula_apoderado\frmInscribirAlumno_apoderado.Designer.cs">
       <DependentUpon>frmInscribirAlumno_apoderado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.Designer.cs">
-      <DependentUpon>frmMenuInscribirAlumno_apoderado.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\frmIniciarTipoUsuario.cs">
       <SubType>Form</SubType>
@@ -240,23 +209,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrarNotas_profesor\frmListarCursos_profesor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegistrarNotas_profesor\frmListarCursos_profesor.Designer.cs">
-      <DependentUpon>frmListarCursos_profesor.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.Designer.cs">
       <DependentUpon>frmRegistrarFeedback_profesor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.Designer.cs">
-      <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Asistencia\frmGestionarAsistencia_auxiliar.resx">
       <DependentUpon>frmGestionarAsistencia_auxiliar.cs</DependentUpon>
@@ -273,12 +230,6 @@
     <EmbeddedResource Include="GestionSecretario\frmAsignarAlumnos_secretario.resx">
       <DependentUpon>frmAsignarAlumnos_secretario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionSecretario\frmAsignarEventoCursosXSeccion_secretario.resx">
-      <DependentUpon>frmAsignarEventoCursosXSeccion_secretario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionSecretario\frmAsignarEventos_secretario.resx">
-      <DependentUpon>frmAsignarEventos_secretario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmBuscarCurso_secretario.resx">
       <DependentUpon>frmBuscarCurso_secretario.cs</DependentUpon>
     </EmbeddedResource>
@@ -290,9 +241,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmGestionarCursos_secretario.resx">
       <DependentUpon>frmGestionarCursos_secretario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionSecretario\frmGestionarEvento.resx">
-      <DependentUpon>frmGestionarEvento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionSecretario\frmGestionarCursosPorSeccion_secretario.resx">
       <DependentUpon>frmGestionarCursosPorSeccion_secretario.cs</DependentUpon>
@@ -306,17 +254,8 @@
     <EmbeddedResource Include="GestionSecretario\frmGestionarTipoNota_secretario.resx">
       <DependentUpon>frmGestionarTipoNota_secretario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestionSecretario\frmGestionarUsuario_secretario.resx">
-      <DependentUpon>frmGestionarUsuario_secretario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InscripcionMatricula_apoderado\frmGestionarIntencionMatricula_apoderado.resx">
-      <DependentUpon>frmGestionarIntencionMatricula_apoderado.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="InscripcionMatricula_apoderado\frmInscribirAlumno_apoderado.resx">
       <DependentUpon>frmInscribirAlumno_apoderado.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="InscripcionMatricula_apoderado\frmMenuInscribirAlumno_apoderado.resx">
-      <DependentUpon>frmMenuInscribirAlumno_apoderado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\frmIniciarTipoUsuario.resx">
       <DependentUpon>frmIniciarTipoUsuario.cs</DependentUpon>
@@ -351,15 +290,172 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RegistrarNotas_profesor\frmListarCursos_profesor.resx">
-      <DependentUpon>frmListarCursos_profesor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarFeedback_profesor.resx">
       <DependentUpon>frmRegistrarFeedback_profesor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistrarNotas_profesor\frmRegistrarNotas_profesor.resx">
-      <DependentUpon>frmRegistrarNotas_profesor.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="Connected Services\MAlvaradoWS\DBControllerWS.wsdl" />
+    <None Include="Connected Services\MAlvaradoWS\DBControllerWS.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.bimester.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.bimesterXStudentXYear.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.classSection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.course.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.courseSchedule.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.deleteCourseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.deleteEventResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.deleteGRadeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.deleteStudentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.event.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.grade.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.insertCourseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.insertEventResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.insertGRadeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.insertStudentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.insertStudentXYearResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllBimesterXStudentXYearResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllClassSectionByLevelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseByLevelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseScheduleByClassSectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesByTeacherIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesPorIDTeacherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCourseSchedulesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllCoursesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllEventsByCourseScheduleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllGradesByIDCourseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllGradesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllStudentsByGuardianIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllStudentXYearIfTicketEnrollementIsFullResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllTypesXUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllUsersByIdUserTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryAllYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryBlockTimebyIDResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryBlockTimebyUserNameResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryGradesByCourseIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryGradesSearchByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.queryUserByIDResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.student.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.studentXYear.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateBlockTimeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateCourseResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateCourseScheduleResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateEventResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateGRadeResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateGradeXStudentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updatePasswordUserResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateStudentResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.updateUserResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.user.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.userType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.validarUserLoginResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\MAlvaradoWS\MalvaradoSoft.MAlvaradoWS.year.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -373,6 +469,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\MAlvaradoWS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MAlvaradoWS\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MAlvaradoWS\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\MAlvaradoWS\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

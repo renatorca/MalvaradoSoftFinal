@@ -41,10 +41,44 @@ namespace MalvaradoSoft.Login
             }
         }
 
+        public int RandomNumber(int min, int max)
+        {
+            Random random = new Random();
+            return random.Next(min, max);
+        }
+
+        public string RandomString(int size, bool lowerCase)
+        {
+            StringBuilder builder = new StringBuilder();
+            Random random = new Random();
+            char a;
+            for (int i = 0; i < size; i++)
+            {
+                a = Convert.ToChar(Convert.ToInt32(Math.Floor(26 * random.NextDouble() + 65)));
+                builder.Append(a);
+            }
+
+            if (lowerCase)
+                return builder.ToString().ToLower();
+            return builder.ToString();
+        }
+
+        private string generarPassword()
+        {
+
+            StringBuilder builder = new StringBuilder();
+            builder.Append(RandomString(4, true));
+            builder.Append(RandomNumber(1000, 9999));
+            builder.Append(RandomString(2, false));
+
+            return builder.ToString();
+
+        }
+
         private void BtnEnviar_Click(object sender, EventArgs e)
         {
             Random rd = new Random(DateTime.Now.Millisecond);
-            String newPassword = (rd.Next(10000, 99999)).ToString();
+            String newPassword = generarPassword();
             //Actualizo la nueva contraseña del usuario
             int validar = controller.updatePasswordUser(txtCorreo.Text, newPassword);
             if (validar > 0)
