@@ -42,9 +42,9 @@
             this.lblErrorMessage = new System.Windows.Forms.Label();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblBlockTime = new System.Windows.Forms.Label();
             this.lblBlock = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnOcultarContraseña)).BeginInit();
@@ -195,10 +195,6 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
-            // 
             // lblBlockTime
             // 
             this.lblBlockTime.AutoSize = true;
@@ -220,6 +216,11 @@
             this.lblBlock.TabIndex = 21;
             this.lblBlock.Text = "Su cuenta esta bloqueado";
             this.lblBlock.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // frmLogin
             // 
@@ -270,8 +271,8 @@
         private System.Windows.Forms.Label lblErrorMessage;
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblBlockTime;
         private System.Windows.Forms.Label lblBlock;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -50,7 +50,9 @@ namespace MalvaradoSoft
 
             //Application.Run(new frmCambiarContraseña());
 
-            Application.Run(new frmGestionarMatricula_secretario());
+            //Application.Run(new frmGestionarMatricula_secretario());
+            //Application.Run(new frmCambiarContraseña());
+
         }
     }
 }

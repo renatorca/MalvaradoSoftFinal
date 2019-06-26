@@ -105,5 +105,10 @@ namespace MalvaradoSoft.GestionSecretario
                 DialogResult = DialogResult.OK;
             }
         }
+
+        private void FrmGestionarEvento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

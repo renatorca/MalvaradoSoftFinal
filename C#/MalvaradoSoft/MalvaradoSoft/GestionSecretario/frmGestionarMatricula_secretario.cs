@@ -19,6 +19,7 @@ namespace MalvaradoSoft.GestionSecretario
             InitializeComponent();
             controller = new JohanaWS.DBControllerWSClient();
             dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = controller.queryAllStudentsXYearByCondition(3);
         }
 
         private void btnMatricular_Click(object sender, EventArgs e)
@@ -31,10 +32,40 @@ namespace MalvaradoSoft.GestionSecretario
                 {
                     studentxy = new JohanaWS.studentXYear();
                     studentxy.condition.idCondition = 1;//matricular alumno
-                    //int result = controller.updateStudentXYear();
+                    //-int result = controller.updateStudentXYear(studentxy);
                 }
             }
-            MessageBox.Show("Los alumnos han sido matriculados satisfactoriamente","Mensaje informativo",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            DialogResult result=MessageBox.Show("¿Está seguro que desea matricular a estos alumnos?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result== DialogResult.Yes)
+            {
+                dataGridView1.DataSource = controller.queryAllStudentsXYearByCondition(3);
+                MessageBox.Show("Los alumnos han sido matriculados satisfactoriamente", "Mensaje informativo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    dataGridView1.Rows[i].Cells[0].Value = false;
+                }
+            }
+            
+        }
+
+        private void btnDeseleccionarTodo_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                dataGridView1.Rows[i].Cells[0].Value = false;
+            }
+        }
+
+        private void btnSeleccionarTodo_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dataGridView1.Rows.Count; i++)
+            {
+                dataGridView1.Rows[i].Cells[0].Value = true;
+            }
         }
     }
 }

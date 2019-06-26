@@ -85,6 +85,7 @@ namespace MalvaradoSoft.Login
             menu.User = user;
             menu.FormClosed += Logout;
             menu.Show();
+            this.Hide();
         }
 
         private void ImageProfesor_Click(object sender, EventArgs e)
@@ -93,6 +94,7 @@ namespace MalvaradoSoft.Login
             menu.User = user;
             menu.FormClosed += Logout;
             menu.Show();
+            this.Hide();
         }
 
         private void ImageSecretario_Click(object sender, EventArgs e)
@@ -101,6 +103,7 @@ namespace MalvaradoSoft.Login
             menu.User = user;
             menu.FormClosed += Logout;
             menu.Show();
+            this.Hide();
         }
 
         private void ImageApoderado_Click(object sender, EventArgs e)
@@ -109,6 +112,7 @@ namespace MalvaradoSoft.Login
             menu.User = user;
             menu.FormClosed += Logout;
             menu.Show();
+            this.Hide();
         }
 
         private void openPictureBox(string name)

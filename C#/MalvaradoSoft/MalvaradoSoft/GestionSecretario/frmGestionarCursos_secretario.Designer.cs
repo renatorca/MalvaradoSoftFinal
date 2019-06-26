@@ -55,9 +55,9 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(8, -39);
+            this.panel1.Location = new System.Drawing.Point(-1, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(785, 64);
+            this.panel1.Size = new System.Drawing.Size(800, 64);
             this.panel1.TabIndex = 34;
             // 
             // label4
@@ -73,46 +73,63 @@
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Location = new System.Drawing.Point(417, 459);
+            this.btnRegresar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnRegresar.ForeColor = System.Drawing.Color.White;
+            this.btnRegresar.Location = new System.Drawing.Point(408, 514);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(161, 30);
+            this.btnRegresar.Size = new System.Drawing.Size(161, 34);
             this.btnRegresar.TabIndex = 33;
             this.btnRegresar.Text = "Regresar";
-            this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.UseVisualStyleBackColor = false;
             this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(193, 459);
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(193, 514);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(161, 30);
+            this.button4.Size = new System.Drawing.Size(161, 34);
             this.button4.TabIndex = 32;
             this.button4.Text = "Agregar Evaluación";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(470, 190);
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(193, 222);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(89, 29);
+            this.button3.Size = new System.Drawing.Size(161, 34);
             this.button3.TabIndex = 31;
             this.button3.Text = "Registrar Curso";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(224, 190);
+            this.button2.BackColor = System.Drawing.Color.Firebrick;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(408, 222);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 29);
+            this.button2.Size = new System.Drawing.Size(161, 34);
             this.button2.TabIndex = 30;
             this.button2.Text = "Borrar Curso";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(184, 251);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.groupBox2.Location = new System.Drawing.Point(175, 312);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(403, 156);
             this.groupBox2.TabIndex = 29;
@@ -129,7 +146,7 @@
             this.Column2});
             this.dataGridView1.Location = new System.Drawing.Point(9, 20);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(385, 207);
+            this.dataGridView1.Size = new System.Drawing.Size(385, 153);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1
@@ -151,9 +168,10 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(184, 68);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.groupBox1.Location = new System.Drawing.Point(165, 97);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(403, 94);
+            this.groupBox1.Size = new System.Drawing.Size(467, 94);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Curso";
@@ -161,7 +179,7 @@
             // btnBuscarUsuario
             // 
             this.btnBuscarUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarUsuario.Image")));
-            this.btnBuscarUsuario.Location = new System.Drawing.Point(358, 16);
+            this.btnBuscarUsuario.Location = new System.Drawing.Point(404, 16);
             this.btnBuscarUsuario.Name = "btnBuscarUsuario";
             this.btnBuscarUsuario.Size = new System.Drawing.Size(36, 33);
             this.btnBuscarUsuario.TabIndex = 25;
@@ -171,33 +189,35 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(125, 54);
+            this.comboBox1.Location = new System.Drawing.Point(144, 57);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(227, 21);
+            this.comboBox1.Size = new System.Drawing.Size(227, 28);
             this.comboBox1.TabIndex = 14;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 23);
+            this.textBox1.Location = new System.Drawing.Point(144, 26);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 20);
+            this.textBox1.Size = new System.Drawing.Size(227, 26);
             this.textBox1.TabIndex = 13;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label2.Location = new System.Drawing.Point(6, 26);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 13);
+            this.label2.Size = new System.Drawing.Size(126, 17);
             this.label2.TabIndex = 11;
             this.label2.Text = "Nombre del Curso:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label3.Location = new System.Drawing.Point(6, 57);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
+            this.label3.Size = new System.Drawing.Size(52, 17);
             this.label3.TabIndex = 12;
             this.label3.Text = "Grado:";
             // 
@@ -205,7 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 505);
+            this.ClientSize = new System.Drawing.Size(800, 600);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.button4);
@@ -213,6 +233,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmGestionarCursos_secretario";
             this.Text = "frmGestionarCursos_secretario";
             this.panel1.ResumeLayout(false);

@@ -37,8 +37,12 @@
             this.Ticket = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMatricular = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnDeseleccionarTodo = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnSeleccionarTodo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -101,51 +105,99 @@
             // 
             // btnMatricular
             // 
-            this.btnMatricular.Location = new System.Drawing.Point(712, 458);
+            this.btnMatricular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnMatricular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatricular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnMatricular.ForeColor = System.Drawing.Color.White;
+            this.btnMatricular.Location = new System.Drawing.Point(667, 447);
             this.btnMatricular.Name = "btnMatricular";
-            this.btnMatricular.Size = new System.Drawing.Size(75, 23);
+            this.btnMatricular.Size = new System.Drawing.Size(120, 34);
             this.btnMatricular.TabIndex = 3;
             this.btnMatricular.Text = "Matricular";
-            this.btnMatricular.UseVisualStyleBackColor = true;
+            this.btnMatricular.UseVisualStyleBackColor = false;
             this.btnMatricular.Click += new System.EventHandler(this.btnMatricular_Click);
             // 
-            // btnCancelar
+            // btnDeseleccionarTodo
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(567, 458);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(84, 23);
-            this.btnCancelar.TabIndex = 4;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnDeseleccionarTodo.BackColor = System.Drawing.Color.Firebrick;
+            this.btnDeseleccionarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeseleccionarTodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnDeseleccionarTodo.ForeColor = System.Drawing.Color.White;
+            this.btnDeseleccionarTodo.Location = new System.Drawing.Point(216, 447);
+            this.btnDeseleccionarTodo.Name = "btnDeseleccionarTodo";
+            this.btnDeseleccionarTodo.Size = new System.Drawing.Size(164, 34);
+            this.btnDeseleccionarTodo.TabIndex = 4;
+            this.btnDeseleccionarTodo.Text = "Deseleccionar Todo";
+            this.btnDeseleccionarTodo.UseVisualStyleBackColor = false;
+            this.btnDeseleccionarTodo.Click += new System.EventHandler(this.btnDeseleccionarTodo_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Location = new System.Drawing.Point(-1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(835, 65);
+            this.panel1.TabIndex = 25;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Location = new System.Drawing.Point(10, 10);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(265, 33);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Matricular Alumnos";
+            // 
+            // btnSeleccionarTodo
+            // 
+            this.btnSeleccionarTodo.BackColor = System.Drawing.Color.Firebrick;
+            this.btnSeleccionarTodo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSeleccionarTodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnSeleccionarTodo.ForeColor = System.Drawing.Color.White;
+            this.btnSeleccionarTodo.Location = new System.Drawing.Point(19, 447);
+            this.btnSeleccionarTodo.Name = "btnSeleccionarTodo";
+            this.btnSeleccionarTodo.Size = new System.Drawing.Size(164, 34);
+            this.btnSeleccionarTodo.TabIndex = 26;
+            this.btnSeleccionarTodo.Text = "Seleccionar Todo";
+            this.btnSeleccionarTodo.UseVisualStyleBackColor = false;
+            this.btnSeleccionarTodo.Click += new System.EventHandler(this.btnSeleccionarTodo_Click);
             // 
             // frmGestionarMatricula_secretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(828, 493);
-            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnSeleccionarTodo);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnDeseleccionarTodo);
             this.Controls.Add(this.btnMatricular);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmGestionarMatricula_secretario";
             this.Text = "frmGestionarMatricula_secretario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMatricular;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnDeseleccionarTodo;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Dni;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoPat;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ticket;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnSeleccionarTodo;
     }
 }

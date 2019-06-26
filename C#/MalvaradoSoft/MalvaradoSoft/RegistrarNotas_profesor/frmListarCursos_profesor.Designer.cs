@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             this.dgvCursos = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.colNombreCurso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNivel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSeccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvCursos
@@ -46,30 +49,12 @@
             this.colNombreCurso,
             this.colNivel,
             this.colSeccion});
-            this.dgvCursos.Location = new System.Drawing.Point(12, 76);
+            this.dgvCursos.Location = new System.Drawing.Point(16, 156);
             this.dgvCursos.Name = "dgvCursos";
             this.dgvCursos.ReadOnly = true;
             this.dgvCursos.Size = new System.Drawing.Size(546, 252);
             this.dgvCursos.TabIndex = 0;
             this.dgvCursos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.registrarNotas);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cursos a cargo";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(12, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 20);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Seleccione un curso para registrar notas";
             // 
             // colNombreCurso
             // 
@@ -93,17 +78,58 @@
             this.colSeccion.Name = "colSeccion";
             this.colSeccion.ReadOnly = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Cursos a cargo";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(12, 112);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(216, 20);
+            this.textBox1.TabIndex = 2;
+            this.textBox1.Text = "Seleccione un curso para registrar notas";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(569, 64);
+            this.panel1.TabIndex = 17;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Location = new System.Drawing.Point(26, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(170, 33);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "Listar Cursos";
+            // 
             // frmListarCursos_profesor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 340);
+            this.ClientSize = new System.Drawing.Size(570, 420);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvCursos);
             this.Name = "frmListarCursos_profesor";
             this.Text = "frmListarCursos_profesor";
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursos)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +143,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombreCurso;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNivel;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSeccion;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label9;
     }
 }

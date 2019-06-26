@@ -32,42 +32,54 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvCursosPorSeccion = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Eventos = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtSeccion = new System.Windows.Forms.TextBox();
             this.txtGrado = new System.Windows.Forms.TextBox();
             this.labelGrado = new System.Windows.Forms.Label();
             this.labelSeccion = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Eventos = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursosPorSeccion)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(55, 328);
+            this.button2.BackColor = System.Drawing.Color.Firebrick;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(266, 414);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 32);
+            this.button2.Size = new System.Drawing.Size(112, 34);
             this.button2.TabIndex = 23;
             this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(252, 328);
+            this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.btnRegistrar.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrar.Location = new System.Drawing.Point(114, 414);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(75, 32);
+            this.btnRegistrar.Size = new System.Drawing.Size(112, 34);
             this.btnRegistrar.TabIndex = 22;
             this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
             this.btnRegistrar.Click += new System.EventHandler(this.BtnRegistrar_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvCursosPorSeccion);
-            this.groupBox2.Location = new System.Drawing.Point(12, 102);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.groupBox2.Location = new System.Drawing.Point(12, 181);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(375, 217);
             this.groupBox2.TabIndex = 21;
@@ -88,13 +100,31 @@
             this.dgvCursosPorSeccion.TabIndex = 8;
             this.dgvCursosPorSeccion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvCursosPorSeccion_CellContentClick);
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "name";
+            this.Column1.Frozen = true;
+            this.Column1.HeaderText = "Nombre";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 160;
+            // 
+            // Eventos
+            // 
+            this.Eventos.HeaderText = "Eventos";
+            this.Eventos.Name = "Eventos";
+            this.Eventos.ReadOnly = true;
+            this.Eventos.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Eventos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Eventos.Width = 160;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtSeccion);
             this.groupBox1.Controls.Add(this.txtGrado);
             this.groupBox1.Controls.Add(this.labelGrado);
             this.groupBox1.Controls.Add(this.labelSeccion);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 81);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 75);
             this.groupBox1.TabIndex = 20;
@@ -133,39 +163,44 @@
             this.labelSeccion.TabIndex = 1;
             this.labelSeccion.Text = "Seccion:";
             // 
-            // Column1
+            // panel1
             // 
-            this.Column1.DataPropertyName = "name";
-            this.Column1.Frozen = true;
-            this.Column1.HeaderText = "Nombre";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 160;
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuText;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(400, 58);
+            this.panel1.TabIndex = 40;
             // 
-            // Eventos
+            // label4
             // 
-            this.Eventos.HeaderText = "Eventos";
-            this.Eventos.Name = "Eventos";
-            this.Eventos.ReadOnly = true;
-            this.Eventos.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Eventos.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Eventos.Width = 160;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.Location = new System.Drawing.Point(12, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(220, 33);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Asignar Eventos";
             // 
             // frmAsignarEventos_secretario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 379);
+            this.ClientSize = new System.Drawing.Size(399, 464);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmAsignarEventos_secretario";
-            this.Text = "frmAsugnarEventos_secretario";
+            this.Text = "frmAsignarEventos_secretario";
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCursosPorSeccion)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -183,5 +218,7 @@
         private System.Windows.Forms.Label labelSeccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewButtonColumn Eventos;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
     }
 }

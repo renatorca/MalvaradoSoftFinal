@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MalvaradoSoft.JohanaWS;
 
 namespace MalvaradoSoft.InscripcionMatricula_apoderado
 {
@@ -27,9 +26,10 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
         FileStream fs2;
         String ruta;
 
-        public student Student2 { get => student2; set => student2 = value; }
+        
 
         public bool State { get => state; set => state = value; }
+        public JohanaWS.student Student2 { get => student2; set => student2 = value; }
 
         public void estadoComponentes(estado est)
         {
@@ -166,11 +166,11 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
             {
                 if(txtDNI.Text.Length != 8 && Double.TryParse(txtDNI.Text, out DoubleR))
                 {
-                    lblx1.Text = "*";
+                    lblx1.Text = "*";//cambiar color
                     result = 0;
                 }if(txtTel.Text.Length != 9 && Double.TryParse(txtDNI.Text,out DoubleR))
                 {
-                    lblx2.Text = "*";
+                    lblx2.Text = "*";//cambiar color
                     result = 0;
                 }                  
                 MessageBox.Show("(*) Uno de los campos ingresados no son válidos", "Mensaje de Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -180,8 +180,8 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
 
         private int verificarFiles()
         {
-            int result = 1;
-            //-int result = JohanaWS.verifyStudentFiles(student.idUser);
+            //int result = 1;
+            int result = JohanaWS.verifyStudentFiles(student2.idUser);
             if (result > 0)
             {
                 estadoComponentes(estado.editar);
@@ -215,7 +215,7 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
                 if (verificarFiles() > 0 && verificarDniYTelefono() > 0)
                 {
                     guardarDatosAlumno();
-                    //-r = controller2.insertStudent(student2);
+                    /r = controller2.insertStudent(student2);
                 }
                 if (r>0)
                 {
@@ -224,8 +224,6 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
                 else
                 {
                     MessageBox.Show("Ha habido un error en la inscripción vuelva ha intentarlo nuevamente", "Mensaje de Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
-                    lblx1.Text = "";
-                    lblx2.Text = "";
                 }
                 if (r > 0)
                 {
@@ -257,7 +255,7 @@ namespace MalvaradoSoft.InscripcionMatricula_apoderado
             if(verificarFiles() == 1 && verificarDniYTelefono() > 0)
             {
                 guardarDatosAlumno();
-                //-r = controller2.insertStudent(student2);
+                r = controller2.insertStudent(student2);
             }
             if (r > 0)
             {

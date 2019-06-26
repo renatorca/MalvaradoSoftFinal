@@ -12,11 +12,11 @@ namespace MalvaradoSoft.GestionSecretario
 {
     public partial class frmAsignarEventoCursosXSeccion_secretario : Form
     {
-        RenatoCWS.DBControllerWSClient controller;
+        MAlvaradoWS.DBControllerWSClient controller;
         public frmAsignarEventoCursosXSeccion_secretario()
         {
             InitializeComponent();
-            controller = new RenatoCWS.DBControllerWSClient();
+            controller = new MAlvaradoWS.DBControllerWSClient();
             BindingList<int> grados = new BindingList<int>();
             grados.Add(1);
             grados.Add(2);
@@ -29,8 +29,8 @@ namespace MalvaradoSoft.GestionSecretario
 
         private void BtnEditarHorario_Click(object sender, EventArgs e)
         {
-            RenatoCWS.classSection cs;
-            cs = (RenatoCWS.classSection)cmbSeccion.SelectedItem;
+            MAlvaradoWS.classSection cs;
+            cs = (MAlvaradoWS.classSection)cmbSeccion.SelectedItem;
             frmAsignarEventos_secretario frmCursoporSeccion = new frmAsignarEventos_secretario(cs);
             if (frmCursoporSeccion.ShowDialog() == DialogResult.OK)
             {
@@ -43,6 +43,11 @@ namespace MalvaradoSoft.GestionSecretario
             int grado = Int32.Parse(cmbGrado.Text);
             //cmbSeccion.DataSource = controller.queryAllClassSectionByLevel(grado);
             cmbSeccion.DisplayMember = "name";
+        }
+
+        private void BtnCancelar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

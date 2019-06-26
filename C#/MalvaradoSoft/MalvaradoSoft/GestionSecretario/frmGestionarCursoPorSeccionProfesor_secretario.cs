@@ -12,12 +12,12 @@ namespace MalvaradoSoft.GestionSecretario
 {
     public partial class frmGestionarCursoPorSeccionProfesor_secretario : Form
     {
-        RenatoCWS.courseSchedule curso = new RenatoCWS.courseSchedule();
-        RenatoCWS.DBControllerWSClient controller;
-        public frmGestionarCursoPorSeccionProfesor_secretario(RenatoCWS.classSection cs)
+        MAlvaradoWS.courseSchedule curso = new MAlvaradoWS.courseSchedule();
+        MAlvaradoWS.DBControllerWSClient controller;
+        public frmGestionarCursoPorSeccionProfesor_secretario(MAlvaradoWS.classSection cs)
         {
             InitializeComponent();
-            controller = new RenatoCWS.DBControllerWSClient();
+            controller = new MAlvaradoWS.DBControllerWSClient();
             txtGrado.Text = cs.level.ToString();
             txtSeccion.Text = cs.name;
             txtSeccion.Enabled = false;
